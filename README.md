@@ -1,3 +1,3 @@
 # Taiwanese-Restaurants---Kyrylo-Nhi
 "Git workflow" +
-Nhi step 2.1
+Nhi step 2
