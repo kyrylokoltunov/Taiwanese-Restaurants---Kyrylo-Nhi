@@ -20,19 +20,24 @@ library(viridis)
 library(leaflet)
 library(htmltools)
 
+# We started by downloading all the necessary libraries to get ready for content extraction.
+
 ```
 
 ```{r}
-# Function to get the text from page so don't need to repeat it multiple times
+
 get_text_from_page <- function(page, css_selector) {
   page |> 
     html_nodes(css_selector) |> 
     html_text()
 }
+
+# The first step for us was creating a function called get_text_from_page. 
+
+# This function takes a web page and a CSS selector as inputs. It then finds all the HTML nodes that match the selector and extracts their text content.
 ```
 
 ```{r}
-# This function takes in a url to create a clean tibble
 
 scrape_page <- function(url) {
   Sys.sleep(5)
@@ -54,12 +59,14 @@ scrape_page <- function(url) {
 
 scrape_page("https://www.tripadvisor.com/Restaurants-g293913-Taipei.html")
 
+# The next step for us was creating a new function called scrape_page. This function takes a link and waits for 5 seconds using Sys.sleep() before starting, so we don’t overload the system. Its main goal is to collect data directly from TripAdvisor, such as the restaurant’s name, rating, number of reviews, location, and cuisine type.2
+
 ```
 
--   Observation: A problem I encounter is when scraping the main page, a few locations are missing so using this function would result in an error telling me that the length of the columns are not the same and the code stops executing. Another problem with this is we don't know which index we have missing values because the next value fills in the gap of the missing one and so on.
--   After identifying the problem, I came up with a solution of selecting a different pattern that contains information of the restaurants including the location if they have it. Using this longer string, I extract the location using regular expression. This way, we have the same length across all the columns and identify indices of missing values.
+-   Observation: There was a problem encountered when scraping the main page is that a few locations are missing, so using this function results in an error saying the column lengths are not the same, and the code stops executing. Another problem with this is not knowing which index has missing values because the next value fills the gap of the missing one and so on.
+-   After identifying the problem, a solution was developed by selecting a different pattern that includes restaurant information along with the location, if available. Using this longer string, the location is extracted with a regular expression. This ensures all columns have the same length and allows identifying the indices with missing values.
 
-# Implement new method into the function
+# Implementing a New Method into the Function
 
 ```{r}
 scrape_page_im <- function(url) {
@@ -80,9 +87,11 @@ scrape_page_im <- function(url) {
            num_reviews = parse_number(str_extract(num_reviews, "\\d+(.*)\\d"))
     )
 }
+
+#We have a function named scrape_page_im with a url argument. We pause it for 5 seconds using Sys.sleep(5), then open a new session with bow(url), download the HTML content of the page, and extract restaurant names with the CSS selector .mtnKn.OgHoE. We repeat a similar procedure for ratings and the number of reviews, then create a new tidy table for rest_name, cuisine, ratings, and location. Then we clean and format the data with mutate() using as.numeric, str_trim, str_extract, and parse_number.
 ```
 
-# Apply the function to multiple pages
+# Applying the Function to Multiple Pages
 
 ```{r}
 # Final data set using map functions in the purrr package
@@ -95,6 +104,8 @@ base_url2 <- "-Taipei.html"
 sequence <- seq(30, 120, 30)
 urls_all_pages <- str_c(base_url1, sequence, base_url2)
 url_first_page <- "https://www.tripadvisor.com/Restaurants-g293913-oa-Taipei.html"
+
+# We define two parts of the URL, base_url1 and base_url2, then create a sequence of 30, 120, and 30, and combine everything using str_c.
 ```
 
 ```{r}
@@ -103,6 +114,8 @@ pages <- purrr::map(urls_all_pages, scrape_page_im)
 rest_info <- bind_rows(first_page, pages)
 
 write_csv(rest_info, "rest_info.csv")
+
+# Here, we apply it to first_page using url_first_page, then to all other pages using urls_all_pages. After that, we combine all the results into one dataset called rest_info using bind_rows. Finally, we save the complete dataset as a CSV file named "rest_info.csv" using write_csv.
 ```
 
 ```{r}
@@ -131,4 +144,6 @@ str_extract(test, "^(\\w+?, ?\\w+)\\$+")
 str_remove(test, "\\$.*")
 str_replace(str_extract(test, "mi(.*)"), "mi", "")
 class(test)
+
+# We first use bow to open a URL and set force = TRUE to start a new session. Then we define a test function using a CSS selector, html_nodes, and html_text, test it with the selector, and extract text using specific selectors like .UIwAG and .k+ div > .G. Later, we use str_extract to clean the text. We also use str_remove and str_replace to further clean the strings and check the object type with class(test).
 ```
