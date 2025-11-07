@@ -1,4 +1,5 @@
-# Taiwanese-Restaurants---Kyrylo-Nhi
-"Git workflow" +
-Nhi step 3
-# Test commit to check author name
+# Taiwanese-Restaurants
+In this project, we applied web scraping functions to politely and 
+ethically scrape TripAdvisor website for restaurant information such as 
+name, location, and ratings. The paths are allowed and we follow the stated 
+crawl time of the website. 
