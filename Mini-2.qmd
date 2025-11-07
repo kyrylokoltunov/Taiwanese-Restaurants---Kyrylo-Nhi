@@ -1,0 +1,134 @@
+---
+title: "Taiwan restaurants-MP2"
+author: "Nhi Luong"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: FALSE
+
+library(tidyverse)
+library(stringr)
+library(rvest)
+library(polite)
+library(sf)
+library(maps)
+library(viridis)
+library(leaflet)
+library(htmltools)
+
+```
+
+```{r}
+# Function to get the text from page so don't need to repeat it multiple times
+get_text_from_page <- function(page, css_selector) {
+  page |> 
+    html_nodes(css_selector) |> 
+    html_text()
+}
+```
+
+```{r}
+# This function takes in a url to create a clean tibble
+
+scrape_page <- function(url) {
+  Sys.sleep(5)
+  session <- bow(url, force = TRUE)
+  page <- scrape(session)
+  rest_name <- get_text_from_page(page, ".mtnKn.OgHoE")
+  ratings <- get_text_from_page(page, ".kzrsh span span")
+  num_reviews <- get_text_from_page(page, ".kzrsh .qMyjI")
+  location <- get_text_from_page(page, ".ZNjnF+ .ZNjnF")
+  cuisine <- get_text_from_page(page, ".k+ div > .G")
+  cuisine <- str_remove(test, "\\$.*")
+  tibble(rest_name, cuisine, ratings, location) |>
+    mutate(ratings = as.numeric(ratings),
+           rest_name = str_trim(str_extract(rest_name, "[^\\d\\.].*")),
+           num_reviews = str_extract(num_reviews, "\\(.*\\)"),
+           num_reviews = parse_number(str_extract(num_reviews, "\\d+(.*)\\d"))
+    )
+}
+
+scrape_page("https://www.tripadvisor.com/Restaurants-g293913-Taipei.html")
+
+```
+
+-   Observation: A problem I encounter is when scraping the main page, a few locations are missing so using this function would result in an error telling me that the length of the columns are not the same and the code stops executing. Another problem with this is we don't know which index we have missing values because the next value fills in the gap of the missing one and so on.
+-   After identifying the problem, I came up with a solution of selecting a different pattern that contains information of the restaurants including the location if they have it. Using this longer string, I extract the location using regular expression. This way, we have the same length across all the columns and identify indices of missing values.
+
+# Implement new method into the function
+
+```{r}
+scrape_page_im <- function(url) {
+  Sys.sleep(5)
+  session <- bow(url, force = TRUE)
+  page <- scrape(session)
+  rest_name <- get_text_from_page(page, ".mtnKn.OgHoE")
+  ratings <- get_text_from_page(page, ".kzrsh span span")
+  num_reviews <- get_text_from_page(page, ".kzrsh .qMyjI")
+  location <- get_text_from_page(page, ".UIwAG")
+  location <- str_replace(str_extract(location, "mi(.*)"), "mi", "")
+  cuisine <- get_text_from_page(page, ".k+ div > .G")
+  cuisine <- str_remove(cuisine, "\\$.*")
+  tibble(rest_name, cuisine, ratings, location) |>
+    mutate(ratings = as.numeric(ratings),
+           rest_name = str_trim(str_extract(rest_name, "[^\\d\\.].*")),
+           num_reviews = str_extract(num_reviews, "\\(.*\\)"),
+           num_reviews = parse_number(str_extract(num_reviews, "\\d+(.*)\\d"))
+    )
+}
+```
+
+# Apply the function to multiple pages
+
+```{r}
+# Final data set using map functions in the purrr package
+
+base_url1 <- "https://www.tripadvisor.com/Restaurants-g293913-oa"
+base_url2 <- "-Taipei.html"
+# this is page 1
+
+#https://www.tripadvisor.com/Restaurants-g293913-oa30-Taipei.html --> page 2
+sequence <- seq(30, 120, 30)
+urls_all_pages <- str_c(base_url1, sequence, base_url2)
+url_first_page <- "https://www.tripadvisor.com/Restaurants-g293913-oa-Taipei.html"
+```
+
+```{r}
+first_page <- purrr::map(url_first_page, scrape_page_im)
+pages <- purrr::map(urls_all_pages, scrape_page_im)
+rest_info <- bind_rows(first_page, pages)
+
+write_csv(rest_info, "rest_info.csv")
+```
+
+```{r}
+# this is for the first page where 2 locations are missing on the main page
+
+location <- append(location, "Zhongshan District", after = 10) # manually fill in missing location
+  location <- append(location, "Datong", after = 20)
+```
+
+# Test area
+
+```{r}
+ses <- bow("https://www.tripadvisor.com/Restaurants-g293913-Taipei.html", force = TRUE)
+page <- scrape(ses)
+
+test_fun <- function(page, css_selector) {
+  page |> 
+    html_nodes(css_selector) |> 
+    html_text()
+}
+test_fun(page, ".ZNjnF+ .ZNjnF")
+
+test <- get_text_from_page(page, ".UIwAG")
+test <- get_text_from_page(page, ".k+ div > .G")
+str_extract(test, "^(\\w+?, ?\\w+)\\$+")
+str_remove(test, "\\$.*")
+str_replace(str_extract(test, "mi(.*)"), "mi", "")
+class(test)
+```
