@@ -1,0 +1,150 @@
+---
+title: "Taiwan restaurants-MP2"
+author: "Nhi Luong"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| include: FALSE
+
+library(tidyverse)
+library(stringr)
+library(rvest)
+library(polite)
+library(sf)
+library(maps)
+library(viridis)
+library(leaflet)
+library(htmltools)
+
+# We started by downloading all the necessary libraries to get ready for content extraction.
+
+```
+
+```{r}
+
+get_text_from_page <- function(page, css_selector) {
+  page |> 
+    html_nodes(css_selector) |> 
+    html_text()
+}
+
+# The first step for us was creating a function called get_text_from_page. 
+
+# This function takes a web page and a CSS selector as inputs. It then finds all the HTML nodes that match the selector and extracts their text content.
+```
+
+```{r}
+
+scrape_page <- function(url) {
+  Sys.sleep(5)
+  session <- bow(url, force = TRUE)
+  page <- scrape(session)
+  rest_name <- get_text_from_page(page, ".mtnKn.OgHoE")
+  ratings <- get_text_from_page(page, ".kzrsh span span")
+  num_reviews <- get_text_from_page(page, ".kzrsh .qMyjI")
+  location <- get_text_from_page(page, ".ZNjnF+ .ZNjnF")
+  cuisine <- get_text_from_page(page, ".k+ div > .G")
+  cuisine <- str_remove(test, "\\$.*")
+  tibble(rest_name, cuisine, ratings, location) |>
+    mutate(ratings = as.numeric(ratings),
+           rest_name = str_trim(str_extract(rest_name, "[^\\d\\.].*")),
+           num_reviews = str_extract(num_reviews, "\\(.*\\)"),
+           num_reviews = parse_number(str_extract(num_reviews, "\\d+(.*)\\d"))
+    )
+}
+
+scrape_page("https://www.tripadvisor.com/Restaurants-g293913-Taipei.html")
+
+# The next step for us was creating a new function called scrape_page. This function takes a link and waits for 5 seconds using Sys.sleep() before starting, so we don’t overload the system. Its main goal is to collect data directly from TripAdvisor, such as the restaurant’s name, rating, number of reviews, location, and cuisine type.2
+
+```
+
+-   Observation: There was a problem encountered when scraping the main page is that a few locations are missing, so using this function results in an error saying the column lengths are not the same, and the code stops executing. Another problem with this is not knowing which index has missing values because the next value fills the gap of the missing one and so on.
+-   After identifying the problem, a solution was developed by selecting a different pattern that includes restaurant information along with the location, if available. Using this longer string, the location is extracted with a regular expression. This ensures all columns have the same length and allows identifying the indices with missing values.
+
+# Implementing a New Method into the Function
+
+```{r}
+scrape_page_im <- function(url) {
+  Sys.sleep(5)
+  session <- bow(url, force = TRUE)
+  page <- scrape(session)
+  rest_name <- get_text_from_page(page, ".mtnKn.OgHoE")
+  ratings <- get_text_from_page(page, ".kzrsh span span")
+  num_reviews <- get_text_from_page(page, ".kzrsh .qMyjI")
+  location <- get_text_from_page(page, ".UIwAG")
+  location <- str_replace(str_extract(location, "mi(.*)"), "mi", "")
+  cuisine <- get_text_from_page(page, ".k+ div > .G")
+  cuisine <- str_remove(cuisine, "\\$.*")
+  tibble(rest_name, cuisine, ratings, location) |>
+    mutate(ratings = as.numeric(ratings),
+           rest_name = str_trim(str_extract(rest_name, "[^\\d\\.].*")),
+           num_reviews = str_extract(num_reviews, "\\(.*\\)"),
+           num_reviews = parse_number(str_extract(num_reviews, "\\d+(.*)\\d"))
+    )
+}
+
+#We have a function named scrape_page_im with a url argument. We pause it for 5 seconds using Sys.sleep(5), then open a new session with bow(url), download the HTML content of the page, and extract restaurant names with the CSS selector .mtnKn.OgHoE. We repeat a similar procedure for ratings and the number of reviews, then create a new tidy table for rest_name, cuisine, ratings, and location. Then we clean and format the data with mutate() using as.numeric, str_trim, str_extract, and parse_number.
+```
+
+# Applying the Function to Multiple Pages
+
+```{r}
+# Final data set using map functions in the purrr package
+
+base_url1 <- "https://www.tripadvisor.com/Restaurants-g293913-oa"
+base_url2 <- "-Taipei.html"
+# this is page 1
+
+#https://www.tripadvisor.com/Restaurants-g293913-oa30-Taipei.html --> page 2
+sequence <- seq(30, 120, 30)
+urls_all_pages <- str_c(base_url1, sequence, base_url2)
+url_first_page <- "https://www.tripadvisor.com/Restaurants-g293913-oa-Taipei.html"
+
+# We define two parts of the URL, base_url1 and base_url2, then create a sequence of 30, 120, and 30, and combine everything using str_c.
+```
+
+```{r}
+first_page <- purrr::map(url_first_page, scrape_page_im)
+pages <- purrr::map(urls_all_pages, scrape_page_im)
+rest_info <- bind_rows(first_page, pages)
+
+write_csv(rest_info, "rest_info.csv")
+
+# Here, we apply it to first_page using url_first_page, then to all other pages using urls_all_pages. After that, we combine all the results into one dataset called rest_info using bind_rows. Finally, we save the complete dataset as a CSV file named "rest_info.csv" using write_csv.
+```
+
+```{r}
+# this is for the first page where 2 locations are missing on the main page
+
+location <- append(location, "Zhongshan District", after = 10) # manually fill in missing location
+  location <- append(location, "Datong", after = 20)
+```
+
+# Test area
+
+```{r}
+ses <- bow("https://www.tripadvisor.com/Restaurants-g293913-Taipei.html", force = TRUE)
+page <- scrape(ses)
+
+test_fun <- function(page, css_selector) {
+  page |> 
+    html_nodes(css_selector) |> 
+    html_text()
+}
+test_fun(page, ".ZNjnF+ .ZNjnF")
+
+test <- get_text_from_page(page, ".UIwAG")
+test <- get_text_from_page(page, ".k+ div > .G")
+str_extract(test, "^(\\w+?, ?\\w+)\\$+")
+str_remove(test, "\\$.*")
+str_replace(str_extract(test, "mi(.*)"), "mi", "")
+class(test)
+
+# We first use bow to open a URL and set force = TRUE to start a new session. Then we define a test function using a CSS selector, html_nodes, and html_text, test it with the selector, and extract text using specific selectors like .UIwAG and .k+ div > .G. Later, we use str_extract to clean the text. We also use str_remove and str_replace to further clean the strings and check the object type with class(test).
+```
+
