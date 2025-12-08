@@ -21,7 +21,6 @@ library(leaflet)
 library(htmltools)
 
 # We started by downloading all the necessary libraries to get ready for content extraction.
-
 ```
 
 ```{r}
