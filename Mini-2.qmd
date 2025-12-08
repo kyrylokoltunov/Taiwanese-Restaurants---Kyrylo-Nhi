@@ -220,3 +220,69 @@ class(test)
 =======
 We could use this table for further analysis such as finding out which district has the highest ratings overall or which cuisine receives highest ratings and number of reviews. 
 >>>>>>> e4864ffda8f201a99bff8c8f3c959b446a3705fc
+
+# Taoyuan
+
+```{r}
+base_url1_taoyuan <- "https://www.tripadvisor.com/Restaurants-g297912-oa"
+base_url2_taoyuan <- "-Taoyuan.html"
+
+url_first_page_taoyuan <- "https://www.tripadvisor.com/Restaurants-g297912-Taoyuan.html"
+
+sequence_taoyuan <- seq(30, 150, 30)
+urls_all_pages_taoyuan <- str_c(base_url1_taoyuan, sequence_taoyuan, base_url2_taoyuan)
+
+first_page_taoyuan <- purrr::map(url_first_page_taoyuan, scrape_page_im)
+pages_taoyuan <- purrr::map(urls_all_pages_taoyuan, scrape_page_im)
+
+rest_info_taoyuan <- bind_rows(first_page_taoyuan, pages_taoyuan)
+rest_info_taoyuan
+
+write_csv(rest_info_taoyuan, "rest_info_taoyuan.csv")
+```
+
+# Kaohsiung
+
+```{r}
+base_url1_kaohsiung <- "https://www.tripadvisor.com/Restaurants-g297908-oa"
+base_url2_kaohsiung <- "-Kaohsiung.html"
+
+url_first_page_kaohsiung <- "https://www.tripadvisor.com/Restaurants-g297908-Kaohsiung.html"
+
+sequence_kaohsiung <- seq(30, 150, 30)
+
+urls_all_pages_kaohsiung <- str_c(base_url1_kaohsiung, 
+                                  sequence_kaohsiung, 
+                                  base_url2_kaohsiung)
+first_page_kaohsiung <- purrr::map(url_first_page_kaohsiung, scrape_page_im)
+pages_kaohsiung <- purrr::map(urls_all_pages_kaohsiung, scrape_page_im)
+
+rest_info_kaohsiung <- bind_rows(first_page_kaohsiung, pages_kaohsiung)
+
+rest_info_kaohsiung
+write_csv(rest_info_kaohsiung, "rest_info_kaohsiung.csv")
+```
+
+# Hsinchu
+
+```{r}
+base_url1_hsinchu <- "https://www.tripadvisor.com/Restaurants-g297906-oa"
+base_url2_hsinchu <- "-Hsinchu.html"
+
+url_first_page_hsinchu <- "https://www.tripadvisor.com/Restaurants-g297906-Hsinchu.html"
+
+sequence_hsinchu <- seq(30, 150, 30)
+urls_all_pages_hsinchu <- str_c(base_url1_hsinchu,
+                                sequence_hsinchu,
+                                base_url2_hsinchu)
+
+first_page_hsinchu <- purrr::map(url_first_page_hsinchu, scrape_page_im)
+pages_hsinchu <- purrr::map(urls_all_pages_hsinchu, scrape_page_im)
+
+rest_info_hsinchu <- bind_rows(first_page_hsinchu, pages_hsinchu)
+
+rest_info_hsinchu
+
+write_csv(rest_info_hsinchu, "rest_info_hsinchu.csv")
+```
+
