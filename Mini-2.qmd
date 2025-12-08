@@ -146,3 +146,5 @@ class(test)
 
 # We first use bow to open a URL and set force = TRUE to start a new session. Then we define a test function using a CSS selector, html_nodes, and html_text, test it with the selector, and extract text using specific selectors like .UIwAG and .k+ div > .G. Later, we use str_extract to clean the text. We also use str_remove and str_replace to further clean the strings and check the object type with class(test).
 ```
+
+#123
