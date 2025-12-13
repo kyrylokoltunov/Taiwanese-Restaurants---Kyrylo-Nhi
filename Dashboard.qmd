@@ -1,0 +1,100 @@
+---
+title: "Dashboard"
+author: "Nhi Luong"
+format: 
+  dashboard:
+    theme: minty
+
+server: shiny
+---
+
+```{r,echo=FALSE}
+#| context: setup
+#| include: FALSE
+#| message: FALSE
+
+library(tidyverse)
+library(stringr)
+library(rvest)
+library(polite)
+library(sf)
+library(maps)
+library(leaflet)
+library(htmltools)
+library(readr)
+library(tidytext)
+library(knitr)
+library(plotly)
+library(gganimate)
+library(bslib)
+
+rest_info_taipei <- read_csv("rest_info_taipei.csv")
+rest_info_all <- read_csv("rest_info_all.csv")
+```
+
+# About {orientation="columns" scrolling="true"}
+
+
+# Restaurant Statistics
+
+## {.sidebar}
+
+```{r}
+ selectInput(inputId = "cuisine_choice",
+                  label = h3("Cuisine Type"),
+                  choices = c("Asian" = "asian",
+                              "Chinese" = "chinese", 
+                              "Japanese" = "japanese", 
+                              "Taiwanese" = "taiwanese", 
+                              "Italian" = "italian", 
+                              "American" = "american"),
+                  selected = "asian")
+
+selectInput(inputId = "city_choice",
+                  label = h3("City"),
+                  choices = c("Taipei" = "Taipei",
+                              "Hsinchu" = "Hsinchu", 
+                              "Kaohsiung" = "Kaohsiung", 
+                              "Taoyuan" = "Taoyuan"),
+                  selected = "Taipei") # Need to look further
+```
+
+## Row {height="35%"}
+
+```{r}
+value_box(
+  title = "Average Rating",
+  value = textOutput("rating")
+)
+```
+
+
+
+### Column 
+
+```{r}
+#| title: title
+
+plotOutput('plot1')
+
+```
+
+```{r}
+#| context: server
+ 
+output$plot1 <- renderPlot({
+    rest_info_all |>
+      filter(cuisine_type == input$cuisine_choice) |>
+      ggplot(aes(num_reviews, ratings)) +
+      geom_jitter()
+})
+
+output$rating <- renderText({
+    rest_info_all |>
+      filter(city == input$city_choice) |>
+      summarise(mean_rating = round(mean(ratings, na.rm = T)),2) |>
+      pull(mean_rating)
+})
+```
+
+
