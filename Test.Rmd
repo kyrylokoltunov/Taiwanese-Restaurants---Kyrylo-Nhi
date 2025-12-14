@@ -5,33 +5,36 @@ output: html_document
 
 ```{r}
 install.packages("wordcloud")
+install.packages("RColorBrewer")
 ```
 
 ```{r}
-make_wordcloud <- function(
-data,
-restaurant_name,
-text_var = "review",
-density_keep = 0.7,   
-min_freq = 2,
-max_words = 150,
-seed = 123) {
-
 library(tidyverse)
 library(tidytext)
 library(wordcloud)
 library(RColorBrewer)
+library(readxl)
+
+make_wordcloud <- function(
+  data,
+  restaurant_name,
+  text_var = "review",
+  density_keep = 0.7,   
+  min_freq = 2,
+  max_words = 150,
+  seed = 123) {
 
 a1 <- data %>%
   filter(.data[["restaurant"]] == restaurant_name)
 
-if (nrow(a1) == 0) {stop("No reviews found for this restaurant name :)) ")}
+if (nrow(a1) == 0) 
+  {stop("No reviews found for this restaurant name :)) ")}
 
 words_main <- a1 %>%
-    mutate(text = tolower(.data[[text_var]])) %>%
-    unnest_tokens(word, text) %>%
-    anti_join(stop_words, by = "word") %>%
-    filter(str_detect(word, "[a-z]"))
+  mutate(text = tolower(.data[[text_var]])) %>%
+  unnest_tokens(word, text) %>%
+  anti_join(stop_words, by = "word") %>%
+  filter(str_detect(word, "[a-z]"))
 
 word_counts <- words_main %>%
   count(word, sort = TRUE)
@@ -39,7 +42,16 @@ word_counts <- words_main %>%
 keep_n <- floor(nrow(word_counts) * density_keep)
   word_counts_reduced <- word_counts %>%
   slice_head(n = keep_n)
-  set.seed(seed)
+
+set.seed(seed)
+
+plot_title <- paste(
+  "Word map of",
+  gsub("_", " ", restaurant_name))
+
+old_par <- par(no.readonly = TRUE)
+
+par(mar = c(1, 1, 1, 1),oma = c(0, 0, 4, 0),xpd = NA)
 
 wordcloud(
   words = word_counts_reduced$word,
@@ -50,11 +62,20 @@ wordcloud(
   rot.per = 0.25,
   scale = c(4, 0.6),
   colors = brewer.pal(8, "Dark2"))
-}
 
+mtext(
+  plot_title,
+  side = 3,
+  outer = TRUE,
+  line = 1,
+  cex = 1.6,
+  font = 2)
+  par(old_par)}
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
+library(readxl)
+
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -62,7 +83,7 @@ make_wordcloud(
   restaurant_name = "Mayur_Indian_Kitchen"
 )
 ```
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -71,7 +92,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -89,7 +110,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -98,7 +119,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -107,7 +128,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -116,7 +137,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -125,7 +146,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -142,7 +163,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -150,7 +171,7 @@ make_wordcloud(
   restaurant_name = "Antonios_Italian_Restaurant"
 )
 ```
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -159,7 +180,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(
@@ -168,7 +189,7 @@ make_wordcloud(
 )
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 reviews_raw <- read_excel("maindataset.xlsx")
 
 make_wordcloud(

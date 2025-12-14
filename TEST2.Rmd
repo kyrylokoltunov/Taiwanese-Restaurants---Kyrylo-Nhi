@@ -1,0 +1,74 @@
+---
+title: "TEST2"
+output: html_document
+---
+```{r}
+install.packages("igraph")
+install.packages("ggraph")
+install.packages("widyr")
+install.packages("patchwork")
+install.packages("textstem")
+
+```
+
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(igraph)
+library(ggraph)
+library(widyr)
+library(patchwork)
+library(textstem)
+```
+
+```{r}
+library(dplyr)
+library(tidytext)
+library(stringr)
+library(widyr)
+library(igraph)
+library(ggraph)
+library(readxl)
+
+reviews_df <- read_excel("maindataset.xlsx")
+
+restaurant_name <- "Mayur_Indian_Kitchen"
+
+positive <- reviews_df %>%
+  filter(restaurant == restaurant_name) %>%
+  mutate(
+    text = str_to_lower(review),
+    text = str_replace_all(text, "[[:punct:]]", " "),
+    text = str_trim(text),
+    review_id = row_number()
+  ) %>%
+  unnest_tokens(word, text) %>%
+  filter(!word %in% stop_words$word, !is.na(word))
+
+positive_review_ids <- positive %>%
+  inner_join(get_sentiments("bing"), by = "word") %>%
+  filter(sentiment == "positive") %>%
+  distinct(review_id)
+
+positive_only <- positive %>%
+  semi_join(positive_review_ids, by = "review_id")
+
+word_pairs_pos <- positive_only %>%
+  pairwise_count(word, review_id, sort = TRUE, upper = FALSE) %>%
+  filter(n >= 2)
+
+pos_graph <- graph_from_data_frame(word_pairs_pos)
+
+ggraph(pos_graph, layout = "fr") +
+  geom_edge_link(color = "darkgreen", alpha = 0.6) +
+  geom_node_point(color = "forestgreen", size = 4) +
+  geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+  labs(
+    title = "Connected Mind Map of Positive Reviews",
+    subtitle = restaurant_name
+  ) +
+  theme_void()
+
+```
+
