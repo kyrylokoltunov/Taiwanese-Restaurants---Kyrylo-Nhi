@@ -1,0 +1,180 @@
+---
+title: "Test"
+output: html_document
+---
+
+```{r}
+install.packages("wordcloud")
+```
+
+```{r}
+make_wordcloud <- function(
+data,
+restaurant_name,
+text_var = "review",
+density_keep = 0.7,   
+min_freq = 2,
+max_words = 150,
+seed = 123) {
+
+library(tidyverse)
+library(tidytext)
+library(wordcloud)
+library(RColorBrewer)
+
+a1 <- data %>%
+  filter(.data[["restaurant"]] == restaurant_name)
+
+if (nrow(a1) == 0) {stop("No reviews found for this restaurant name :)) ")}
+
+words_main <- a1 %>%
+    mutate(text = tolower(.data[[text_var]])) %>%
+    unnest_tokens(word, text) %>%
+    anti_join(stop_words, by = "word") %>%
+    filter(str_detect(word, "[a-z]"))
+
+word_counts <- words_main %>%
+  count(word, sort = TRUE)
+
+keep_n <- floor(nrow(word_counts) * density_keep)
+  word_counts_reduced <- word_counts %>%
+  slice_head(n = keep_n)
+  set.seed(seed)
+
+wordcloud(
+  words = word_counts_reduced$word,
+  freq  = word_counts_reduced$n,
+  min.freq = min_freq,
+  max.words = max_words,
+  random.order = FALSE,
+  rot.per = 0.25,
+  scale = c(4, 0.6),
+  colors = brewer.pal(8, "Dark2"))
+}
+
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Mayur_Indian_Kitchen"
+)
+```
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Haidilao_Taiwan"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Ichiran_Ramen_Taiwan"
+)
+```
+
+```{r, warning=FALSE, message=FALSE}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Lawry_s_The_Prime_Rib"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Din_Tai_Fung"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Inparadise"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "La_Farfalla_(Humble House)"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Thai_Bazaar"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Top_Cap_Steakhouse"
+)
+```
+```{r, warning=FALSE, message=FALSE}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Mala_Hot_Pot"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Antonios_Italian_Restaurant"
+)
+```
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Afternoon_Tea_Restaurant_(Taipei)"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "Kiki_Eslite"
+)
+```
+
+```{r}
+reviews_raw <- read_excel("maindataset.xlsx")
+
+make_wordcloud(
+  data = reviews_raw,
+  restaurant_name = "TGI_Fridays_(Breeze Xinyi)"
+)
+```
+
+
