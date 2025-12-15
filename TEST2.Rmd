@@ -11,17 +11,6 @@ install.packages("textstem")
 
 ```
 
-
-```{r}
-library(tidyverse)
-library(tidytext)
-library(igraph)
-library(ggraph)
-library(widyr)
-library(patchwork)
-library(textstem)
-```
-
 ```{r}
 library(dplyr)
 library(tidytext)
@@ -30,45 +19,80 @@ library(widyr)
 library(igraph)
 library(ggraph)
 library(readxl)
+library(ggtext)
 
-reviews_df <- read_excel("maindataset.xlsx")
+mind_map.f <- function(
+  data,
+  restaurant_name,
+  min_pair_freq = 2,
+  keep_ratio = 0.75
+) {
 
-restaurant_name <- "Mayur_Indian_Kitchen"
+restaurant_clean <- restaurant_name %>%
+  str_replace_all("_", " ") %>%
+  str_to_title()
 
-positive <- reviews_df %>%
+tokens <- data %>%
   filter(restaurant == restaurant_name) %>%
   mutate(
     text = str_to_lower(review),
     text = str_replace_all(text, "[[:punct:]]", " "),
     text = str_trim(text),
-    review_id = row_number()
-  ) %>%
-  unnest_tokens(word, text) %>%
-  filter(!word %in% stop_words$word, !is.na(word))
+    review_id = row_number()) %>%
+    unnest_tokens(word, text) %>%
+    filter(!word %in% stop_words$word, !is.na(word))
 
-positive_review_ids <- positive %>%
-  inner_join(get_sentiments("bing"), by = "word") %>%
-  filter(sentiment == "positive") %>%
-  distinct(review_id)
+wp <- tokens %>%
+    pairwise_count(word, review_id, sort = TRUE, upper = FALSE) %>%
+    filter(n >= min_pair_freq) %>%
+    slice_max(n, n = ceiling(nrow(.) * keep_ratio))
 
-positive_only <- positive %>%
-  semi_join(positive_review_ids, by = "review_id")
+graph <- graph_from_data_frame(wp)
+  clusters <- components(graph)$membership
+  V(graph)$cluster <- clusters
 
-word_pairs_pos <- positive_only %>%
-  pairwise_count(word, review_id, sort = TRUE, upper = FALSE) %>%
-  filter(n >= 2)
+cluster_1c <- lapply(split(V(graph)$name, clusters), function(nodes) {
+    subgraph <- induced_subgraph(graph, nodes)
+    nodes[which.max(degree(subgraph))]})
 
-pos_graph <- graph_from_data_frame(word_pairs_pos)
+constellations_f123 <- do.call(rbind, lapply(names(cluster_1c), function(cl) {
+    center <- cluster_1c[[cl]]
+    nodes <- names(clusters[clusters == as.integer(cl)])
+    data.frame(
+      from = center,
+      to = nodes[nodes != center],
+      stringsAsFactors = FALSE)}))
 
-ggraph(pos_graph, layout = "fr") +
-  geom_edge_link(color = "darkgreen", alpha = 0.6) +
-  geom_node_point(color = "forestgreen", size = 4) +
-  geom_node_text(aes(label = name), repel = TRUE, size = 4) +
-  labs(
-    title = "Connected Mind Map of Positive Reviews",
-    subtitle = restaurant_name
-  ) +
-  theme_void()
+constellation.g <- graph_from_data_frame(constellations_f123)
 
+ggraph(constellation.g, layout = "fr") +
+    geom_edge_fan(
+      color = "gray60",
+      alpha = 0.4,
+      lineend = "round"
+    ) +
+    geom_node_point(color = "steelblue3", size = 2) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 4) +
+    labs(
+      title = paste(
+        "What customers think about",
+        paste0("**", restaurant_clean, "**")
+      ),
+      caption = "Word clusters are based on shared usage and word choice in reviews.") +
+    theme_void() +
+    theme(
+      plot.title = ggtext::element_markdown())}
 ```
+
+```{r}
+library(readxl)
+
+reviews <- read_excel("maindataset.xlsx")
+
+mind_map.f(
+  data = reviews,
+  restaurant_name = "Mayur_Indian_Kitchen")
+```
+
+
 
