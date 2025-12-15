@@ -1,38 +1,139 @@
 ---
 title: "Dashboard"
-author: "Nhi Luong"
-format: 
+format:
   dashboard:
     theme: minty
-
 server: shiny
 ---
 
-```{r,echo=FALSE}
+```{r}
 #| context: setup
 #| include: FALSE
 #| message: FALSE
 
 library(tidyverse)
-library(stringr)
-library(rvest)
-library(polite)
-library(sf)
 library(maps)
 library(leaflet)
 library(htmltools)
 library(readr)
 library(tidytext)
+library(dplyr)
 library(knitr)
-library(plotly)
-library(gganimate)
 library(bslib)
+library(bsicons)
+library(DT)
+library(highcharter)
+library(wordcloud)
+library(wordcloud2)
+library(RColorBrewer)
+library(igraph)
+library(ggraph)
+library(quarto)
 
-rest_info_taipei <- read_csv("rest_info_taipei.csv")
 rest_info_all <- read_csv("rest_info_all.csv")
+all_reviews <- read_csv("all_reviews.csv")
+smart_stopwords <- stop_words |> filter(lexicon == "SMART")
+afinn_sentiments <- readRDS("afinn.rds")
+nrc_sentiments <- readRDS("nrc.rds")
+bing_sentiment <- readRDS("bing.rds")
+
+mint_bg     <- "#0F2F2A"  # deep mint green
+mint_grid   <- "#B7DED7"  # soft mint
+mint_accent <- "#3FAE9E"  # light mint
+ivory       <- "#FBFAF7"  # ivory white
+
+taiwan_night <- c(
+  "#3FAE9E",  
+  "#A67C52",  
+  "#3B6E8F",  
+  "#F9A602",
+  "#8C1D18" 
+)
+
+theme_minty_ivory <- function(base_size = 12, base_family = "") {
+  theme_minimal(base_size = base_size, base_family = base_family) %+replace%
+    theme(
+      # Backgrounds
+      plot.background  = element_rect(fill = ivory, color = NA),
+      panel.background = element_rect(fill = ivory, color = NA),
+      # Grid
+      panel.grid.major = element_line(color = mint_accent, linewidth = 0.2),
+      panel.grid.minor = element_blank(),
+      # Global text
+      text = element_text(color = mint_bg),
+      # Titles
+      plot.title = element_text(
+        face = "bold", size = rel(1.3), hjust = 0
+      ),
+      plot.subtitle = element_text(size = rel(1.05)),
+      plot.caption  = element_text(color = mint_accent, size = rel(0.9)),
+      # Axes
+      axis.title = element_text(color = mint_bg),
+      axis.text  = element_text(color = mint_bg),
+      axis.ticks = element_line(color = mint_bg),
+      # Legend
+      legend.background = element_rect(fill = ivory, color = NA),
+      legend.key        = element_rect(fill = ivory, color = NA),
+      legend.text       = element_text(color = mint_bg),
+      legend.title      = element_text(color = mint_bg, face = "bold"),
+      # Facets
+      strip.background = element_rect(fill = mint_accent, color = NA),
+      strip.text       = element_text(color = ivory, face = "bold")
+    )
+}
+
+a <- grid::arrow(type = "closed", length = unit(.15, "inches"))
 ```
 
 # About {orientation="columns" scrolling="true"}
+
+## Column {width="60%"}
+
+#### Authors
+
+**Authors**
+
+Nhi Luong, Kyrylo Koltunov
+
+#### Motivation
+
+**Motivation**
+
+Traveling is a significant part of today’s world. According to the United Nations World Tourism Organization, global traveler numbers are expected to rise from around 1.6 billion in 2025 to approximately 2.4 billion by 2040 (Google Bussiness) . While traveling is already popular, individuals do engage in travel in different ways. This project is based on the analysis of reviews left by travelers in Taiwan, one of the world’s most exciting destinations to visit. The reviews focus on the perspectives behind travel experiences, while also exploring the unique sense of local culture through the perspectives of individuals who have already visited. TripAdvisor allows travelers to view place ratings before visiting in order to understand others’ experiences. Through this research, the goal is to investigate how people from different backgrounds and travel experiences perceive Taiwanese food culture and the restaurants they visited.
+
+#### Introduction
+
+**Introduction**
+
+This project explores restaurants in Taiwan, focusing on four major cities: Taipei, Taoyuan, Kaohsiung, and Hsinchu. We collected restaurant-level information from the TripAdvisor website using a polite web-scraping approach, which resulted in a dataset of 720 restaurants with six variables. To take a closer look at how people describe their dining experiences, we also created a smaller, hand-curated dataset of restaurant reviews from the Xinyi District in Taipei. This review-level dataset includes 452 individual reviews and four variables, allowing us to closely examine how customers talk about food, service, atmosphere, and overall experiences within a specific neighborhood.
+
+#### Our Interests
+
+**Our Interests**
+
++ Explore the distributions of ratings and number of reviews across districts. 
++ Keywords in reviews associated with positive/ negative sentiments
++ Explore sentiment score vs ratings and how sentiment score for each traveler type changes over the years
+
+#### Data Sources
+
+**Data Source & GitHub repo**
+
+Restaurant information scraped from [Tripadvisor](https://www.tripadvisor.com/Restaurants-g293910-Taiwan.html)
+
+Google Bussiness
+[Source](https://business.google.com/us/think/consumer-insights/future-of-travel-2040-insights/)
+
+GitHub Repo [Link](https://github.com/kyrylokoltunov/Taiwanese-Restaurants---Kyrylo-Nhi.git)
+
+## Column {width="40%"}
+
+```{r}
+leaflet() |>
+  setView(120.9605, 23.6978, 8) |>
+  addTiles()
+```
+
 
 
 # Restaurant Statistics
@@ -40,7 +141,323 @@ rest_info_all <- read_csv("rest_info_all.csv")
 ## {.sidebar}
 
 ```{r}
- selectInput(inputId = "cuisine_choice",
+selectInput(inputId = "restaurant",
+                  label = h3("Choose a restaurant:"),
+                  choices = rest_info_all$rest_name,
+                  selected = "Umeko Restaurant")
+```
+
+This page contains essential information of a restaurant such as ratings, number of reviews, and district. Here, you can also explore customer's views from restaurants in Xinyi district in Taipei. (**Note**: As of December 15, only restaurants in Xinyi districts have reviews shown.)
+
+## Column
+
+### Row {height="30%"}
+
+```{r}
+rest_stats <- list(
+  value_box(
+    title = "Rating",
+    value = textOutput("rating"),
+    showcase = bs_icon("star-fill"),
+    showcase_layout = "top right",
+    theme = "success"
+  ),
+  value_box(
+    title = "Number of Reviews",
+    value = textOutput("num_reviews"),
+    showcase = bs_icon("people-fill"),
+    showcase_layout = "top right",
+    theme = "success"
+  ),
+  value_box(
+    title = "Cuisine",
+    value = textOutput("cuisine"),
+    showcase = bs_icon("globe-asia-australia"),
+    showcase_layout = "top right",
+    theme = "success"
+  ),
+  value_box(
+    title = "District",
+    value = textOutput("district"),
+    showcase = bs_icon("geo-alt-fill"),
+    showcase_layout = "top right",
+    theme = "success",
+    p(textOutput("city"))
+  )
+)
+
+layout_columns(
+    !!!rest_stats,
+    fill = T,
+    theme = "success"
+  )
+```
+
+### Row {height="60%"}
+
+```{r}
+  card(
+      dataTableOutput("reviews")
+  )
+```
+
+```{r}
+#| context: server
+
+# Rest. Stats: Value box 1
+output$rating <- renderText({
+    rest_info_all |>
+      filter(rest_name == input$restaurant) |>
+      pull(ratings)
+})
+
+# Rest. Stats: Value box 2
+output$cuisine <- renderText({
+    rest_info_all |>
+      filter(rest_name == input$restaurant) |>
+      pull(cuisine)
+})
+
+# Rest. Stats: Value box 3a
+output$district <- renderText({
+    rest_info_all |>
+      filter(rest_name == input$restaurant) |>
+      pull(location)
+})
+
+# Rest. Stats: Value box 3b
+output$city <- renderText({
+    rest_info_all |>
+      filter(rest_name == input$restaurant) |>
+      pull(city)
+})
+
+# Rest. Stats: Value box 4
+output$num_reviews <- renderText({
+    rest_info_all |>
+      filter(rest_name == input$restaurant) |>
+      pull(num_reviews)
+})
+
+# Rest. Stats: Card 1
+output$reviews <- renderDataTable({
+  all_reviews |>
+    mutate(review = str_to_lower(review)) |>
+    left_join(rest_info_all, join_by(restaurant == rest_name)) |>
+    filter(restaurant == input$restaurant) |>
+    select(review)
+})
+```
+
+# Visualizations {scrolling="false"}
+
+## {.toolbar}
+
+```{r}
+numericInput(inputId = "cutoff2", 
+                   label = span("Exclude ratings above:"), 
+                   value = 5, width = '30%')
+numericInput(inputId = "cutoff", 
+             label = span("Exclude number of reviews above:"),
+             value = 7000, width = '30%')
+```
+
+## Row {.tabset}
+
+### Taipei 
+
+#### Column
+
+```{r}
+#| title: Ratings Across Districts
+plotOutput('plot1a')
+```
+
+#### Column
+
+```{r}
+#| title: Number of Reviews Across Districts
+plotOutput('plot1b')
+```
+
+```{r}
+#| context: server
+
+# Visualizations: Plot 1a
+output$plot1a <- renderPlot({
+    rest_info_all |>
+    filter(city == "Taipei") |>
+    filter(ratings < input$cutoff2) |>
+    mutate(location = fct_reorder(location, ratings)) |>
+    ggplot(aes(location, ratings)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+
+# Visualizations: Plot 1b
+output$plot1b <- renderPlot({
+    rest_info_all |>
+    filter(city == "Taipei") |>
+    filter(num_reviews < input$cutoff) |>
+    mutate(location = fct_reorder(location, num_reviews)) |>
+    ggplot(aes(fct_reorder(location, num_reviews), num_reviews)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+```
+
+### Taoyuan
+
+#### Column
+
+```{r}
+#| title: Ratings Across Districts
+plotOutput('plot2a')
+```
+
+#### Column
+
+```{r}
+#| title: Number of Reviews Across Districts
+plotOutput('plot2b')
+```
+
+```{r}
+#| context: server
+
+# Visualizations: Plot 2a
+output$plot2a <- renderPlot({
+    rest_info_all |>
+    filter(city == "Taoyuan") |>
+    filter(ratings < input$cutoff2) |>
+    mutate(location = fct_reorder(location, ratings)) |>
+    ggplot(aes(location, ratings)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+
+# Visualizations: Plot 2b
+output$plot2b <- renderPlot({
+    rest_info_all |>
+    filter(city == "Taoyuan",
+           !is.na(num_reviews)) |>
+    filter(num_reviews < input$cutoff) |>
+    ggplot(aes(fct_reorder(location, num_reviews), num_reviews)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+```
+
+### Kaohsiung
+
+#### Column
+
+```{r}
+#| title: Ratings Across Districts
+plotOutput('plot3a')
+```
+
+#### Column
+
+```{r}
+#| title: Number of Reviews Across Districts
+plotOutput('plot3b')
+```
+
+```{r}
+#| context: server
+
+# Visualizations: Plot 3a
+output$plot3a <- renderPlot({
+    rest_info_all |>
+    filter(city == "Kaohsiung") |>
+    filter(ratings < input$cutoff2) |>
+    mutate(location = fct_reorder(location, ratings)) |>
+    ggplot(aes(location, ratings)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+
+# Visualizations: Plot 3b
+output$plot3b <- renderPlot({
+    rest_info_all |>
+    filter(city == "Kaohsiung",
+           !is.na(num_reviews)) |>
+    filter(num_reviews < input$cutoff) |>
+    ggplot(aes(fct_reorder(location, num_reviews), num_reviews)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+```
+
+### Hsinchu
+
+#### Column
+
+```{r}
+#| title: Ratings Across Districts
+plotOutput('plot4a')
+```
+
+#### Column
+
+```{r}
+#| title: Number of Reviews Across Districts
+plotOutput('plot4b')
+```
+
+```{r}
+#| context: server
+
+# Visualizations: Plot 4a
+output$plot4a <- renderPlot({
+    rest_info_all |>
+    filter(city == "Hsinchu",
+           ratings < input$cutoff2) |>
+    mutate(location = fct_reorder(location, ratings)) |>
+    ggplot(aes(location, ratings)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+
+# Visualizations: Plot 4b
+output$plot4b <- renderPlot({
+    rest_info_all |>
+    filter(city == "Hsinchu",
+           num_reviews < input$cutoff) |>
+    ggplot(aes(fct_reorder(location, num_reviews), num_reviews)) +
+    geom_boxplot(fill = mint_grid) +
+    theme_minty_ivory() +
+    labs(x = NULL, y = NULL) +
+    coord_flip()
+})
+```
+
+# Sentiment Analysis
+
+## {.sidebar width="250px"}
+
+```{r}
+selectInput(inputId = "traveler_type",
+                  label = h3("Choose a traveler type:"),
+                  choices = unique(all_reviews$traveler_type),
+                  selected = "Family")
+
+checkboxGroupInput(inputId = "cuisine_choice",
                   label = h3("Cuisine Type"),
                   choices = c("Asian" = "asian",
                               "Chinese" = "chinese", 
@@ -49,52 +466,254 @@ rest_info_all <- read_csv("rest_info_all.csv")
                               "Italian" = "italian", 
                               "American" = "american"),
                   selected = "asian")
-
-selectInput(inputId = "city_choice",
-                  label = h3("City"),
-                  choices = c("Taipei" = "Taipei",
-                              "Hsinchu" = "Hsinchu", 
-                              "Kaohsiung" = "Kaohsiung", 
-                              "Taoyuan" = "Taoyuan"),
-                  selected = "Taipei") # Need to look further
 ```
 
-## Row {height="35%"}
+## Column
+
+### Row {height='20%'}
+
+We explore sentiment analysis from the reviews by first using the AFINN sentiment to get the sentiment score of each word. The sentiment has a range of score between -5 and 5, where -5 is the most negative and 5 is the most positive. We see that depending on the cuisine type, the sentiment score differs even within one traveler type.
+
+### Row {height='80%'}
+
+#### Column {.tabset}
 
 ```{r}
-value_box(
-  title = "Average Rating",
-  value = textOutput("rating")
-)
-```
+#| title: Restaurant Ratings and Sentiment Score
 
-
-
-### Column 
-
-```{r}
-#| title: title
-
-plotOutput('plot1')
+plotOutput('sent_plot1')
 
 ```
 
 ```{r}
 #| context: server
- 
-output$plot1 <- renderPlot({
-    rest_info_all |>
-      filter(cuisine_type == input$cuisine_choice) |>
-      ggplot(aes(num_reviews, ratings)) +
-      geom_jitter()
-})
 
-output$rating <- renderText({
-    rest_info_all |>
-      filter(city == input$city_choice) |>
-      summarise(mean_rating = round(mean(ratings, na.rm = T)),2) |>
-      pull(mean_rating)
+# Review Analysis: Plot 1
+output$sent_plot1 <- renderPlot({
+    all_reviews |>
+    mutate(review = str_to_lower(review)) |>
+    left_join(rest_info_all, join_by(restaurant == rest_name)) |>
+    unnest_tokens(word, review) |>
+    unnest_tokens(cuisine_type, cuisine) |>
+    anti_join(smart_stopwords) |>
+    inner_join(afinn_sentiments) |>
+    group_by(traveler_type, cuisine_type) |>
+    mutate(mean_value = mean(value, na.rm = T)) |>
+    filter(traveler_type %in% input$traveler_type) |>
+    filter(cuisine_type %in% input$cuisine_choice) |>
+    mutate(cuisine_type = str_to_title(cuisine_type)) |>
+    ggplot(aes(ratings, mean_value, color = cuisine_type)) +
+    geom_jitter(size = 4, alpha = 0.5) +
+    labs(x = "Ratings",
+         y = "Sentiment Score",
+         color = "Cuisine Type") +
+    theme_minty_ivory() 
 })
 ```
+ 
+```{r}
+#| title: Interactive Plot
+
+highchartOutput('sent_plot2')
+
+```
+
+```{r}
+#| context: server
+
+# Review Analysis: Plot 2
+output$sent_plot2 <- renderHighchart({
+  p <- all_reviews |>
+    mutate(review = str_to_lower(review)) |>
+    left_join(rest_info_all, join_by(restaurant == rest_name)) |>
+    unnest_tokens(word, review) |>
+    unnest_tokens(cuisine_type, cuisine) |>
+    anti_join(smart_stopwords) |>
+    inner_join(afinn_sentiments) |>
+    mutate(cuisine_type = str_to_title(cuisine_type),
+           review_date = as.character(review_date),
+           year = str_extract_all(review_date, "\\d{4}"),
+           year = as.integer(year)) |>
+    group_by(year, traveler_type) |>
+    mutate(mean_value = mean(value)) |>
+    ungroup() |>
+    filter(traveler_type == input$traveler_type)
+    
+    hc <- highchart() %>%
+    hc_chart(type = "scatter") %>%
+    hc_add_series(
+      data = list_parse(data.frame(x = p$year, y = p$mean_value))
+    ) %>%
+    hc_legend(FALSE) |>
+    hc_xAxis(title = list(text = "Year")) %>%
+    hc_yAxis(title = list(text = "Sentiment Mean Score")) %>%
+    hc_colors("#3FAE9E") %>%
+    hc_plotOptions(scatter = list(
+      marker = list(radius = 6),
+      animation = list(duration = 2000)
+    )) %>%
+    hc_title(text = paste("Sentiment Trend for", input$traveler_type))
+
+  hc
+})
+```
+
+
+# Text Analysis 
+
+## {.sidebar width="200px"}
+
+```{r}
+selectInput(inputId = "review_restaurant",
+                  label = h3("Choose a restaurant:"),
+                  choices = unique(all_reviews$restaurant),
+                  selected = "食令Shabu", width = '100%')
+```
+
+In this section, we apply text analysis to each restaurant's review to better understand their experiences at the restaurant. We visualize the text reviews through wordcloud and two different network graphs.
+
+## Column
+
+### Row
+
+```{r}
+#| title: What words do people mention the most in their reviews?
+
+wordcloud2Output("wordcloud")
+```
+
+```{r}
+#| context: server
+# Wordcloud function
+
+# Text Analysis: Plot 1 (wordcloud)
+output$wordcloud <- renderWordcloud2({
+  test <- all_reviews |>
+    mutate(review = str_to_lower(review)) |>
+    filter(restaurant == input$review_restaurant) |>
+    mutate(review = str_to_lower(review)) |>
+    unnest_tokens(word, review) |>
+    anti_join(stop_words, by = "word") |>
+    filter(str_detect(word, "[a-z]")) |>
+    count(word, sort = TRUE)
+
+word_data <- data.frame(word = test$word, freq = test$n)
+
+wordcloud2(
+  word_data,
+  size = 0.55,
+  color = taiwan_night,
+  shape = 'circle',
+  rotateRatio = 0.25
+  )
+})
+```
+
+### Row
+
+```{r}
+#| title: What shared moments or impressions appear across reviews?
+plotOutput("network")
+```
+
+
+```{r}
+#| context: server
+
+# Text Analysis: Plot 2
+output$network <- renderPlot({
+  test_graph <- all_reviews |>
+  mutate(review = str_to_lower(review)) |>
+  filter(restaurant == input$review_restaurant) |>
+  unnest_tokens(bigram, review, token = "ngrams", n = 2) |>
+  filter(bigram != "NA") |>
+  separate(bigram, c("word1", "word2"), sep = " ") |>
+  filter(!word1 %in% stop_words$word,
+         !word2 %in% stop_words$word) |>
+  count(word1, word2, sort = TRUE) |>
+  filter(n > 1) |>
+  graph_from_data_frame()
+
+ggraph(test_graph, layout = "fr") +
+  geom_edge_link(aes(edge_alpha = n), show.legend = FALSE,
+                 arrow = a, end_cap = circle(.07, 'inches')) +
+  geom_node_point(color = mint_accent, size = 3) +
+  geom_node_text(aes(label = name), vjust = 1, hjust = 1) +
+  theme_minimal(base_size = 12, base_family = "") +
+    theme(
+      plot.background  = element_rect(fill = ivory, color = NA),
+      panel.background = element_rect(fill = ivory, color = NA),
+      axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    panel.border = element_blank(),
+    plot.title = element_blank()
+    )
+})
+```
+
+## Column
+
+```{r}
+#| title: Positive vs Negative Words
+
+plotOutput("bing")
+```
+
+```{r}
+#| context: server
+
+# Text Analysis: Plot 3
+
+output$bing <- renderPlot({
+  all_reviews |>
+  filter(restaurant == input$review_restaurant) |>
+  mutate(review = str_to_lower(review)) |>
+  unnest_tokens(word, review) |>
+  inner_join(bing_sentiment) |>
+  count(word, sentiment, sort = T) |>
+  ungroup() |>
+  group_by(sentiment) |>
+  slice_max(n, n = 10, with_ties = FALSE) |>
+  ungroup() |>
+  mutate(word = reorder(word, n)) |>
+  ggplot(aes(n, word, fill = sentiment)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~sentiment, scales = "free_y", ncol = 1) +
+  labs(x = "Contribution to sentiment",
+       y = NULL) +
+  theme_minty_ivory() +
+  scale_fill_manual(
+    values = c(
+      "negative" = "red3",
+      "positive" = "steelblue3"
+    )
+  )
+})
+```
+
+# What's Next
+
+## Column {width="60%"}
+
+### Conclusion
+
+**Conclusion**
+
++ Through this project, we learn that the majority of restaurants in our dataset have a very high ratings across four big cities. Within each city, the median of the ratings fall between 4.0 and 4.3, which is considered to be very good. Restaurants in Taipei, in particular, have a higher median ratings than that of the other three cities. 
++ On the other hand, the number of reviews vary more across cities because we would assume that more people travel to bigger cities and therefore leave more reviews for restaurants in those big cities.
++ As for the sentiment analysis, there seems to be a trend in the sentiment mean score over the years across all traveler types. However, we should take this as an observation for now since the reviews only come from restaurants in Xinyi district so it is not representative.
++ As for the text analysis, we see the word "service" appears in almost all the wordclouds, indicating the customers must have experienced a good service at that restaurants.
+
+## Column {width="40%"}
+
+### Future Works
+
+**Future Works**
+
++ We would like to find a way to scrape the reviews using codes so the process speeds up more and also obtain a more representative dataset.
++ An sf dataset for Taiwan (and also cities) is needed to be able to make cool maps that can show the restaurants' locations.
++ More text analysis can be done such as finding words preceded by the word "not"
 
 

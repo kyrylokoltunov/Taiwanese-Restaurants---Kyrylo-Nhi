@@ -1,1191 +1,721 @@
-rest_name,ratings,location,num_reviews,city,cuisine_type
-Umeko Restaurant,4.5,Zhongshan,635,Taipei,chinese
-Umeko Restaurant,4.5,Zhongshan,635,Taipei,japanese
-食令Shabu,4.9,Xinyi,1374,Taipei,seafood
-食令Shabu,4.9,Xinyi,1374,Taipei,asian
-Din Tai Fung,4.5,Xinyi,4722,Taipei,taiwanese
-A Point Steak & Bar,4.9,Xinyi,467,Taipei,steakhouse
-A Point Steak & Bar,4.9,Xinyi,467,Taipei,diner
-Shin Yeh Taiwanese Cuisine-Original Restaurant,4.2,Zhongshan,686,Taipei,chinese
-Shin Yeh Taiwanese Cuisine-Original Restaurant,4.2,Zhongshan,686,Taipei,asian
-Formosa Restaurant,4.9,Da'an,169,Taipei,chinese
-Formosa Restaurant,4.9,Da'an,169,Taipei,asian
-Mosun Teppanyaki,4.9,Da'an,831,Taipei,southwestern
-Mosun Teppanyaki,4.9,Da'an,831,Taipei,asian
-Host Shabu,4.8,Xinyi,2441,Taipei,seafood
-Host Shabu,4.8,Xinyi,2441,Taipei,asian
-Yang Shin Vegetarian Restaurant,4.4,Zhongshan,2431,Taipei,cantonese
-Yang Shin Vegetarian Restaurant,4.4,Zhongshan,2431,Taipei,taiwanese
-Hangzhou Xiaolong Bao,4.2,Da'an,806,Taipei,chinese
-Hangzhou Xiaolong Bao,4.2,Da'an,806,Taipei,asian
-Umeko Japanese Unagi House,4.8,Taipei,360,Taipei,japanese
-Umeko Japanese Unagi House,4.8,Taipei,360,Taipei,sushi
-Fuda Dumpling,4.4,Zhongshan,363,Taipei,chinese
-Fuda Dumpling,4.4,Zhongshan,363,Taipei,asian
-Din Tai Fung (Shinkong Mitsukoshi),4.4,Zhongshan,739,Taipei,asian
-Din Tai Fung (Shinkong Mitsukoshi),4.4,Zhongshan,739,Taipei,taiwanese
-Din Tai Fung,4.4,Zhongzheng,4914,Taipei,chinese
-Din Tai Fung,4.4,Zhongzheng,4914,Taipei,asian
-Shang Palace,4.8,Da'an,449,Taipei,chinese
-Shang Palace,4.8,Da'an,449,Taipei,asian
-Le Mian Wu Japanese Restaurant,4.8,Wanhua,377,Taipei,japanese
-Palais de Chine Hotel -Le Palais,4.5,Datong,928,Taipei,chinese
-Palais de Chine Hotel -Le Palais,4.5,Datong,928,Taipei,asian
-Sihai Soy Milk,4.3,Datong,150,Taipei,chinese
-Sihai Soy Milk,4.3,Datong,150,Taipei,asian
-Yen Chinese Restaurant,4.7,Xinyi,1415,Taipei,chinese
-Yen Chinese Restaurant,4.7,Xinyi,1415,Taipei,asian
-Yangtse River,4.9,Da'an,348,Taipei,chinese
-Yangtse River,4.9,Da'an,348,Taipei,asian
-Modern Toilet Restaurant,4.7,Shilin,575,Taipei,asian
-Nowhere Taipei,5,Taipei,65,Taipei,mexican
-Nowhere Taipei,5,Taipei,65,Taipei,bar
-Matsusaka Tei,4.9,Xinyi,359,Taipei,japanese
-Matsusaka Tei,4.9,Xinyi,359,Taipei,barbecue
-Lao Shan Dong Noodles Made by Hand,4.1,Wanhua,61,Taipei,chinese
-Lao Shan Dong Noodles Made by Hand,4.1,Wanhua,61,Taipei,asian
-Le Blanc,4.8,Da'an,2583,Taipei,american
-Le Blanc,4.8,Da'an,2583,Taipei,steakhouse
-Din Tai Fung (Tienmu),4.5,Shilin,349,Taipei,chinese
-Din Tai Fung (Tienmu),4.5,Shilin,349,Taipei,asian
-CÉ LA VI Taipei,4.5,Xinyi,68,Taipei,bar
-CÉ LA VI Taipei,4.5,Xinyi,68,Taipei,korean
-Din Tai Fung (Fuxing Branch),4.4,Da'an,1119,Taipei,chinese
-Din Tai Fung (Fuxing Branch),4.4,Da'an,1119,Taipei,asian
-W XYZ Bar,4.9,Zhongshan,560,Taipei,bars
-W XYZ Bar,4.9,Zhongshan,560,Taipei,pubs
-W XYZ Bar,4.9,Zhongshan,560,Taipei,american
-Shin Yeh Japanese Buffet - Guancian Restaurant,4.4,Zhongzheng,1753,Taipei,japanese
-Shin Yeh Japanese Buffet - Guancian Restaurant,4.4,Zhongzheng,1753,Taipei,seafood
-Kiki Restaurant,4.4,Da'an,440,Taipei,chinese
-Kiki Restaurant,4.4,Da'an,440,Taipei,asian
-Meat Boss Shabu Shabu Hotpot - Dunhua South,4.8,Da'an,407,Taipei,chinese
-Meat Boss Shabu Shabu Hotpot - Dunhua South,4.8,Da'an,407,Taipei,asian
-Balle Balle Indian Restaurant,4.6,Songshan,689,Taipei,indian
-Balle Balle Indian Restaurant,4.6,Songshan,689,Taipei,asian
-Texas Roadhouse,4.3,Xinyi,892,Taipei,american
-Texas Roadhouse,4.3,Xinyi,892,Taipei,steakhouse
-Le Palais Restaurant,4.4,Datong,25,Taipei,chinese
-Le Palais Restaurant,4.4,Datong,25,Taipei,asian
-Jin Feng Lu Rou Fan,4.2,Zhongzheng,867,Taipei,chinese
-Wulao,4.4,Zhongshan,778,Taipei,chinese
-Wulao,4.4,Zhongshan,778,Taipei,asian
-WOOBAR,4.8,Xinyi,979,Taipei,bar
-WOOBAR,4.8,Xinyi,979,Taipei,international
-Shi Ling Shabu,4.9,Zhongshan,162,Taipei,seafood
-Shi Ling Shabu,4.9,Zhongshan,162,Taipei,asian
-Le Mian Wu,4.9,Da'an,469,Taipei,japanese
-Le Mian Wu,4.9,Da'an,469,Taipei,asian
-Cafe - Grand Hyatt Taipei,4.2,Xinyi,1659,Taipei,chinese
-Cafe - Grand Hyatt Taipei,4.2,Xinyi,1659,Taipei,international
-Yen Bar,4.9,Xinyi,401,Taipei,american
-Yen Bar,4.9,Xinyi,401,Taipei,bar
-Diamond Tony's 101 Authentic Italian Cuisine,4.2,Xinyi,2228,Taipei,italian
-Diamond Tony's 101 Authentic Italian Cuisine,4.2,Xinyi,2228,Taipei,bar
-Liu Shandong Beef Noodles,4.1,Zhongzheng,192,Taipei,chinese
-Prime One Steak House,4.4,Zhongzheng,292,Taipei,steakhouse
-BravoCafe Taipei No.3,4.8,Zhongshan,520,Taipei,bars
-BravoCafe Taipei No.3,4.8,Zhongshan,520,Taipei,pubs
-BravoCafe Taipei No.3,4.8,Zhongshan,520,Taipei,italian
-Fuhong Beef Noodles,4.2,Wanhua,177,Taipei,chinese
-Fuhong Beef Noodles,4.2,Wanhua,177,Taipei,asian
-Moonlight Cantonese Restaurant - COURTYARD TAIPEI,4.8,Nangang,411,Taipei,chinese
-Moonlight Cantonese Restaurant - COURTYARD TAIPEI,4.8,Nangang,411,Taipei,asian
-No 168 Prime Steakhouse,4.5,Zhongshan,944,Taipei,steakhouse
-No 168 Prime Steakhouse,4.5,Zhongshan,944,Taipei,european
-Spice Market,4.3,Xinyi,993,Taipei,seafood
-Spice Market,4.3,Xinyi,993,Taipei,asian
-Marshal Zen Garden,4.1,Beitou,302,Taipei,chinese
-Marshal Zen Garden,4.1,Beitou,302,Taipei,international
-ikki New Japanese Restaurant(Taipei Hengyan),4.4,Zhongzheng,656,Taipei,japanese
-ikki New Japanese Restaurant(Taipei Hengyan),4.4,Zhongzheng,656,Taipei,asian
-Taïrroir,4.4,Zhongshan,285,Taipei,french
-Taïrroir,4.4,Zhongshan,285,Taipei,european
-Fresh & Aged Italian Steak House,4.4,Neihu,447,Taipei,steakhouse
-Fresh & Aged Italian Steak House,4.4,Neihu,447,Taipei,fusion
-Addiction Aquatic Development,4.2,Zhongshan,1384,Taipei,japanese
-Addiction Aquatic Development,4.2,Zhongshan,1384,Taipei,seafood
-ShinYeh Japanese Buffet - Jhongshan Restaurant,4.3,Zhongshan,2049,Taipei,japanese
-ShinYeh Japanese Buffet - Jhongshan Restaurant,4.3,Zhongshan,2049,Taipei,sushi
-A Cheng Goose,4.5,Zhongshan,149,Taipei,chinese
-A Cheng Goose,4.5,Zhongshan,149,Taipei,asian
-Chamonix Teppanyaki - Taipei Zhongshan N.Branch,4.5,Zhongshan,1165,Taipei,asian
-Chamonix Teppanyaki - Taipei Zhongshan N.Branch,4.5,Zhongshan,1165,Taipei,soups
-Rakuken Taipei,4.8,Da'an,345,Taipei,japanese
-Rakuken Taipei,4.8,Da'an,345,Taipei,steakhouse
-Grand Hilai,4.3,Da'an,6461,Taipei,chinese
-Grand Hilai,4.3,Da'an,6461,Taipei,japanese
-Lin Dong Fang Niu Rou Mian,4.2,Zhongshan,581,Taipei,chinese
-Lin Dong Fang Niu Rou Mian,4.2,Zhongshan,581,Taipei,asian
-The Dragon - Sheraton Grand Taipei Hotel,4.5,Zhongzheng,279,Taipei,chinese
-The Dragon - Sheraton Grand Taipei Hotel,4.5,Zhongzheng,279,Taipei,asian
-Golden Formosa,4.3,Shilin,77,Taipei,taiwanese
-Top One Pot - Xinyi,4.4,Da'an,760,Taipei,chinese
-Top One Pot - Xinyi,4.4,Da'an,760,Taipei,asian
-Osteria By Vincent,4.8,Da'an,263,Taipei,chinese
-Osteria By Vincent,4.8,Da'an,263,Taipei,american
-Mediterranean Steak House At The Riviera Taipei,4.6,Zhongshan,1316,Taipei,steakhouse
-Mediterranean Steak House At The Riviera Taipei,4.6,Zhongshan,1316,Taipei,european
-L'Atelier De Joël Robuchon,4.3,Xinyi,400,Taipei,french
-L'Atelier De Joël Robuchon,4.3,Xinyi,400,Taipei,european
-Yi Jia Zi,4.5,Wanhua,20,Taipei,asian
-Yi Jia Zi,4.5,Wanhua,20,Taipei,taiwanese
-Silks Palace,4,Shilin,318,Taipei,asian
-Silks Palace,4,Shilin,318,Taipei,cantonese
-Taiwanese Cuisine & Champagne at Fujin Tree,4.1,Songshan,56,Taipei,chinese
-Taiwanese Cuisine & Champagne at Fujin Tree,4.1,Songshan,56,Taipei,asian
-Irodori Grand Hyatt Taipei,4.2,Xinyi,582,Taipei,japanese
-Irodori Grand Hyatt Taipei,4.2,Xinyi,582,Taipei,sushi
-Ya Ge,4.3,Songshan,135,Taipei,chinese
-Ya Ge,4.3,Songshan,135,Taipei,asian
-Danny’s Steakhouse,4.3,Zhongshan,1635,Taipei,steakhouse
-Modern Toilet Theme Restaurant - Taipei Ximending,3.4,Wanhua,534,Taipei,asian
-Tim Ho Wan - HOYII Main Station,4,Zhongzheng,780,Taipei,chinese
-Tim Ho Wan - HOYII Main Station,4,Zhongzheng,780,Taipei,asian
-King of Soy Milk,4.2,Zhongshan,273,Taipei,fast
-King of Soy Milk,4.2,Zhongshan,273,Taipei,food
-King of Soy Milk,4.2,Zhongshan,273,Taipei,asian
-Mayur Indian Kitchen MIK-1,4.7,Xinyi,1418,Taipei,indian
-Mayur Indian Kitchen MIK-1,4.7,Xinyi,1418,Taipei,pakistani
-Tha Top,4.1,Shilin,155,Taipei,chinese
-Tha Top,4.1,Shilin,155,Taipei,asian
-Beef Noodle of the King,4.3,Zhongzheng,218,Taipei,chinese
-Beef Noodle of the King,4.3,Zhongzheng,218,Taipei,asian
-Rice & Shine Restaurant,4.5,Datong,89,Taipei,chinese
-Rice & Shine Restaurant,4.5,Datong,89,Taipei,taiwanese
-Rilakkuma CafE,4.3,Da'an,2685,Taipei,american
-Rilakkuma CafE,4.3,Da'an,2685,Taipei,cafe
-Bencotto,4.4,Songshan,346,Taipei,italian
-Mayur Indian Kitchen,4.6,Zhongshan,323,Taipei,indian
-Haidilao,4.3,Xinyi,230,Taipei,chinese
-Haidilao,4.3,Xinyi,230,Taipei,asian
-Ichiran Ramen - Taiwan Taipei Shop,4.1,Xinyi,160,Taipei,japanese
-Ichiran Ramen - Taiwan Taipei Shop,4.1,Xinyi,160,Taipei,fast
-Ichiran Ramen - Taiwan Taipei Shop,4.1,Xinyi,160,Taipei,food
-Pearl River,4.6,Da'an,227,Taipei,chinese
-Pearl River,4.6,Da'an,227,Taipei,asian
-Ruth's Chris Steak House,4.5,Songshan,478,Taipei,american
-Ruth's Chris Steak House,4.5,Songshan,478,Taipei,steakhouse
-Sunrise all day dinning - COURTYARD TAIPEI,4.4,Nangang,1069,Taipei,european
-Sunrise all day dinning - COURTYARD TAIPEI,4.4,Nangang,1069,Taipei,asian
-Shin Yeh Shiao Ju-Nangang Restaurant,4.2,Nangang,45,Taipei,chinese
-Shin Yeh Shiao Ju-Nangang Restaurant,4.2,Nangang,45,Taipei,asian
-Yu Shan Ge,4.4,Zhongzheng,375,Taipei,chinese
-Yu Shan Ge,4.4,Zhongzheng,375,Taipei,asian
-ShinYeh Japanese Buffet - Jiankang Restaurant,4.3,Songshan,2168,Taipei,japanese
-ShinYeh Japanese Buffet - Jiankang Restaurant,4.3,Songshan,2168,Taipei,sushi
-Lawry's The Prime Rib,4.4,Xinyi,1983,Taipei,american
-Lawry's The Prime Rib,4.4,Xinyi,1983,Taipei,steakhouse
-Din Tai Fung,4.5,Xinyi,184,Taipei,chinese
-Din Tai Fung,4.5,Xinyi,184,Taipei,asian
-Yakitori - Songjiang,4.4,Zhongshan,457,Taipei,japanese
-Yakitori - Songjiang,4.4,Zhongshan,457,Taipei,bar
-T.G.I.Friday's Hsi-Men Restaurant (Ximen Dian),4.2,Wanhua,519,Taipei,american
-T.G.I.Friday's Hsi-Men Restaurant (Ximen Dian),4.2,Wanhua,519,Taipei,bar
-Fruitful Food,4.4,Da'an,324,Taipei,chinese
-Fruitful Food,4.4,Da'an,324,Taipei,asian
-Bravo Beer - Taipei Civic Store,4.8,Songshan,536,Taipei,italian
-Bravo Beer - Taipei Civic Store,4.8,Songshan,536,Taipei,american
-"M.O. Bar at Mandarin Oriental, Taipei",4.8,Songshan,188,Taipei,bar
-"M.O. Bar at Mandarin Oriental, Taipei",4.8,Songshan,188,Taipei,wine
-"M.O. Bar at Mandarin Oriental, Taipei",4.8,Songshan,188,Taipei,bar
-Mayur Indian Kitchen MIK-2 - Minsheng E. Road,4.6,Songshan,782,Taipei,indian
-Mayur Indian Kitchen MIK-2 - Minsheng E. Road,4.6,Songshan,782,Taipei,asian
-Inparadise 饗饗,4.3,Xinyi,155,Taipei,french
-Inparadise 饗饗,4.3,Xinyi,155,Taipei,chinese
-Tao-Yuan-Street Beef Noodle Shop,4.1,Zhongzheng,259,Taipei,taiwanese
-Ximen Jinfeng,4.2,Wanhua,87,Taipei,chinese
-Ximen Jinfeng,4.2,Wanhua,87,Taipei,asian
-Le Cafe - Hotel Royal-Nikko Taipei,4.3,Zhongshan,1844,Taipei,NA
-Jingding Xiaoguan,4.3,Songshan,248,Taipei,chinese
-Jingding Xiaoguan,4.3,Songshan,248,Taipei,asian
-Tokiya (Beitou Guangming Branch),4.2,Beitou,173,Taipei,asian
-Yong Kang Beef Noodles,4,Da'an,851,Taipei,chinese
-Yong Kang Beef Noodles,4,Da'an,851,Taipei,asian
-Zhouji Rouzhou,4.1,Wanhua,172,Taipei,chinese
-Zhouji Rouzhou,4.1,Wanhua,172,Taipei,asian
-Café Un Deux Trois,4.4,Songshan,716,Taipei,steakhouse
-Café Un Deux Trois,4.4,Songshan,716,Taipei,international
-Top One Pot,4.3,Zhongshan,677,Taipei,chinese
-Top One Pot,4.3,Zhongshan,677,Taipei,asian
-Merlot Cafe & Bistro,4.6,Zhongshan,394,Taipei,italian
-Merlot Cafe & Bistro,4.6,Zhongshan,394,Taipei,european
-La Farfalla - Humble House Taipei,4.2,Xinyi,2983,Taipei,italian
-Latest Recipe - Le Meridien Taipei,4.1,Xinyi,2535,Taipei,asian
-Sunway Siokudo,4.1,Wanhua,134,Taipei,japanese
-Sunway Siokudo,4.1,Wanhua,134,Taipei,sushi
-Chousan,4.5,Shilin,51,Taipei,asian
-Chousan,4.5,Shilin,51,Taipei,taiwanese
-Hangzhou Xiaolong Tangbao,4.1,Songshan,175,Taipei,chinese
-Hangzhou Xiaolong Tangbao,4.1,Songshan,175,Taipei,asian
-The Guest House - Sheraton Grande Taipei Hotel,4.2,Zhongzheng,305,Taipei,chinese
-The Guest House - Sheraton Grande Taipei Hotel,4.2,Zhongzheng,305,Taipei,asian
-Ruth's Chris Steak House,4.5,Zhongshan,265,Taipei,steakhouse
-Gustoso Italian Restaurant- Madison Taipei Hotel,4.5,Da'an,295,Taipei,italian
-Gustoso Italian Restaurant- Madison Taipei Hotel,4.5,Da'an,295,Taipei,steakhouse
-Toutouan Kaiseki Restaurant,4.5,Da'an,525,Taipei,japanese
-Chamonix Teppanyaki (Taipei Nanchang Branch),4.4,Zhongzheng,526,Taipei,NA
-Wang Steak (Zhongshan N. Branch),4.2,Zhongshan,395,Taipei,steakhouse
-Rakumenya-Nangang Shop,4.7,Nangang,387,Taipei,japanese
-Qiao Zhi Wei Handmade Dumplings,4.4,Zhongzheng,134,Taipei,chinese
-Qiao Zhi Wei Handmade Dumplings,4.4,Zhongzheng,134,Taipei,asian
-Qi Yan No.1 Sichuan Cuisine,4.6,Beitou,54,Taipei,chinese
-Si Fang a Jiu Minced Pork Rice,4.3,Wanhua,92,Taipei,chinese
-Si Fang a Jiu Minced Pork Rice,4.3,Wanhua,92,Taipei,asian
-Gusto,4.7,Zhongzheng,103,Taipei,italian
-Gusto,4.7,Zhongzheng,103,Taipei,pizza
-AISIN GIORO Restaurant,4.5,Da'an,821,Taipei,chinese
-AISIN GIORO Restaurant,4.5,Da'an,821,Taipei,seafood
-Thai Bazaar,4.1,Xinyi,250,Taipei,asian
-Thai Bazaar,4.1,Xinyi,250,Taipei,thai
-Just Italian Restaurant,4.2,Da'an,274,Taipei,italian
-Just Italian Restaurant,4.2,Da'an,274,Taipei,pizza
-Lan Jia Steamed Sandwich Shop,4.3,Zhongzheng,227,Taipei,chinese
-Lan Jia Steamed Sandwich Shop,4.3,Zhongzheng,227,Taipei,fast
-Lan Jia Steamed Sandwich Shop,4.3,Zhongzheng,227,Taipei,food
-Kitchen 12-Sheraton Grande Taipei Hotel,4,Zhongzheng,3588,Taipei,chinese
-Kitchen 12-Sheraton Grande Taipei Hotel,4,Zhongzheng,3588,Taipei,asian
-Golden Phoenix Hall Cantonese Cuisine,4.2,Zhongshan,669,Taipei,chinese
-Golden Phoenix Hall Cantonese Cuisine,4.2,Zhongshan,669,Taipei,asian
-Mala Yuanyang Hotpot,4.3,Wanhua,242,Taipei,chinese
-Mala Yuanyang Hotpot,4.3,Wanhua,242,Taipei,asian
-Metro Buffet - Caesar Metro Taipei,3.9,Wanhua,179,Taipei,chinese
-Metro Buffet - Caesar Metro Taipei,3.9,Wanhua,179,Taipei,japanese
-Little Mongolian Taipei Station(hotpot),4.1,Zhongzheng,329,Taipei,chinese
-Little Mongolian Taipei Station(hotpot),4.1,Zhongzheng,329,Taipei,asian
-Top Cap Steakhouse,4.3,Xinyi,499,Taipei,steakhouse
-Top Cap Steakhouse,4.3,Xinyi,499,Taipei,european
-"Mayur Indian Kitchen Vegetarian restaurant, MIK-3",4.5,Zhongshan,344,Taipei,indian
-Mala Hotpot,4.3,Xinyi,130,Taipei,chinese
-Mala Hotpot,4.3,Xinyi,130,Taipei,asian
-Niang Zi Korean Food,4.2,Songshan,1268,Taipei,barbecue
-Niang Zi Korean Food,4.2,Songshan,1268,Taipei,asian
-Danny & Company,4.5,Da'an,348,Taipei,steakhouse
-Tokiya (Taipei Chongqing S. Branch),4.2,Zhongzheng,320,Taipei,NA
-Ai Zai Cai Ru Rou Fan,4.3,Beitou,55,Taipei,chinese
-Rainbow Terrace the Atrium,4.2,Da'an,495,Taipei,chinese
-Rainbow Terrace the Atrium,4.2,Da'an,495,Taipei,international
-Sukhothai - Sheraton Grand Taipei Hotel,4.2,Zhongzheng,389,Taipei,asian
-Sukhothai - Sheraton Grand Taipei Hotel,4.2,Zhongzheng,389,Taipei,thai
-Shihlin Kitchen - Renaissance Taipei Shihlin Hotel,3.9,Shilin,332,Taipei,italian
-Shihlin Kitchen - Renaissance Taipei Shihlin Hotel,3.9,Shilin,332,Taipei,seafood
-Dian Shui Lou - Huaining,4,Zhongzheng,537,Taipei,chinese
-Dian Shui Lou - Huaining,4,Zhongzheng,537,Taipei,asian
-Shuang Yue Food,4.4,Zhongzheng,65,Taipei,chinese
-Shuang Yue Food,4.4,Zhongzheng,65,Taipei,asian
-Da Antonio Ristorante Italiano,4.1,Xinyi,407,Taipei,italian
-Steak Inn,4.4,Da'an,506,Taipei,steakhouse
-Steak Inn,4.4,Da'an,506,Taipei,seafood
-French Windows - British TeaHouse,4.6,Xinyi,360,Taipei,italian
-French Windows - British TeaHouse,4.6,Xinyi,360,Taipei,european
-Saffron Fine Indian Cuisine,4.6,Shilin,243,Taipei,indian
-Saffron Fine Indian Cuisine,4.6,Shilin,243,Taipei,asian
-Chamonix Teppanaki - Zhongxiao  E. Rd Branch,4.5,Da'an,362,Taipei,NA
-Antoine Room-Sheraton Grande Taipei Hotel,4.5,Zhongzheng,258,Taipei,french
-Antoine Room-Sheraton Grande Taipei Hotel,4.5,Zhongzheng,258,Taipei,european
-Top One Pot JiLin,4.3,Zhongshan,379,Taipei,chinese
-Top One Pot JiLin,4.3,Zhongshan,379,Taipei,asian
-Manlai Hot Spring Ramen,3.7,Beitou,121,Taipei,japanese
-Manlai Hot Spring Ramen,3.7,Beitou,121,Taipei,asian
-Nook Restaurant,4.5,Beitou,39,Taipei,chinese
-Nook Restaurant,4.5,Beitou,39,Taipei,american
-Thai Town Cuisine - Taipei Main Station Mitsukoshi Store,4.3,Zhongzheng,150,Taipei,thai
-Hestia Tapas Bar,4.3,Songshan,248,Taipei,mediterranean
-Hestia Tapas Bar,4.3,Songshan,248,Taipei,european
-Hooters Taipei,3.9,Songshan,110,Taipei,bars
-Hooters Taipei,3.9,Songshan,110,Taipei,pubs
-Hooters Taipei,3.9,Songshan,110,Taipei,american
-Taoran Ting Restaurant,4.2,Songshan,85,Taipei,chinese
-Taoran Ting Restaurant,4.2,Songshan,85,Taipei,asian
-Checkers,3.9,Zhongzheng,1990,Taipei,chinese
-Checkers,3.9,Zhongzheng,1990,Taipei,asian
-Beitou Kagaya,4,Beitou,65,Taipei,japanese
-Beitou Kagaya,4,Beitou,65,Taipei,asian
-Da Dao Cheng Braised Pork On Rice,4.7,Datong,27,Taipei,asian
-Da Dao Cheng Braised Pork On Rice,4.7,Datong,27,Taipei,taiwanese
-The Jade Lounge,4.9,Songshan,120,Taipei,NA
-Driftwood Ximending,4.6,Wanhua,42,Taipei,bars
-Driftwood Ximending,4.6,Wanhua,42,Taipei,pubs
-Driftwood Ximending,4.6,Wanhua,42,Taipei,bar
-Marco Polo,4.5,Da'an,218,Taipei,italian
-Marco Polo,4.5,Da'an,218,Taipei,european
-ikki (Taipei Dunhua N. Branch),4.3,Songshan,382,Taipei,japanese
-ikki (Taipei Dunhua N. Branch),4.3,Songshan,382,Taipei,asian
-Wired Chaya (Neihu),4.3,Neihu,47,Taipei,chinese
-Wired Chaya (Neihu),4.3,Neihu,47,Taipei,japaneseopen
-Wired Chaya (Neihu),4.3,Neihu,47,Taipei,now
-Yakitori - Da Zhi,4.4,Zhongshan,328,Taipei,japanese
-Yakitori - Da Zhi,4.4,Zhongshan,328,Taipei,asian
-KiKi Eslite XinYi Branch,4.2,Xinyi,341,Taipei,chinese
-KiKi Eslite XinYi Branch,4.2,Xinyi,341,Taipei,szechuan
-Eatogether - Q Square,4.2,Datong,104,Taipei,asian
-TGI Fridays,4.2,Zhongzheng,437,Taipei,bar
-TGI Fridays,4.2,Zhongzheng,437,Taipei,pub
-Yonghe Century Soy Milk King,4.1,Datong,138,Taipei,taiwanese
-Sushiro - Taiwan Flagship Restaurant,4.2,Zhongzheng,62,Taipei,japanese
-Sushiro - Taiwan Flagship Restaurant,4.2,Zhongzheng,62,Taipei,sushi
-Very Thai Restaurant - Nangang CTBC Financial Park Store,4.3,Nangang,132,Taipei,thai
-INJOY Seafood HotPot,4.5,Da'an,286,Taipei,seafood
-INJOY Seafood HotPot,4.5,Da'an,286,Taipei,asian
-Li He Fa Glutinous Oil Rice & Rice Cake Shop,4.4,Datong,80,Taipei,asian
-TGI Friday's,4.2,Xinyi,942,Taipei,american
-TGI Friday's,4.2,Xinyi,942,Taipei,bar
-Tasty Steak (Taipei Roosevelt Branch),4.4,Da'an,213,Taipei,american
-Tasty Steak (Taipei Roosevelt Branch),4.4,Da'an,213,Taipei,steakhouse
-Moksha indian restaurant,4.7,Shilin,70,Taipei,indian
-Moksha indian restaurant,4.7,Shilin,70,Taipei,asian
-Grand Hilai Taoyuan Taimou,4.3,Luzhu District,6,Hsinchu,chinese
-Grand Hilai Taoyuan Taimou,4.3,Luzhu District,6,Hsinchu,seafood
-ShinYeh Japanese Buffet - Zhongmao Shop,4.4,Taoyuan District,907,Hsinchu,japanese
-ShinYeh Japanese Buffet - Zhongmao Shop,4.4,Taoyuan District,907,Hsinchu,seafood
-Chun Shui Tang (Taoyuan Airport),4.1,Dayuan District,91,Hsinchu,chinese
-Chun Shui Tang (Taoyuan Airport),4.1,Dayuan District,91,Hsinchu,asian
-Top One Pot ZhongMei,4.4,Zhongli District,297,Hsinchu,chinese
-Best01 Tea Garden,4.4,Longtan District,33,Hsinchu,asian
-Best01 Tea Garden,4.4,Longtan District,33,Hsinchu,taiwanese
-Hotel Kuva Chateau- Tang’s Chinese Restaurant,4.3,Zhongli District,299,Hsinchu,chinese
-Hotel Kuva Chateau- Tang’s Chinese Restaurant,4.3,Zhongli District,299,Hsinchu,asian
-ikki New Japanese Restaurant (Taoyuan Nanhua),4.4,Taoyuan District,365,Hsinchu,japanese
-The Square,3.8,Dayuan District,352,Hsinchu,international
-The Square,3.8,Dayuan District,352,Hsinchu,asian
-Chiang Fu Yan,4.4,Longtan District,13,Hsinchu,chinese
-Chiang Fu Yan,4.4,Longtan District,13,Hsinchu,asian
-Our Noodles Garden,4.3,Daxi District,42,Hsinchu,chinese
-Our Noodles Garden,4.3,Daxi District,42,Hsinchu,fast
-Our Noodles Garden,4.3,Daxi District,42,Hsinchu,food
-The Shrimp Daddy - Taoyuan Tonlin Plaza,4.2,Taoyuan District,80,Hsinchu,seafood
-Wang Steak (Taoyuan Zhongli Yanping Branch),4.4,NA,217,Hsinchu,steakhouse
-Chus Steak,4.4,Zhongli District,34,Hsinchu,french
-Chus Steak,4.4,Zhongli District,34,Hsinchu,steakhouse
-Da Jiang Wu Hakka Restaurant,4.2,Longtan District,18,Hsinchu,asian
-Da Jiang Wu Hakka Restaurant,4.2,Longtan District,18,Hsinchu,taiwanese
-Sanhoyan - Taoyuan Gloria Outlet,4,Zhongli District,28,Hsinchu,taiwanese
-Wei Fang Chinese Restaurant,4,Dayuan District,88,Hsinchu,chinese
-Wei Fang Chinese Restaurant,4,Dayuan District,88,Hsinchu,asian
-Hit Western Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Hsinchu,italian
-Hit Western Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Hsinchu,american
-Eatogether,4.3,Taoyuan District,103,Hsinchu,fusion
-Timhowan - Taoyuan Tai Mall Store,4.1,Luzhu District,252,Hsinchu,chinese
-Timhowan - Taoyuan Tai Mall Store,4.1,Luzhu District,252,Hsinchu,asian
-Homee Kitchen,3.4,Dayuan District,60,Hsinchu,chinese
-Homee Kitchen,3.4,Dayuan District,60,Hsinchu,asian
-Pine Garden,4.2,Longtan District,12,Hsinchu,chinese
-Pine Garden,4.2,Longtan District,12,Hsinchu,contemporary
-Great Kuva Thai Food (Hotel Kuva Chateau ),4.4,NA,145,Hsinchu,thai
-Yi Nancun Juan Cun Niurou Mian,4,Yangmei District,8,Hsinchu,asian
-Yi Nancun Juan Cun Niurou Mian,4,Yangmei District,8,Hsinchu,taiwanese
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Hsinchu,opens
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Hsinchu,in
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Hsinchu,9
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Hsinchu,min
-Gudi Kitchen,4.8,Taoyuan District,6,Hsinchu,steakhouse
-Gudi Kitchen,4.8,Taoyuan District,6,Hsinchu,international
-Xin Mei Long Qu Restaurant,4.8,Xinwu District,4,Hsinchu,asian
-Xin Mei Long Qu Restaurant,4.8,Xinwu District,4,Hsinchu,taiwanese
-Da Tang Mei Goose Diner,4.2,Longtan District,24,Hsinchu,asian
-Da Tang Mei Goose Diner,4.2,Longtan District,24,Hsinchu,taiwanese
-Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,4.2,Daxi District,38,Hsinchu,asian
-Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,4.2,Daxi District,38,Hsinchu,taiwanese
-Big Pier - Flagship Store,4.4,Zhongli District,7,Hsinchu,american
-Pizza Rock Nankan,4.8,Luzhu District,54,Hsinchu,italian
-Pizza Rock Nankan,4.8,Luzhu District,54,Hsinchu,american
-Yangmei Hakka Restaurant,4.1,Yangmei District,18,Hsinchu,asian
-Yangmei Hakka Restaurant,4.1,Yangmei District,18,Hsinchu,taiwanese
-Lake House,5,Yangmei District,2,Hsinchu,open
-Lake House,5,Yangmei District,2,Hsinchu,now
-Laojia Restaurant,4.2,Fuxing District,5,Hsinchu,chinese
-Tina Kitchen,4,Fuxing District,6,Hsinchu,fusion
-Vege Creek,4.8,NA,4,Hsinchu,asian
-Vege Creek,4.8,NA,4,Hsinchu,taiwaneseopen
-Vege Creek,4.8,NA,4,Hsinchu,now
-Wang Steak (Taoyuan Tongde Branch),4.4,Taoyuan District,267,Hsinchu,american
-Wang Steak (Taoyuan Tongde Branch),4.4,Taoyuan District,267,Hsinchu,steakhouse
-Sunlight Books,5,Yangmei District,2,Hsinchu,italianopen
-Sunlight Books,5,Yangmei District,2,Hsinchu,now
-NINI Garden Italian Restaurant,4.4,Luzhu District,41,Hsinchu,italian
-NINI Garden Italian Restaurant,4.4,Luzhu District,41,Hsinchu,steakhouse
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Hsinchu,asian
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Hsinchu,taiwaneseopen
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Hsinchu,now
-Green Hills Coffee,5,Yangmei District,2,Hsinchu,italian
-Green Hills Coffee,5,Yangmei District,2,Hsinchu,cafe
-DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,4.5,Zhongli District,10,Hsinchu,mexican
-DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,4.5,Zhongli District,10,Hsinchu,american
-Mushi Shabu-Shabu,4.8,Bade District,6,Hsinchu,chinese
-Mushi Shabu-Shabu,4.8,Bade District,6,Hsinchu,asian
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Hsinchu,opens
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Hsinchu,in
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Hsinchu,8
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Hsinchu,minmenu
-Black Beard Beefsteak - Longtan,4.5,Longtan District,2,Hsinchu,steakhouse
-Shanghaochi Erouting- Bade,4.5,Bade District,2,Hsinchu,deli
-The Olive Tree Experience,3.8,Longtan District,5,Hsinchu,chinese
-The Olive Tree Experience,3.8,Longtan District,5,Hsinchu,asian
-Wacheng Thai Town Cuisin Taoyuan Sanyue,4.3,Taoyuan District,93,Hsinchu,thai
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Hsinchu,chinese
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Hsinchu,seafoodopen
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Hsinchu,nowmenu
-Muhezi Yaokao Pizza,4.5,Longtan District,6,Hsinchu,pizza
-Muhezi Yaokao Pizza,4.5,Longtan District,6,Hsinchu,cafe
-Nanfei Meishi House,4.3,Xinwu District,3,Hsinchu,african
-HoneyWood Cafe,4.5,Pingzhen District,15,Hsinchu,italian
-HoneyWood Cafe,4.5,Pingzhen District,15,Hsinchu,american
-Ichi Tora Ramen,4.2,Yangmei District,5,Hsinchu,japanese
-A15 Taiwan Food,4.4,Dayuan District,7,Hsinchu,chinese
-A15 Taiwan Food,4.4,Dayuan District,7,Hsinchu,american
-Buna Cafe,4.1,Taoyuan District,44,Hsinchu,italian
-Li Xuan,3.7,Daxi District,15,Hsinchu,chinese
-Li Xuan,3.7,Daxi District,15,Hsinchu,asian
-Hai Yan Re Kuai Chao Canting,5,Xinwu District,1,Hsinchu,chinese
-Second Floor Taoyuan Huatai Store,4,Zhongli District,1,Hsinchu,fusionopen
-Second Floor Taoyuan Huatai Store,4,Zhongli District,1,Hsinchu,now
-Kudian Coffee,4.7,Fuxing District,6,Hsinchu,cafemenu
-Kanpai Classic - Zhong Mao Branch,4.3,Taoyuan District,12,Hsinchu,japanese
-Kanpai Classic - Zhong Mao Branch,4.3,Taoyuan District,12,Hsinchu,bar
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Hsinchu,opens
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Hsinchu,in
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Hsinchu,8
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Hsinchu,min
-Wanshitou Restaurant,4.1,Luzhu District,10,Hsinchu,cafe
-Wanshitou Restaurant,4.1,Luzhu District,10,Hsinchu,asian
-Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Hsinchu,chinese
-Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Hsinchu,asian
-Haidilao - Taoyuan Tong Ling,4.6,Taoyuan District,17,Hsinchu,open
-Haidilao - Taoyuan Tong Ling,4.6,Taoyuan District,17,Hsinchu,now
-Chuwei Port Chengfubo Seafood,4.3,Dayuan District,13,Hsinchu,seafood
-Gan Zhi Fei Nong,4.2,Longtan District,6,Hsinchu,opens
-Gan Zhi Fei Nong,4.2,Longtan District,6,Hsinchu,in
-Gan Zhi Fei Nong,4.2,Longtan District,6,Hsinchu,38
-Gan Zhi Fei Nong,4.2,Longtan District,6,Hsinchu,min
-Mr. Onion Steak Restaurant,3.7,Luzhu District,26,Hsinchu,steakhouse
-Thai Town Cuisine - Zhongli Sogo Store,4.2,Zhongli District,181,Hsinchu,thai
-YI HUI XUAN,3.7,Zhongli District,7,Hsinchu,chinese
-Gloria Outlets,4,NA,10,Hsinchu,asian
-Gloria Outlets,4,NA,10,Hsinchu,taiwanese
-Yamaokuya Yakiniku - Nankan Branch,4.5,Luzhu District,6,Hsinchu,japanese
-Yamaokuya Yakiniku - Nankan Branch,4.5,Luzhu District,6,Hsinchu,barbecue
-Usual Place Hakka Cuisine,4.1,Daxi District,33,Hsinchu,asian
-Usual Place Hakka Cuisine,4.1,Daxi District,33,Hsinchu,taiwanese
-Yong Chuan Beef Noodles,3.9,Zhongli District,39,Hsinchu,asian
-Roots Cafe - Gloria Outlets,3.8,Zhongli District,13,Hsinchu,american
-Roots Cafe - Gloria Outlets,3.8,Zhongli District,13,Hsinchu,cafe
-Shin Bai Wang Hakka Restaurant,4.7,Zhongli District,6,Hsinchu,chinese
-Shin Bai Wang Hakka Restaurant,4.7,Zhongli District,6,Hsinchu,seafood
-Korean Food,4,Yangmei District,8,Hsinchu,asian
-Korean Food,4,Yangmei District,8,Hsinchu,korean
-Shian-Yeou Fondu Automat,4.1,Pingzhen District,47,Hsinchu,menu
-J&D BEEF NOODLES,4.1,Luzhu District,8,Hsinchu,chinese
-J&D BEEF NOODLES,4.1,Luzhu District,8,Hsinchu,asian
-The H.O.P.,4.5,Taoyuan District,62,Hsinchu,mexican
-The H.O.P.,4.5,Taoyuan District,62,Hsinchu,american
-A Han Thai,4.3,Pingzhen District,7,Hsinchu,thai
-Zendon Yaki,4.6,Zhongli District,13,Hsinchu,steakhouse
-Zendon Yaki,4.6,Zhongli District,13,Hsinchu,asianopen
-Zendon Yaki,4.6,Zhongli District,13,Hsinchu,now
-Yi Restaurant Monarch Skyline Hotel,4.2,Luzhu District,12,Hsinchu,japanese
-Guang De Seafood Restaurant (Zhongmei Rd),4.2,Zhongli District,10,Hsinchu,seafoodopen
-Guang De Seafood Restaurant (Zhongmei Rd),4.2,Zhongli District,10,Hsinchu,now
-Zang Shoushi,4.1,Zhongli District,67,Hsinchu,japanese
-McDonald's Airport,3.5,NA,2,Hsinchu,fast
-McDonald's Airport,3.5,NA,2,Hsinchu,food
-Shan Zhen Eatery,4.4,Fuxing District,5,Hsinchu,asian
-Shan Zhen Eatery,4.4,Fuxing District,5,Hsinchu,taiwanese
-Jack's Steak House,5,Zhongli District,4,Hsinchu,steakhouse
-Ranaissance - Longtan Store,4.3,Longtan District,13,Hsinchu,chinese
-Da Shi Men Live Fish Restaurant,4.1,Longtan District,9,Hsinchu,chinese
-Da Shi Men Live Fish Restaurant,4.1,Longtan District,9,Hsinchu,seafood
-Toscanini Italy Restaurant,3.6,Pingzhen District,21,Hsinchu,italian
-Traveler Cafe,3.8,Yangmei District,6,Hsinchu,italian
-Traveler Cafe,3.8,Yangmei District,6,Hsinchu,chinese
-Pretty Garden,4,Longtan District,5,Hsinchu,cafe
-Pretty Garden,4,Longtan District,5,Hsinchu,northern
-Pretty Garden,4,Longtan District,5,Hsinchu,italian
-Xinhong Goose Restaurant,3.3,Xinwu District,3,Hsinchu,asian
-Xinhong Goose Restaurant,3.3,Xinwu District,3,Hsinchu,taiwanese
-Youji Liaoli,3.8,Daxi District,5,Hsinchu,asian
-Youji Liaoli,3.8,Daxi District,5,Hsinchu,taiwanese
-Long Tan Lao Tou Bai Hakka Cuisine,3.6,Longtan District,28,Hsinchu,fusion
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Hsinchu,chinese
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Hsinchu,asianopens
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Hsinchu,in
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Hsinchu,8
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Hsinchu,min
-Yi Xiao Lu,5,Taoyuan District,4,Hsinchu,japanese
-Yi Xiao Lu,5,Taoyuan District,4,Hsinchu,sushi
-Gan Noodle,4.3,Daxi District,6,Hsinchu,asian
-Gan Noodle,4.3,Daxi District,6,Hsinchu,taiwanese
-Hanlin Tea House,4.2,Taoyuan District,18,Hsinchu,fusion
-Pleasant Hotels Buffet,3.4,Taoyuan District,37,Hsinchu,international
-Smail,4.4,Daxi District,5,Hsinchu,pizza
-Smail,4.4,Daxi District,5,Hsinchu,cafe
-Cozzi Market,3.3,Zhongli District,3,Hsinchu,fusion
-Thai Town Cuisine- Zhongli Metro Walk Store,4,Zhongli District,104,Hsinchu,thai
-Wu Ming Seafood Dining,5,Dayuan District,1,Hsinchu,chinese
-Wu Ming Seafood Dining,5,Dayuan District,1,Hsinchu,asianclosed
-Wu Ming Seafood Dining,5,Dayuan District,1,Hsinchu,today
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Hsinchu,american
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Hsinchu,brew
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Hsinchu,pub
-Roux Bistro,5,Taoyuan District,1,Hsinchu,french
-Roux Bistro,5,Taoyuan District,1,Hsinchu,fusionopens
-Roux Bistro,5,Taoyuan District,1,Hsinchu,in
-Roux Bistro,5,Taoyuan District,1,Hsinchu,8
-Roux Bistro,5,Taoyuan District,1,Hsinchu,min
-Little Mongolian Spicy Hot Pot - Zhongli,4,Zhongli District,249,Hsinchu,asian
-Little Mongolian Spicy Hot Pot - Zhongli,4,Zhongli District,249,Hsinchu,taiwanese
-KIKI Noodle Bar,4.5,Dayuan District,2,Hsinchu,open
-KIKI Noodle Bar,4.5,Dayuan District,2,Hsinchu,now
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Hsinchu,chinese
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Hsinchu,seafoodopen
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Hsinchu,nowmenu
-Yangmei Shouwu Hakka Seafood,3.8,Yangmei District,6,Hsinchu,asian
-Yangmei Shouwu Hakka Seafood,3.8,Yangmei District,6,Hsinchu,taiwanese
-Hakka Shallot Noodles,3.8,Yangmei District,6,Hsinchu,asian
-Hakka Shallot Noodles,3.8,Yangmei District,6,Hsinchu,taiwanese
-KaiFun Together - Zhongli,4.3,Zhongli District,18,Hsinchu,open
-KaiFun Together - Zhongli,4.3,Zhongli District,18,Hsinchu,nowmenu
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Hsinchu,italianopens
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Hsinchu,in
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Hsinchu,8
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Hsinchu,min
-Sunrise Golf & Country Club,4.1,Yangmei District,15,Hsinchu,fusion
-Formosa Chang - Taoyuan Erhang,3.8,Dayuan District,16,Hsinchu,open
-Formosa Chang - Taoyuan Erhang,3.8,Dayuan District,16,Hsinchu,now
-Littlehill. Life,4.4,Longtan District,8,Hsinchu,opens
-Littlehill. Life,4.4,Longtan District,8,Hsinchu,in
-Littlehill. Life,4.4,Longtan District,8,Hsinchu,8
-Littlehill. Life,4.4,Longtan District,8,Hsinchu,min
-Shiyuan Huoyu Restaurant,4.7,Longtan District,3,Hsinchu,chineseopen
-Shiyuan Huoyu Restaurant,4.7,Longtan District,3,Hsinchu,now
-Bonew Cafe',4.5,Longtan District,4,Hsinchu,cafe
-Bonew Cafe',4.5,Longtan District,4,Hsinchu,northern
-Bonew Cafe',4.5,Longtan District,4,Hsinchu,italian
-Thai Town Cuisine - Taoyuan Zhongzheng Store,4.3,Taoyuan District,39,Hsinchu,thai
-Yentl Pasta - Linkou,4.5,Guishan District,4,Hsinchu,italian
-Orchard Cafe - Orchard Park,3.9,Dayuan District,112,Hsinchu,international
-Chiuan Jia Fu Hakka Cuisine Restaurant,4.6,Zhongli District,8,Hsinchu,asian
-Chiuan Jia Fu Hakka Cuisine Restaurant,4.6,Zhongli District,8,Hsinchu,taiwanese
-Yulan Huoyu Restaurant,4,Longtan District,2,Hsinchu,chinese
-Yulan Huoyu Restaurant,4,Longtan District,2,Hsinchu,seafoodopen
-Yulan Huoyu Restaurant,4,Longtan District,2,Hsinchu,now
-Lao Di Fang Restaurant,4.5,Longtan District,2,Hsinchu,asian
-Lao Di Fang Restaurant,4.5,Longtan District,2,Hsinchu,taiwanese
-Tina Kitchen,3.8,Bade District,11,Hsinchu,fusion
-Green Herb Cuisine,5,Taoyuan District,2,Hsinchu,international
-Green Herb Cuisine,5,Taoyuan District,2,Hsinchu,fusionopen
-Green Herb Cuisine,5,Taoyuan District,2,Hsinchu,nowmenu
-Little Mongolian Taoyuan,4,Taoyuan District,107,Hsinchu,chineseopens
-Little Mongolian Taoyuan,4,Taoyuan District,107,Hsinchu,in
-Little Mongolian Taoyuan,4,Taoyuan District,107,Hsinchu,8
-Little Mongolian Taoyuan,4,Taoyuan District,107,Hsinchu,min
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Hsinchu,mexican
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Hsinchu,chineseclosed
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Hsinchu,now
-Back Street Office,4.2,Daxi District,5,Hsinchu,cafe
-Frank's Texas Bbq,4.1,Daxi District,10,Hsinchu,american
-Frank's Texas Bbq,4.1,Daxi District,10,Hsinchu,barbecueopens
-Frank's Texas Bbq,4.1,Daxi District,10,Hsinchu,in
-Frank's Texas Bbq,4.1,Daxi District,10,Hsinchu,8
-Frank's Texas Bbq,4.1,Daxi District,10,Hsinchu,min
-Lifestyle Book Store,4.6,Pingzhen District,7,Hsinchu,cafe
-Stanley’s Steakhouse,4,Zhongli District,1,Hsinchu,steakhouse
-Nan Bei He Noodles Diner,4,Yangmei District,7,Hsinchu,asian
-The Black Apartment Coffee and Art Gallery,4.7,Yangmei District,7,Hsinchu,italian
-The Black Apartment Coffee and Art Gallery,4.7,Yangmei District,7,Hsinchu,american
-Dim Sum Master - Ba De/Guang Feng,3.1,Bade District,7,Hsinchu,asian
-A Pi Po Herb Stew Spare Rib,4,Yangmei District,3,Hsinchu,asian
-A Pi Po Herb Stew Spare Rib,4,Yangmei District,3,Hsinchu,taiwanese
-Wulao Zhongzheng,4.2,Taoyuan District,60,Hsinchu,asian
-Wulao Zhongzheng,4.2,Taoyuan District,60,Hsinchu,taiwanese
-Ba Fung Hakka Restaurant,3.5,Yangmei District,13,Hsinchu,asian
-Ba Fung Hakka Restaurant,3.5,Yangmei District,13,Hsinchu,taiwanese
-Yi Fan Di Sukiyaki,4.2,Taoyuan District,23,Hsinchu,japanese
-Monet Coffee-Yong An,4.5,Xinwu District,2,Hsinchu,cafe
-Monet Coffee-Yong An,4.5,Xinwu District,2,Hsinchu,fast
-Monet Coffee-Yong An,4.5,Xinwu District,2,Hsinchu,food
-Wonder Garden,4.6,Pingzhen District,7,Hsinchu,chinese
-Lao Sichuan Spicy Hot Pot,4.1,Taoyuan District,43,Hsinchu,chinese
-Lao Sichuan Spicy Hot Pot,4.1,Taoyuan District,43,Hsinchu,asian
-Momo Paradise Zhongli Dajiang,3.7,Zhongli District,54,Hsinchu,open
-Momo Paradise Zhongli Dajiang,3.7,Zhongli District,54,Hsinchu,now
-Lanting Moon,5,Longtan District,1,Hsinchu,chinese
-Lanting Moon,5,Longtan District,1,Hsinchu,contemporary
-Ming Shi Fu Seafood,4.3,Dayuan District,7,Hsinchu,seafood
-Pizza Rock Taiwan - Taoyuan Branch,4.8,Taoyuan District,6,Hsinchu,italian
-Pizza Rock Taiwan - Taoyuan Branch,4.8,Taoyuan District,6,Hsinchu,american
-Sun Dong Bao Niu Pai   Zhong Li Jian Xing,3.6,Zhongli District,8,Hsinchu,steakhouse
-Sun Dong Bao Niu Pai   Zhong Li Jian Xing,3.6,Zhongli District,8,Hsinchu,asian
-Ate Marita Cold Noodle House,5,Zhongli District,6,Hsinchu,filipino
-Ate Marita Cold Noodle House,5,Zhongli District,6,Hsinchu,asian
-Green Breeze Prairie,3.8,Pingzhen District,12,Hsinchu,fusion
-Yakiyan O-NiKU - Taoyuan Tong Ling,4.6,Taoyuan District,67,Hsinchu,asian
-Grand Hilai Taoyuan Taimou,4.3,Luzhu District,6,Kaohsiung,chinese
-Grand Hilai Taoyuan Taimou,4.3,Luzhu District,6,Kaohsiung,seafood
-ShinYeh Japanese Buffet - Zhongmao Shop,4.4,Taoyuan District,907,Kaohsiung,japanese
-ShinYeh Japanese Buffet - Zhongmao Shop,4.4,Taoyuan District,907,Kaohsiung,seafood
-Chun Shui Tang (Taoyuan Airport),4.1,Dayuan District,91,Kaohsiung,chinese
-Chun Shui Tang (Taoyuan Airport),4.1,Dayuan District,91,Kaohsiung,asian
-Top One Pot ZhongMei,4.4,Zhongli District,297,Kaohsiung,chinese
-Best01 Tea Garden,4.4,Longtan District,33,Kaohsiung,asian
-Best01 Tea Garden,4.4,Longtan District,33,Kaohsiung,taiwanese
-Hotel Kuva Chateau- Tang’s Chinese Restaurant,4.3,Zhongli District,299,Kaohsiung,chinese
-Hotel Kuva Chateau- Tang’s Chinese Restaurant,4.3,Zhongli District,299,Kaohsiung,asian
-ikki New Japanese Restaurant (Taoyuan Nanhua),4.4,Taoyuan District,365,Kaohsiung,japanese
-The Square,3.8,Dayuan District,352,Kaohsiung,international
-The Square,3.8,Dayuan District,352,Kaohsiung,asian
-Chiang Fu Yan,4.4,Longtan District,13,Kaohsiung,chinese
-Chiang Fu Yan,4.4,Longtan District,13,Kaohsiung,asian
-Our Noodles Garden,4.3,Daxi District,42,Kaohsiung,chinese
-Our Noodles Garden,4.3,Daxi District,42,Kaohsiung,fast
-Our Noodles Garden,4.3,Daxi District,42,Kaohsiung,food
-The Shrimp Daddy - Taoyuan Tonlin Plaza,4.2,Taoyuan District,80,Kaohsiung,seafood
-Wang Steak (Taoyuan Zhongli Yanping Branch),4.4,NA,217,Kaohsiung,steakhouse
-Chus Steak,4.4,Zhongli District,34,Kaohsiung,french
-Chus Steak,4.4,Zhongli District,34,Kaohsiung,steakhouse
-Da Jiang Wu Hakka Restaurant,4.2,Longtan District,18,Kaohsiung,asian
-Da Jiang Wu Hakka Restaurant,4.2,Longtan District,18,Kaohsiung,taiwanese
-Sanhoyan - Taoyuan Gloria Outlet,4,Zhongli District,28,Kaohsiung,taiwanese
-Wei Fang Chinese Restaurant,4,Dayuan District,88,Kaohsiung,chinese
-Wei Fang Chinese Restaurant,4,Dayuan District,88,Kaohsiung,asian
-Hit Western Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Kaohsiung,italian
-Hit Western Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Kaohsiung,american
-Eatogether,4.3,Taoyuan District,103,Kaohsiung,fusion
-Timhowan - Taoyuan Tai Mall Store,4.1,Luzhu District,252,Kaohsiung,chinese
-Timhowan - Taoyuan Tai Mall Store,4.1,Luzhu District,252,Kaohsiung,asian
-Homee Kitchen,3.4,Dayuan District,60,Kaohsiung,chinese
-Homee Kitchen,3.4,Dayuan District,60,Kaohsiung,asian
-Pine Garden,4.2,Longtan District,12,Kaohsiung,chinese
-Pine Garden,4.2,Longtan District,12,Kaohsiung,contemporary
-Great Kuva Thai Food (Hotel Kuva Chateau ),4.4,NA,145,Kaohsiung,thai
-Yi Nancun Juan Cun Niurou Mian,4,Yangmei District,8,Kaohsiung,asian
-Yi Nancun Juan Cun Niurou Mian,4,Yangmei District,8,Kaohsiung,taiwanese
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Kaohsiung,opens
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Kaohsiung,in
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Kaohsiung,9
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Kaohsiung,min
-Gudi Kitchen,4.8,Taoyuan District,6,Kaohsiung,steakhouse
-Gudi Kitchen,4.8,Taoyuan District,6,Kaohsiung,international
-Xin Mei Long Qu Restaurant,4.8,Xinwu District,4,Kaohsiung,asian
-Xin Mei Long Qu Restaurant,4.8,Xinwu District,4,Kaohsiung,taiwanese
-Da Tang Mei Goose Diner,4.2,Longtan District,24,Kaohsiung,asian
-Da Tang Mei Goose Diner,4.2,Longtan District,24,Kaohsiung,taiwanese
-Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,4.2,Daxi District,38,Kaohsiung,asian
-Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,4.2,Daxi District,38,Kaohsiung,taiwanese
-Big Pier - Flagship Store,4.4,Zhongli District,7,Kaohsiung,american
-Pizza Rock Nankan,4.8,Luzhu District,54,Kaohsiung,italian
-Pizza Rock Nankan,4.8,Luzhu District,54,Kaohsiung,american
-Yangmei Hakka Restaurant,4.1,Yangmei District,18,Kaohsiung,asian
-Yangmei Hakka Restaurant,4.1,Yangmei District,18,Kaohsiung,taiwanese
-Lake House,5,Yangmei District,2,Kaohsiung,open
-Lake House,5,Yangmei District,2,Kaohsiung,now
-Laojia Restaurant,4.2,Fuxing District,5,Kaohsiung,chinese
-Tina Kitchen,4,Fuxing District,6,Kaohsiung,fusion
-Vege Creek,4.8,NA,4,Kaohsiung,asian
-Vege Creek,4.8,NA,4,Kaohsiung,taiwaneseopen
-Vege Creek,4.8,NA,4,Kaohsiung,now
-Wang Steak (Taoyuan Tongde Branch),4.4,Taoyuan District,267,Kaohsiung,american
-Wang Steak (Taoyuan Tongde Branch),4.4,Taoyuan District,267,Kaohsiung,steakhouse
-Sunlight Books,5,Yangmei District,2,Kaohsiung,italianopen
-Sunlight Books,5,Yangmei District,2,Kaohsiung,now
-NINI Garden Italian Restaurant,4.4,Luzhu District,41,Kaohsiung,italian
-NINI Garden Italian Restaurant,4.4,Luzhu District,41,Kaohsiung,steakhouse
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Kaohsiung,asian
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Kaohsiung,taiwaneseopen
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Kaohsiung,now
-Green Hills Coffee,5,Yangmei District,2,Kaohsiung,italian
-Green Hills Coffee,5,Yangmei District,2,Kaohsiung,cafe
-DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,4.5,Zhongli District,10,Kaohsiung,mexican
-DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,4.5,Zhongli District,10,Kaohsiung,american
-Mushi Shabu-Shabu,4.8,Bade District,6,Kaohsiung,chinese
-Mushi Shabu-Shabu,4.8,Bade District,6,Kaohsiung,asian
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Kaohsiung,opens
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Kaohsiung,in
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Kaohsiung,8
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Kaohsiung,minmenu
-Black Beard Beefsteak - Longtan,4.5,Longtan District,2,Kaohsiung,steakhouse
-Shanghaochi Erouting- Bade,4.5,Bade District,2,Kaohsiung,deli
-The Olive Tree Experience,3.8,Longtan District,5,Kaohsiung,chinese
-The Olive Tree Experience,3.8,Longtan District,5,Kaohsiung,asian
-Wacheng Thai Town Cuisin Taoyuan Sanyue,4.3,Taoyuan District,93,Kaohsiung,thai
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Kaohsiung,chinese
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Kaohsiung,seafoodopen
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Kaohsiung,nowmenu
-Muhezi Yaokao Pizza,4.5,Longtan District,6,Kaohsiung,pizza
-Muhezi Yaokao Pizza,4.5,Longtan District,6,Kaohsiung,cafe
-Nanfei Meishi House,4.3,Xinwu District,3,Kaohsiung,african
-HoneyWood Cafe,4.5,Pingzhen District,15,Kaohsiung,italian
-HoneyWood Cafe,4.5,Pingzhen District,15,Kaohsiung,american
-Ichi Tora Ramen,4.2,Yangmei District,5,Kaohsiung,japanese
-A15 Taiwan Food,4.4,Dayuan District,7,Kaohsiung,chinese
-A15 Taiwan Food,4.4,Dayuan District,7,Kaohsiung,american
-Buna Cafe,4.1,Taoyuan District,44,Kaohsiung,italian
-Li Xuan,3.7,Daxi District,15,Kaohsiung,chinese
-Li Xuan,3.7,Daxi District,15,Kaohsiung,asian
-Hai Yan Re Kuai Chao Canting,5,Xinwu District,1,Kaohsiung,chinese
-Second Floor Taoyuan Huatai Store,4,Zhongli District,1,Kaohsiung,fusionopen
-Second Floor Taoyuan Huatai Store,4,Zhongli District,1,Kaohsiung,now
-Kudian Coffee,4.7,Fuxing District,6,Kaohsiung,cafemenu
-Kanpai Classic - Zhong Mao Branch,4.3,Taoyuan District,12,Kaohsiung,japanese
-Kanpai Classic - Zhong Mao Branch,4.3,Taoyuan District,12,Kaohsiung,bar
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Kaohsiung,opens
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Kaohsiung,in
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Kaohsiung,8
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Kaohsiung,min
-Wanshitou Restaurant,4.1,Luzhu District,10,Kaohsiung,cafe
-Wanshitou Restaurant,4.1,Luzhu District,10,Kaohsiung,asian
-Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Kaohsiung,chinese
-Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Kaohsiung,asian
-Haidilao - Taoyuan Tong Ling,4.6,Taoyuan District,17,Kaohsiung,open
-Haidilao - Taoyuan Tong Ling,4.6,Taoyuan District,17,Kaohsiung,now
-Chuwei Port Chengfubo Seafood,4.3,Dayuan District,13,Kaohsiung,seafood
-Gan Zhi Fei Nong,4.2,Longtan District,6,Kaohsiung,opens
-Gan Zhi Fei Nong,4.2,Longtan District,6,Kaohsiung,in
-Gan Zhi Fei Nong,4.2,Longtan District,6,Kaohsiung,38
-Gan Zhi Fei Nong,4.2,Longtan District,6,Kaohsiung,min
-Mr. Onion Steak Restaurant,3.7,Luzhu District,26,Kaohsiung,steakhouse
-Thai Town Cuisine - Zhongli Sogo Store,4.2,Zhongli District,181,Kaohsiung,thai
-YI HUI XUAN,3.7,Zhongli District,7,Kaohsiung,chinese
-Gloria Outlets,4,NA,10,Kaohsiung,asian
-Gloria Outlets,4,NA,10,Kaohsiung,taiwanese
-Yamaokuya Yakiniku - Nankan Branch,4.5,Luzhu District,6,Kaohsiung,japanese
-Yamaokuya Yakiniku - Nankan Branch,4.5,Luzhu District,6,Kaohsiung,barbecue
-Usual Place Hakka Cuisine,4.1,Daxi District,33,Kaohsiung,asian
-Usual Place Hakka Cuisine,4.1,Daxi District,33,Kaohsiung,taiwanese
-Yong Chuan Beef Noodles,3.9,Zhongli District,39,Kaohsiung,asian
-Roots Cafe - Gloria Outlets,3.8,Zhongli District,13,Kaohsiung,american
-Roots Cafe - Gloria Outlets,3.8,Zhongli District,13,Kaohsiung,cafe
-Shin Bai Wang Hakka Restaurant,4.7,Zhongli District,6,Kaohsiung,chinese
-Shin Bai Wang Hakka Restaurant,4.7,Zhongli District,6,Kaohsiung,seafood
-Korean Food,4,Yangmei District,8,Kaohsiung,asian
-Korean Food,4,Yangmei District,8,Kaohsiung,korean
-Shian-Yeou Fondu Automat,4.1,Pingzhen District,47,Kaohsiung,menu
-J&D BEEF NOODLES,4.1,Luzhu District,8,Kaohsiung,chinese
-J&D BEEF NOODLES,4.1,Luzhu District,8,Kaohsiung,asian
-The H.O.P.,4.5,Taoyuan District,62,Kaohsiung,mexican
-The H.O.P.,4.5,Taoyuan District,62,Kaohsiung,american
-A Han Thai,4.3,Pingzhen District,7,Kaohsiung,thai
-Zendon Yaki,4.6,Zhongli District,13,Kaohsiung,steakhouse
-Zendon Yaki,4.6,Zhongli District,13,Kaohsiung,asianopen
-Zendon Yaki,4.6,Zhongli District,13,Kaohsiung,now
-Yi Restaurant Monarch Skyline Hotel,4.2,Luzhu District,12,Kaohsiung,japanese
-Guang De Seafood Restaurant (Zhongmei Rd),4.2,Zhongli District,10,Kaohsiung,seafoodopen
-Guang De Seafood Restaurant (Zhongmei Rd),4.2,Zhongli District,10,Kaohsiung,now
-Zang Shoushi,4.1,Zhongli District,67,Kaohsiung,japanese
-McDonald's Airport,3.5,NA,2,Kaohsiung,fast
-McDonald's Airport,3.5,NA,2,Kaohsiung,food
-Shan Zhen Eatery,4.4,Fuxing District,5,Kaohsiung,asian
-Shan Zhen Eatery,4.4,Fuxing District,5,Kaohsiung,taiwanese
-Jack's Steak House,5,Zhongli District,4,Kaohsiung,steakhouse
-Ranaissance - Longtan Store,4.3,Longtan District,13,Kaohsiung,chinese
-Da Shi Men Live Fish Restaurant,4.1,Longtan District,9,Kaohsiung,chinese
-Da Shi Men Live Fish Restaurant,4.1,Longtan District,9,Kaohsiung,seafood
-Toscanini Italy Restaurant,3.6,Pingzhen District,21,Kaohsiung,italian
-Traveler Cafe,3.8,Yangmei District,6,Kaohsiung,italian
-Traveler Cafe,3.8,Yangmei District,6,Kaohsiung,chinese
-Pretty Garden,4,Longtan District,5,Kaohsiung,cafe
-Pretty Garden,4,Longtan District,5,Kaohsiung,northern
-Pretty Garden,4,Longtan District,5,Kaohsiung,italian
-Xinhong Goose Restaurant,3.3,Xinwu District,3,Kaohsiung,asian
-Xinhong Goose Restaurant,3.3,Xinwu District,3,Kaohsiung,taiwanese
-Youji Liaoli,3.8,Daxi District,5,Kaohsiung,asian
-Youji Liaoli,3.8,Daxi District,5,Kaohsiung,taiwanese
-Long Tan Lao Tou Bai Hakka Cuisine,3.6,Longtan District,28,Kaohsiung,fusion
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Kaohsiung,chinese
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Kaohsiung,asianopens
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Kaohsiung,in
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Kaohsiung,8
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Kaohsiung,min
-Yi Xiao Lu,5,Taoyuan District,4,Kaohsiung,japanese
-Yi Xiao Lu,5,Taoyuan District,4,Kaohsiung,sushi
-Gan Noodle,4.3,Daxi District,6,Kaohsiung,asian
-Gan Noodle,4.3,Daxi District,6,Kaohsiung,taiwanese
-Hanlin Tea House,4.2,Taoyuan District,18,Kaohsiung,fusion
-Pleasant Hotels Buffet,3.4,Taoyuan District,37,Kaohsiung,international
-Smail,4.4,Daxi District,5,Kaohsiung,pizza
-Smail,4.4,Daxi District,5,Kaohsiung,cafe
-Cozzi Market,3.3,Zhongli District,3,Kaohsiung,fusion
-Thai Town Cuisine- Zhongli Metro Walk Store,4,Zhongli District,104,Kaohsiung,thai
-Wu Ming Seafood Dining,5,Dayuan District,1,Kaohsiung,chinese
-Wu Ming Seafood Dining,5,Dayuan District,1,Kaohsiung,asianclosed
-Wu Ming Seafood Dining,5,Dayuan District,1,Kaohsiung,today
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Kaohsiung,american
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Kaohsiung,brew
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Kaohsiung,pub
-Roux Bistro,5,Taoyuan District,1,Kaohsiung,french
-Roux Bistro,5,Taoyuan District,1,Kaohsiung,fusionopens
-Roux Bistro,5,Taoyuan District,1,Kaohsiung,in
-Roux Bistro,5,Taoyuan District,1,Kaohsiung,8
-Roux Bistro,5,Taoyuan District,1,Kaohsiung,min
-Little Mongolian Spicy Hot Pot - Zhongli,4,Zhongli District,249,Kaohsiung,asian
-Little Mongolian Spicy Hot Pot - Zhongli,4,Zhongli District,249,Kaohsiung,taiwanese
-KIKI Noodle Bar,4.5,Dayuan District,2,Kaohsiung,open
-KIKI Noodle Bar,4.5,Dayuan District,2,Kaohsiung,now
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Kaohsiung,chinese
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Kaohsiung,seafoodopen
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Kaohsiung,nowmenu
-Yangmei Shouwu Hakka Seafood,3.8,Yangmei District,6,Kaohsiung,asian
-Yangmei Shouwu Hakka Seafood,3.8,Yangmei District,6,Kaohsiung,taiwanese
-Hakka Shallot Noodles,3.8,Yangmei District,6,Kaohsiung,asian
-Hakka Shallot Noodles,3.8,Yangmei District,6,Kaohsiung,taiwanese
-KaiFun Together - Zhongli,4.3,Zhongli District,18,Kaohsiung,open
-KaiFun Together - Zhongli,4.3,Zhongli District,18,Kaohsiung,nowmenu
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Kaohsiung,italianopens
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Kaohsiung,in
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Kaohsiung,8
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Kaohsiung,min
-Sunrise Golf & Country Club,4.1,Yangmei District,15,Kaohsiung,fusion
-Formosa Chang - Taoyuan Erhang,3.8,Dayuan District,16,Kaohsiung,open
-Formosa Chang - Taoyuan Erhang,3.8,Dayuan District,16,Kaohsiung,now
-Littlehill. Life,4.4,Longtan District,8,Kaohsiung,opens
-Littlehill. Life,4.4,Longtan District,8,Kaohsiung,in
-Littlehill. Life,4.4,Longtan District,8,Kaohsiung,8
-Littlehill. Life,4.4,Longtan District,8,Kaohsiung,min
-Shiyuan Huoyu Restaurant,4.7,Longtan District,3,Kaohsiung,chineseopen
-Shiyuan Huoyu Restaurant,4.7,Longtan District,3,Kaohsiung,now
-Bonew Cafe',4.5,Longtan District,4,Kaohsiung,cafe
-Bonew Cafe',4.5,Longtan District,4,Kaohsiung,northern
-Bonew Cafe',4.5,Longtan District,4,Kaohsiung,italian
-Thai Town Cuisine - Taoyuan Zhongzheng Store,4.3,Taoyuan District,39,Kaohsiung,thai
-Yentl Pasta - Linkou,4.5,Guishan District,4,Kaohsiung,italian
-Orchard Cafe - Orchard Park,3.9,Dayuan District,112,Kaohsiung,international
-Chiuan Jia Fu Hakka Cuisine Restaurant,4.6,Zhongli District,8,Kaohsiung,asian
-Chiuan Jia Fu Hakka Cuisine Restaurant,4.6,Zhongli District,8,Kaohsiung,taiwanese
-Yulan Huoyu Restaurant,4,Longtan District,2,Kaohsiung,chinese
-Yulan Huoyu Restaurant,4,Longtan District,2,Kaohsiung,seafoodopen
-Yulan Huoyu Restaurant,4,Longtan District,2,Kaohsiung,now
-Lao Di Fang Restaurant,4.5,Longtan District,2,Kaohsiung,asian
-Lao Di Fang Restaurant,4.5,Longtan District,2,Kaohsiung,taiwanese
-Tina Kitchen,3.8,Bade District,11,Kaohsiung,fusion
-Green Herb Cuisine,5,Taoyuan District,2,Kaohsiung,international
-Green Herb Cuisine,5,Taoyuan District,2,Kaohsiung,fusionopen
-Green Herb Cuisine,5,Taoyuan District,2,Kaohsiung,nowmenu
-Little Mongolian Taoyuan,4,Taoyuan District,107,Kaohsiung,chineseopens
-Little Mongolian Taoyuan,4,Taoyuan District,107,Kaohsiung,in
-Little Mongolian Taoyuan,4,Taoyuan District,107,Kaohsiung,8
-Little Mongolian Taoyuan,4,Taoyuan District,107,Kaohsiung,min
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Kaohsiung,mexican
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Kaohsiung,chineseclosed
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Kaohsiung,now
-Back Street Office,4.2,Daxi District,5,Kaohsiung,cafe
-Frank's Texas Bbq,4.1,Daxi District,10,Kaohsiung,american
-Frank's Texas Bbq,4.1,Daxi District,10,Kaohsiung,barbecueopens
-Frank's Texas Bbq,4.1,Daxi District,10,Kaohsiung,in
-Frank's Texas Bbq,4.1,Daxi District,10,Kaohsiung,8
-Frank's Texas Bbq,4.1,Daxi District,10,Kaohsiung,min
-Lifestyle Book Store,4.6,Pingzhen District,7,Kaohsiung,cafe
-Stanley’s Steakhouse,4,Zhongli District,1,Kaohsiung,steakhouse
-Nan Bei He Noodles Diner,4,Yangmei District,7,Kaohsiung,asian
-The Black Apartment Coffee and Art Gallery,4.7,Yangmei District,7,Kaohsiung,italian
-The Black Apartment Coffee and Art Gallery,4.7,Yangmei District,7,Kaohsiung,american
-Dim Sum Master - Ba De/Guang Feng,3.1,Bade District,7,Kaohsiung,asian
-A Pi Po Herb Stew Spare Rib,4,Yangmei District,3,Kaohsiung,asian
-A Pi Po Herb Stew Spare Rib,4,Yangmei District,3,Kaohsiung,taiwanese
-Wulao Zhongzheng,4.2,Taoyuan District,60,Kaohsiung,asian
-Wulao Zhongzheng,4.2,Taoyuan District,60,Kaohsiung,taiwanese
-Ba Fung Hakka Restaurant,3.5,Yangmei District,13,Kaohsiung,asian
-Ba Fung Hakka Restaurant,3.5,Yangmei District,13,Kaohsiung,taiwanese
-Yi Fan Di Sukiyaki,4.2,Taoyuan District,23,Kaohsiung,japanese
-Monet Coffee-Yong An,4.5,Xinwu District,2,Kaohsiung,cafe
-Monet Coffee-Yong An,4.5,Xinwu District,2,Kaohsiung,fast
-Monet Coffee-Yong An,4.5,Xinwu District,2,Kaohsiung,food
-Wonder Garden,4.6,Pingzhen District,7,Kaohsiung,chinese
-Lao Sichuan Spicy Hot Pot,4.1,Taoyuan District,43,Kaohsiung,chinese
-Lao Sichuan Spicy Hot Pot,4.1,Taoyuan District,43,Kaohsiung,asian
-Momo Paradise Zhongli Dajiang,3.7,Zhongli District,54,Kaohsiung,open
-Momo Paradise Zhongli Dajiang,3.7,Zhongli District,54,Kaohsiung,now
-Lanting Moon,5,Longtan District,1,Kaohsiung,chinese
-Lanting Moon,5,Longtan District,1,Kaohsiung,contemporary
-Ming Shi Fu Seafood,4.3,Dayuan District,7,Kaohsiung,seafood
-Pizza Rock Taiwan - Taoyuan Branch,4.8,Taoyuan District,6,Kaohsiung,italian
-Pizza Rock Taiwan - Taoyuan Branch,4.8,Taoyuan District,6,Kaohsiung,american
-Sun Dong Bao Niu Pai   Zhong Li Jian Xing,3.6,Zhongli District,8,Kaohsiung,steakhouse
-Sun Dong Bao Niu Pai   Zhong Li Jian Xing,3.6,Zhongli District,8,Kaohsiung,asian
-Ate Marita Cold Noodle House,5,Zhongli District,6,Kaohsiung,filipino
-Ate Marita Cold Noodle House,5,Zhongli District,6,Kaohsiung,asian
-Green Breeze Prairie,3.8,Pingzhen District,12,Kaohsiung,fusion
-Yakiyan O-NiKU - Taoyuan Tong Ling,4.6,Taoyuan District,67,Kaohsiung,asian
-Grand Hilai Taoyuan Taimou,4.3,Luzhu District,6,Taoyuan,chinese
-Grand Hilai Taoyuan Taimou,4.3,Luzhu District,6,Taoyuan,seafood
-ShinYeh Japanese Buffet - Zhongmao Shop,4.4,Taoyuan District,907,Taoyuan,japanese
-ShinYeh Japanese Buffet - Zhongmao Shop,4.4,Taoyuan District,907,Taoyuan,seafood
-Chun Shui Tang (Taoyuan Airport),4.1,Dayuan District,91,Taoyuan,chinese
-Chun Shui Tang (Taoyuan Airport),4.1,Dayuan District,91,Taoyuan,asian
-Top One Pot ZhongMei,4.4,Zhongli District,297,Taoyuan,chinese
-Best01 Tea Garden,4.4,Longtan District,33,Taoyuan,asian
-Best01 Tea Garden,4.4,Longtan District,33,Taoyuan,taiwanese
-Hotel Kuva Chateau- Tang’s Chinese Restaurant,4.3,Zhongli District,299,Taoyuan,chinese
-Hotel Kuva Chateau- Tang’s Chinese Restaurant,4.3,Zhongli District,299,Taoyuan,asian
-ikki New Japanese Restaurant (Taoyuan Nanhua),4.4,Taoyuan District,365,Taoyuan,japanese
-The Square,3.8,Dayuan District,352,Taoyuan,international
-The Square,3.8,Dayuan District,352,Taoyuan,asian
-Chiang Fu Yan,4.4,Longtan District,13,Taoyuan,chinese
-Chiang Fu Yan,4.4,Longtan District,13,Taoyuan,asian
-Our Noodles Garden,4.3,Daxi District,42,Taoyuan,chinese
-Our Noodles Garden,4.3,Daxi District,42,Taoyuan,fast
-Our Noodles Garden,4.3,Daxi District,42,Taoyuan,food
-The Shrimp Daddy - Taoyuan Tonlin Plaza,4.2,Taoyuan District,80,Taoyuan,seafood
-Wang Steak (Taoyuan Zhongli Yanping Branch),4.4,NA,217,Taoyuan,steakhouse
-Chus Steak,4.4,Zhongli District,34,Taoyuan,french
-Chus Steak,4.4,Zhongli District,34,Taoyuan,steakhouse
-Da Jiang Wu Hakka Restaurant,4.2,Longtan District,18,Taoyuan,asian
-Da Jiang Wu Hakka Restaurant,4.2,Longtan District,18,Taoyuan,taiwanese
-Sanhoyan - Taoyuan Gloria Outlet,4,Zhongli District,28,Taoyuan,taiwanese
-Wei Fang Chinese Restaurant,4,Dayuan District,88,Taoyuan,chinese
-Wei Fang Chinese Restaurant,4,Dayuan District,88,Taoyuan,asian
-Hit Western Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Taoyuan,italian
-Hit Western Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Taoyuan,american
-Eatogether,4.3,Taoyuan District,103,Taoyuan,fusion
-Timhowan - Taoyuan Tai Mall Store,4.1,Luzhu District,252,Taoyuan,chinese
-Timhowan - Taoyuan Tai Mall Store,4.1,Luzhu District,252,Taoyuan,asian
-Homee Kitchen,3.4,Dayuan District,60,Taoyuan,chinese
-Homee Kitchen,3.4,Dayuan District,60,Taoyuan,asian
-Pine Garden,4.2,Longtan District,12,Taoyuan,chinese
-Pine Garden,4.2,Longtan District,12,Taoyuan,contemporary
-Great Kuva Thai Food (Hotel Kuva Chateau ),4.4,NA,145,Taoyuan,thai
-Yi Nancun Juan Cun Niurou Mian,4,Yangmei District,8,Taoyuan,asian
-Yi Nancun Juan Cun Niurou Mian,4,Yangmei District,8,Taoyuan,taiwanese
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Taoyuan,opens
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Taoyuan,in
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Taoyuan,9
-Eatogether Taoyuan Zhongli Sogo,4.4,Zhongli District,86,Taoyuan,min
-Gudi Kitchen,4.8,Taoyuan District,6,Taoyuan,steakhouse
-Gudi Kitchen,4.8,Taoyuan District,6,Taoyuan,international
-Xin Mei Long Qu Restaurant,4.8,Xinwu District,4,Taoyuan,asian
-Xin Mei Long Qu Restaurant,4.8,Xinwu District,4,Taoyuan,taiwanese
-Da Tang Mei Goose Diner,4.2,Longtan District,24,Taoyuan,asian
-Da Tang Mei Goose Diner,4.2,Longtan District,24,Taoyuan,taiwanese
-Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,4.2,Daxi District,38,Taoyuan,asian
-Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,4.2,Daxi District,38,Taoyuan,taiwanese
-Big Pier - Flagship Store,4.4,Zhongli District,7,Taoyuan,american
-Pizza Rock Nankan,4.8,Luzhu District,54,Taoyuan,italian
-Pizza Rock Nankan,4.8,Luzhu District,54,Taoyuan,american
-Yangmei Hakka Restaurant,4.1,Yangmei District,18,Taoyuan,asian
-Yangmei Hakka Restaurant,4.1,Yangmei District,18,Taoyuan,taiwanese
-Lake House,5,Yangmei District,2,Taoyuan,open
-Lake House,5,Yangmei District,2,Taoyuan,now
-Laojia Restaurant,4.2,Fuxing District,5,Taoyuan,chinese
-Tina Kitchen,4,Fuxing District,6,Taoyuan,fusion
-Vege Creek,4.8,NA,4,Taoyuan,asian
-Vege Creek,4.8,NA,4,Taoyuan,taiwaneseopen
-Vege Creek,4.8,NA,4,Taoyuan,now
-Wang Steak (Taoyuan Tongde Branch),4.4,Taoyuan District,267,Taoyuan,american
-Wang Steak (Taoyuan Tongde Branch),4.4,Taoyuan District,267,Taoyuan,steakhouse
-Sunlight Books,5,Yangmei District,2,Taoyuan,italianopen
-Sunlight Books,5,Yangmei District,2,Taoyuan,now
-NINI Garden Italian Restaurant,4.4,Luzhu District,41,Taoyuan,italian
-NINI Garden Italian Restaurant,4.4,Luzhu District,41,Taoyuan,steakhouse
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Taoyuan,asian
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Taoyuan,taiwaneseopen
-Baigui Nanyangren Wenjingguan Restaurant,4.5,Pingzhen District,6,Taoyuan,now
-Green Hills Coffee,5,Yangmei District,2,Taoyuan,italian
-Green Hills Coffee,5,Yangmei District,2,Taoyuan,cafe
-DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,4.5,Zhongli District,10,Taoyuan,mexican
-DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,4.5,Zhongli District,10,Taoyuan,american
-Mushi Shabu-Shabu,4.8,Bade District,6,Taoyuan,chinese
-Mushi Shabu-Shabu,4.8,Bade District,6,Taoyuan,asian
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Taoyuan,opens
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Taoyuan,in
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Taoyuan,8
-Chamonix Teppanyaki (Pingzhen Yanping Branch),4.4,Pingzhen District,305,Taoyuan,minmenu
-Black Beard Beefsteak - Longtan,4.5,Longtan District,2,Taoyuan,steakhouse
-Shanghaochi Erouting- Bade,4.5,Bade District,2,Taoyuan,deli
-The Olive Tree Experience,3.8,Longtan District,5,Taoyuan,chinese
-The Olive Tree Experience,3.8,Longtan District,5,Taoyuan,asian
-Wacheng Thai Town Cuisin Taoyuan Sanyue,4.3,Taoyuan District,93,Taoyuan,thai
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Taoyuan,chinese
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Taoyuan,seafoodopen
-Parents Restaurant - Fame Hall Garden Hotel,4.2,Longtan District,6,Taoyuan,nowmenu
-Muhezi Yaokao Pizza,4.5,Longtan District,6,Taoyuan,pizza
-Muhezi Yaokao Pizza,4.5,Longtan District,6,Taoyuan,cafe
-Nanfei Meishi House,4.3,Xinwu District,3,Taoyuan,african
-HoneyWood Cafe,4.5,Pingzhen District,15,Taoyuan,italian
-HoneyWood Cafe,4.5,Pingzhen District,15,Taoyuan,american
-Ichi Tora Ramen,4.2,Yangmei District,5,Taoyuan,japanese
-A15 Taiwan Food,4.4,Dayuan District,7,Taoyuan,chinese
-A15 Taiwan Food,4.4,Dayuan District,7,Taoyuan,american
-Buna Cafe,4.1,Taoyuan District,44,Taoyuan,italian
-Li Xuan,3.7,Daxi District,15,Taoyuan,chinese
-Li Xuan,3.7,Daxi District,15,Taoyuan,asian
-Hai Yan Re Kuai Chao Canting,5,Xinwu District,1,Taoyuan,chinese
-Second Floor Taoyuan Huatai Store,4,Zhongli District,1,Taoyuan,fusionopen
-Second Floor Taoyuan Huatai Store,4,Zhongli District,1,Taoyuan,now
-Kudian Coffee,4.7,Fuxing District,6,Taoyuan,cafemenu
-Kanpai Classic - Zhong Mao Branch,4.3,Taoyuan District,12,Taoyuan,japanese
-Kanpai Classic - Zhong Mao Branch,4.3,Taoyuan District,12,Taoyuan,bar
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Taoyuan,opens
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Taoyuan,in
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Taoyuan,8
-Bite 2 Eat Pizza - Taoyuan,4.7,Bade District,3,Taoyuan,min
-Wanshitou Restaurant,4.1,Luzhu District,10,Taoyuan,cafe
-Wanshitou Restaurant,4.1,Luzhu District,10,Taoyuan,asian
-Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Taoyuan,chinese
-Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,4.8,Longtan District,5,Taoyuan,asian
-Haidilao - Taoyuan Tong Ling,4.6,Taoyuan District,17,Taoyuan,open
-Haidilao - Taoyuan Tong Ling,4.6,Taoyuan District,17,Taoyuan,now
-Chuwei Port Chengfubo Seafood,4.3,Dayuan District,13,Taoyuan,seafood
-Gan Zhi Fei Nong,4.2,Longtan District,6,Taoyuan,opens
-Gan Zhi Fei Nong,4.2,Longtan District,6,Taoyuan,in
-Gan Zhi Fei Nong,4.2,Longtan District,6,Taoyuan,38
-Gan Zhi Fei Nong,4.2,Longtan District,6,Taoyuan,min
-Mr. Onion Steak Restaurant,3.7,Luzhu District,26,Taoyuan,steakhouse
-Thai Town Cuisine - Zhongli Sogo Store,4.2,Zhongli District,181,Taoyuan,thai
-YI HUI XUAN,3.7,Zhongli District,7,Taoyuan,chinese
-Gloria Outlets,4,NA,10,Taoyuan,asian
-Gloria Outlets,4,NA,10,Taoyuan,taiwanese
-Yamaokuya Yakiniku - Nankan Branch,4.5,Luzhu District,6,Taoyuan,japanese
-Yamaokuya Yakiniku - Nankan Branch,4.5,Luzhu District,6,Taoyuan,barbecue
-Usual Place Hakka Cuisine,4.1,Daxi District,33,Taoyuan,asian
-Usual Place Hakka Cuisine,4.1,Daxi District,33,Taoyuan,taiwanese
-Yong Chuan Beef Noodles,3.9,Zhongli District,39,Taoyuan,asian
-Roots Cafe - Gloria Outlets,3.8,Zhongli District,13,Taoyuan,american
-Roots Cafe - Gloria Outlets,3.8,Zhongli District,13,Taoyuan,cafe
-Shin Bai Wang Hakka Restaurant,4.7,Zhongli District,6,Taoyuan,chinese
-Shin Bai Wang Hakka Restaurant,4.7,Zhongli District,6,Taoyuan,seafood
-Korean Food,4,Yangmei District,8,Taoyuan,asian
-Korean Food,4,Yangmei District,8,Taoyuan,korean
-Shian-Yeou Fondu Automat,4.1,Pingzhen District,47,Taoyuan,menu
-J&D BEEF NOODLES,4.1,Luzhu District,8,Taoyuan,chinese
-J&D BEEF NOODLES,4.1,Luzhu District,8,Taoyuan,asian
-The H.O.P.,4.5,Taoyuan District,62,Taoyuan,mexican
-The H.O.P.,4.5,Taoyuan District,62,Taoyuan,american
-A Han Thai,4.3,Pingzhen District,7,Taoyuan,thai
-Zendon Yaki,4.6,Zhongli District,13,Taoyuan,steakhouse
-Zendon Yaki,4.6,Zhongli District,13,Taoyuan,asianopen
-Zendon Yaki,4.6,Zhongli District,13,Taoyuan,now
-Yi Restaurant Monarch Skyline Hotel,4.2,Luzhu District,12,Taoyuan,japanese
-Guang De Seafood Restaurant (Zhongmei Rd),4.2,Zhongli District,10,Taoyuan,seafoodopen
-Guang De Seafood Restaurant (Zhongmei Rd),4.2,Zhongli District,10,Taoyuan,now
-Zang Shoushi,4.1,Zhongli District,67,Taoyuan,japanese
-McDonald's Airport,3.5,NA,2,Taoyuan,fast
-McDonald's Airport,3.5,NA,2,Taoyuan,food
-Shan Zhen Eatery,4.4,Fuxing District,5,Taoyuan,asian
-Shan Zhen Eatery,4.4,Fuxing District,5,Taoyuan,taiwanese
-Jack's Steak House,5,Zhongli District,4,Taoyuan,steakhouse
-Ranaissance - Longtan Store,4.3,Longtan District,13,Taoyuan,chinese
-Da Shi Men Live Fish Restaurant,4.1,Longtan District,9,Taoyuan,chinese
-Da Shi Men Live Fish Restaurant,4.1,Longtan District,9,Taoyuan,seafood
-Toscanini Italy Restaurant,3.6,Pingzhen District,21,Taoyuan,italian
-Traveler Cafe,3.8,Yangmei District,6,Taoyuan,italian
-Traveler Cafe,3.8,Yangmei District,6,Taoyuan,chinese
-Pretty Garden,4,Longtan District,5,Taoyuan,cafe
-Pretty Garden,4,Longtan District,5,Taoyuan,northern
-Pretty Garden,4,Longtan District,5,Taoyuan,italian
-Xinhong Goose Restaurant,3.3,Xinwu District,3,Taoyuan,asian
-Xinhong Goose Restaurant,3.3,Xinwu District,3,Taoyuan,taiwanese
-Youji Liaoli,3.8,Daxi District,5,Taoyuan,asian
-Youji Liaoli,3.8,Daxi District,5,Taoyuan,taiwanese
-Long Tan Lao Tou Bai Hakka Cuisine,3.6,Longtan District,28,Taoyuan,fusion
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Taoyuan,chinese
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Taoyuan,asianopens
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Taoyuan,in
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Taoyuan,8
-Lao You Tiao Jia Chang Cai (Linkou),4.5,Guishan District,2,Taoyuan,min
-Yi Xiao Lu,5,Taoyuan District,4,Taoyuan,japanese
-Yi Xiao Lu,5,Taoyuan District,4,Taoyuan,sushi
-Gan Noodle,4.3,Daxi District,6,Taoyuan,asian
-Gan Noodle,4.3,Daxi District,6,Taoyuan,taiwanese
-Hanlin Tea House,4.2,Taoyuan District,18,Taoyuan,fusion
-Pleasant Hotels Buffet,3.4,Taoyuan District,37,Taoyuan,international
-Smail,4.4,Daxi District,5,Taoyuan,pizza
-Smail,4.4,Daxi District,5,Taoyuan,cafe
-Cozzi Market,3.3,Zhongli District,3,Taoyuan,fusion
-Thai Town Cuisine- Zhongli Metro Walk Store,4,Zhongli District,104,Taoyuan,thai
-Wu Ming Seafood Dining,5,Dayuan District,1,Taoyuan,chinese
-Wu Ming Seafood Dining,5,Dayuan District,1,Taoyuan,asianclosed
-Wu Ming Seafood Dining,5,Dayuan District,1,Taoyuan,today
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Taoyuan,american
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Taoyuan,brew
-LEBLEDOR - Zhongli Sogo Outlet,3.8,Zhongli District,22,Taoyuan,pub
-Roux Bistro,5,Taoyuan District,1,Taoyuan,french
-Roux Bistro,5,Taoyuan District,1,Taoyuan,fusionopens
-Roux Bistro,5,Taoyuan District,1,Taoyuan,in
-Roux Bistro,5,Taoyuan District,1,Taoyuan,8
-Roux Bistro,5,Taoyuan District,1,Taoyuan,min
-Little Mongolian Spicy Hot Pot - Zhongli,4,Zhongli District,249,Taoyuan,asian
-Little Mongolian Spicy Hot Pot - Zhongli,4,Zhongli District,249,Taoyuan,taiwanese
-KIKI Noodle Bar,4.5,Dayuan District,2,Taoyuan,open
-KIKI Noodle Bar,4.5,Dayuan District,2,Taoyuan,now
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Taoyuan,chinese
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Taoyuan,seafoodopen
-Top-d Seafood Restaurant (Taoyuan),3.9,Taoyuan District,65,Taoyuan,nowmenu
-Yangmei Shouwu Hakka Seafood,3.8,Yangmei District,6,Taoyuan,asian
-Yangmei Shouwu Hakka Seafood,3.8,Yangmei District,6,Taoyuan,taiwanese
-Hakka Shallot Noodles,3.8,Yangmei District,6,Taoyuan,asian
-Hakka Shallot Noodles,3.8,Yangmei District,6,Taoyuan,taiwanese
-KaiFun Together - Zhongli,4.3,Zhongli District,18,Taoyuan,open
-KaiFun Together - Zhongli,4.3,Zhongli District,18,Taoyuan,nowmenu
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Taoyuan,italianopens
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Taoyuan,in
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Taoyuan,8
-Aegean Sea Shore Cafe,4.3,Xinwu District,3,Taoyuan,min
-Sunrise Golf & Country Club,4.1,Yangmei District,15,Taoyuan,fusion
-Formosa Chang - Taoyuan Erhang,3.8,Dayuan District,16,Taoyuan,open
-Formosa Chang - Taoyuan Erhang,3.8,Dayuan District,16,Taoyuan,now
-Littlehill. Life,4.4,Longtan District,8,Taoyuan,opens
-Littlehill. Life,4.4,Longtan District,8,Taoyuan,in
-Littlehill. Life,4.4,Longtan District,8,Taoyuan,8
-Littlehill. Life,4.4,Longtan District,8,Taoyuan,min
-Shiyuan Huoyu Restaurant,4.7,Longtan District,3,Taoyuan,chineseopen
-Shiyuan Huoyu Restaurant,4.7,Longtan District,3,Taoyuan,now
-Bonew Cafe',4.5,Longtan District,4,Taoyuan,cafe
-Bonew Cafe',4.5,Longtan District,4,Taoyuan,northern
-Bonew Cafe',4.5,Longtan District,4,Taoyuan,italian
-Thai Town Cuisine - Taoyuan Zhongzheng Store,4.3,Taoyuan District,39,Taoyuan,thai
-Yentl Pasta - Linkou,4.5,Guishan District,4,Taoyuan,italian
-Orchard Cafe - Orchard Park,3.9,Dayuan District,112,Taoyuan,international
-Chiuan Jia Fu Hakka Cuisine Restaurant,4.6,Zhongli District,8,Taoyuan,asian
-Chiuan Jia Fu Hakka Cuisine Restaurant,4.6,Zhongli District,8,Taoyuan,taiwanese
-Yulan Huoyu Restaurant,4,Longtan District,2,Taoyuan,chinese
-Yulan Huoyu Restaurant,4,Longtan District,2,Taoyuan,seafoodopen
-Yulan Huoyu Restaurant,4,Longtan District,2,Taoyuan,now
-Lao Di Fang Restaurant,4.5,Longtan District,2,Taoyuan,asian
-Lao Di Fang Restaurant,4.5,Longtan District,2,Taoyuan,taiwanese
-Tina Kitchen,3.8,Bade District,11,Taoyuan,fusion
-Green Herb Cuisine,5,Taoyuan District,2,Taoyuan,international
-Green Herb Cuisine,5,Taoyuan District,2,Taoyuan,fusionopen
-Green Herb Cuisine,5,Taoyuan District,2,Taoyuan,nowmenu
-Little Mongolian Taoyuan,4,Taoyuan District,107,Taoyuan,chineseopens
-Little Mongolian Taoyuan,4,Taoyuan District,107,Taoyuan,in
-Little Mongolian Taoyuan,4,Taoyuan District,107,Taoyuan,8
-Little Mongolian Taoyuan,4,Taoyuan District,107,Taoyuan,min
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Taoyuan,mexican
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Taoyuan,chineseclosed
-Red Barn BBQ Kitchen,4.2,Luzhu District,5,Taoyuan,now
-Back Street Office,4.2,Daxi District,5,Taoyuan,cafe
-Frank's Texas Bbq,4.1,Daxi District,10,Taoyuan,american
-Frank's Texas Bbq,4.1,Daxi District,10,Taoyuan,barbecueopens
-Frank's Texas Bbq,4.1,Daxi District,10,Taoyuan,in
-Frank's Texas Bbq,4.1,Daxi District,10,Taoyuan,8
-Frank's Texas Bbq,4.1,Daxi District,10,Taoyuan,min
-Lifestyle Book Store,4.6,Pingzhen District,7,Taoyuan,cafe
-Stanley’s Steakhouse,4,Zhongli District,1,Taoyuan,steakhouse
-Nan Bei He Noodles Diner,4,Yangmei District,7,Taoyuan,asian
-The Black Apartment Coffee and Art Gallery,4.7,Yangmei District,7,Taoyuan,italian
-The Black Apartment Coffee and Art Gallery,4.7,Yangmei District,7,Taoyuan,american
-Dim Sum Master - Ba De/Guang Feng,3.1,Bade District,7,Taoyuan,asian
-A Pi Po Herb Stew Spare Rib,4,Yangmei District,3,Taoyuan,asian
-A Pi Po Herb Stew Spare Rib,4,Yangmei District,3,Taoyuan,taiwanese
-Wulao Zhongzheng,4.2,Taoyuan District,60,Taoyuan,asian
-Wulao Zhongzheng,4.2,Taoyuan District,60,Taoyuan,taiwanese
-Ba Fung Hakka Restaurant,3.5,Yangmei District,13,Taoyuan,asian
-Ba Fung Hakka Restaurant,3.5,Yangmei District,13,Taoyuan,taiwanese
-Yi Fan Di Sukiyaki,4.2,Taoyuan District,23,Taoyuan,japanese
-Monet Coffee-Yong An,4.5,Xinwu District,2,Taoyuan,cafe
-Monet Coffee-Yong An,4.5,Xinwu District,2,Taoyuan,fast
-Monet Coffee-Yong An,4.5,Xinwu District,2,Taoyuan,food
-Wonder Garden,4.6,Pingzhen District,7,Taoyuan,chinese
-Lao Sichuan Spicy Hot Pot,4.1,Taoyuan District,43,Taoyuan,chinese
-Lao Sichuan Spicy Hot Pot,4.1,Taoyuan District,43,Taoyuan,asian
-Momo Paradise Zhongli Dajiang,3.7,Zhongli District,54,Taoyuan,open
-Momo Paradise Zhongli Dajiang,3.7,Zhongli District,54,Taoyuan,now
-Lanting Moon,5,Longtan District,1,Taoyuan,chinese
-Lanting Moon,5,Longtan District,1,Taoyuan,contemporary
-Ming Shi Fu Seafood,4.3,Dayuan District,7,Taoyuan,seafood
-Pizza Rock Taiwan - Taoyuan Branch,4.8,Taoyuan District,6,Taoyuan,italian
-Pizza Rock Taiwan - Taoyuan Branch,4.8,Taoyuan District,6,Taoyuan,american
-Sun Dong Bao Niu Pai   Zhong Li Jian Xing,3.6,Zhongli District,8,Taoyuan,steakhouse
-Sun Dong Bao Niu Pai   Zhong Li Jian Xing,3.6,Zhongli District,8,Taoyuan,asian
-Ate Marita Cold Noodle House,5,Zhongli District,6,Taoyuan,filipino
-Ate Marita Cold Noodle House,5,Zhongli District,6,Taoyuan,asian
-Green Breeze Prairie,3.8,Pingzhen District,12,Taoyuan,fusion
-Yakiyan O-NiKU - Taoyuan Tong Ling,4.6,Taoyuan District,67,Taoyuan,asian
+rest_name,cuisine,ratings,location,num_reviews,city
+Umeko Restaurant,"Chinese, Japanese",4.5,Zhongshan,635,Taipei
+食令Shabu,"Seafood, Asian",4.9,Xinyi,1374,Taipei
+Din Tai Fung (Xinyi 1),Taiwanese,4.5,Xinyi,4722,Taipei
+A Point Steak & Bar,"Steakhouse, Diner",4.9,Xinyi,467,Taipei
+Shin Yeh Taiwanese Cuisine-Original Restaurant,"Chinese, Asian",4.2,Zhongshan,686,Taipei
+Formosa Restaurant,"Chinese, Asian",4.9,Da'an,169,Taipei
+Mosun Teppanyaki,"Southwestern, Asian",4.9,Da'an,831,Taipei
+Host Shabu,"Seafood, Asian",4.8,Xinyi,2441,Taipei
+Yang Shin Vegetarian Restaurant,"Cantonese, Taiwanese",4.4,Zhongshan,2431,Taipei
+Hangzhou Xiaolong Bao,"Chinese, Asian",4.2,Da'an,806,Taipei
+Umeko Japanese Unagi House,"Japanese, Sushi",4.8,Taipei,360,Taipei
+Fuda Dumpling,"Chinese, Asian",4.4,Zhongshan,363,Taipei
+Din Tai Fung (Shinkong Mitsukoshi),"Asian, Taiwanese",4.4,Zhongshan,739,Taipei
+Din Tai Fung (Zhongzheng),"Chinese, Asian",4.4,Zhongzheng,4914,Taipei
+Shang Palace,"Chinese, Asian",4.8,Da'an,449,Taipei
+Le Mian Wu Japanese Restaurant,Japanese,4.8,Wanhua,377,Taipei
+Palais de Chine Hotel -Le Palais,"Chinese, Asian",4.5,Datong,928,Taipei
+Sihai Soy Milk,"Chinese, Asian",4.3,Datong,150,Taipei
+Yen Chinese Restaurant,"Chinese, Asian",4.7,Xinyi,1415,Taipei
+Yangtse River,"Chinese, Asian",4.9,Da'an,348,Taipei
+Modern Toilet Restaurant,Asian,4.7,Shilin,575,Taipei
+Nowhere Taipei,"Mexican, Bar",5,Taipei,65,Taipei
+Matsusaka Tei,"Japanese, Barbecue",4.9,Xinyi,359,Taipei
+Lao Shan Dong Noodles Made by Hand,"Chinese, Asian",4.1,Wanhua,61,Taipei
+Le Blanc,"American, Steakhouse",4.8,Da'an,2583,Taipei
+Din Tai Fung (Tienmu),"Chinese, Asian",4.5,Shilin,349,Taipei
+CÉ LA VI Taipei,"Bar, Korean",4.5,Xinyi,68,Taipei
+Din Tai Fung (Fuxing Branch),"Chinese, Asian",4.4,Da'an,1119,Taipei
+W XYZ Bar,"Bars & Pubs, American",4.9,Zhongshan,560,Taipei
+Shin Yeh Japanese Buffet - Guancian Restaurant,"Japanese, Seafood",4.4,Zhongzheng,1753,Taipei
+Kiki Restaurant,"Chinese, Asian",4.4,Da'an,440,Taipei
+Meat Boss Shabu Shabu Hotpot - Dunhua South,"Chinese, Asian",4.8,Da'an,407,Taipei
+Balle Balle Indian Restaurant,"Indian, Asian",4.6,Songshan,689,Taipei
+Texas Roadhouse,"American, Steakhouse",4.3,Xinyi,892,Taipei
+Le Palais Restaurant,"Chinese, Asian",4.4,Datong,25,Taipei
+Jin Feng Lu Rou Fan,Chinese,4.2,Zhongzheng,867,Taipei
+Wulao,"Chinese, Asian",4.4,Zhongshan,778,Taipei
+WOOBAR,"Bar, International",4.8,Xinyi,979,Taipei
+Shi Ling Shabu,"Seafood, Asian",4.9,Zhongshan,162,Taipei
+Le Mian Wu,"Japanese, Asian",4.9,Da'an,469,Taipei
+Cafe - Grand Hyatt Taipei,"Chinese, International",4.2,Xinyi,1659,Taipei
+Yen Bar,"American, Bar",4.9,Xinyi,401,Taipei
+Diamond Tony's 101 Authentic Italian Cuisine,"Italian, Bar",4.2,Xinyi,2228,Taipei
+Liu Shandong Beef Noodles,Chinese,4.1,Zhongzheng,192,Taipei
+Prime One Steak House,Steakhouse,4.4,Zhongzheng,292,Taipei
+BravoCafe Taipei No.3,"Bars & Pubs, Italian",4.8,Zhongshan,520,Taipei
+Fuhong Beef Noodles,"Chinese, Asian",4.2,Wanhua,177,Taipei
+Moonlight Cantonese Restaurant - COURTYARD TAIPEI,"Chinese, Asian",4.8,Nangang,411,Taipei
+No 168 Prime Steakhouse,"Steakhouse, European",4.5,Zhongshan,944,Taipei
+Spice Market,"Seafood, Asian",4.3,Xinyi,993,Taipei
+Marshal Zen Garden,"Chinese, International",4.1,Beitou,302,Taipei
+ikki New Japanese Restaurant(Taipei Hengyan),"Japanese, Asian",4.4,Zhongzheng,656,Taipei
+Taïrroir,"French, European",4.4,Zhongshan,285,Taipei
+Fresh & Aged Italian Steak House,"Steakhouse, Fusion",4.4,Neihu,447,Taipei
+Addiction Aquatic Development,"Japanese, Seafood",4.2,Zhongshan,1384,Taipei
+ShinYeh Japanese Buffet - Jhongshan Restaurant,"Japanese, Sushi",4.3,Zhongshan,2049,Taipei
+A Cheng Goose,"Chinese, Asian",4.5,Zhongshan,149,Taipei
+Chamonix Teppanyaki - Taipei Zhongshan N.Branch,"Asian, Soups",4.5,Zhongshan,1165,Taipei
+Rakuken Taipei,"Japanese, Steakhouse",4.8,Da'an,345,Taipei
+Grand Hilai,"Chinese, Japanese",4.3,Da'an,6461,Taipei
+Lin Dong Fang Niu Rou Mian,"Chinese, Asian",4.2,Zhongshan,581,Taipei
+The Dragon - Sheraton Grand Taipei Hotel,"Chinese, Asian",4.5,Zhongzheng,279,Taipei
+Golden Formosa,Taiwanese,4.3,Shilin,77,Taipei
+Top One Pot - Xinyi,"Chinese, Asian",4.4,Da'an,760,Taipei
+Osteria By Vincent,"Chinese, American",4.8,Da'an,263,Taipei
+Mediterranean Steak House At The Riviera Taipei,"Steakhouse, European",4.6,Zhongshan,1316,Taipei
+L'Atelier De Joël Robuchon,"French, European",4.3,Xinyi,400,Taipei
+Yi Jia Zi,"Asian, Taiwanese",4.5,Wanhua,20,Taipei
+Silks Palace,"Asian, Cantonese",4,Shilin,318,Taipei
+Taiwanese Cuisine & Champagne at Fujin Tree,"Chinese, Asian",4.1,Songshan,56,Taipei
+Irodori Grand Hyatt Taipei,"Japanese, Sushi",4.2,Xinyi,582,Taipei
+Ya Ge,"Chinese, Asian",4.3,Songshan,135,Taipei
+Danny’s Steakhouse,Steakhouse,4.3,Zhongshan,1635,Taipei
+Modern Toilet Theme Restaurant - Taipei Ximending,Asian,3.4,Wanhua,534,Taipei
+Tim Ho Wan - HOYII Main Station,"Chinese, Asian",4,Zhongzheng,780,Taipei
+King of Soy Milk,"Fast Food, Asian",4.2,Zhongshan,273,Taipei
+Mayur Indian Kitchen MIK-1,"Indian, Pakistani",4.7,Xinyi,1418,Taipei
+Tha Top,"Chinese, Asian",4.1,Shilin,155,Taipei
+Beef Noodle of the King,"Chinese, Asian",4.3,Zhongzheng,218,Taipei
+Rice & Shine Restaurant,"Chinese, Taiwanese",4.5,Datong,89,Taipei
+Rilakkuma CafE,"American, Cafe",4.3,Da'an,2685,Taipei
+Bencotto,Italian,4.4,Songshan,346,Taipei
+Mayur Indian Kitchen,Indian,4.6,Zhongshan,323,Taipei
+Haidilao,"Chinese, Asian",4.3,Xinyi,230,Taipei
+Ichiran Ramen - Taiwan Taipei Shop,"Japanese, Fast Food",4.1,Xinyi,160,Taipei
+Pearl River,"Chinese, Asian",4.6,Da'an,227,Taipei
+Ruth's Chris Steak House,"American, Steakhouse",4.5,Songshan,478,Taipei
+Sunrise all day dinning - COURTYARD TAIPEI,"European, Asian",4.4,Nangang,1069,Taipei
+Shin Yeh Shiao Ju-Nangang Restaurant,"Chinese, Asian",4.2,Nangang,45,Taipei
+Yu Shan Ge,"Chinese, Asian",4.4,Zhongzheng,375,Taipei
+ShinYeh Japanese Buffet - Jiankang Restaurant,"Japanese, Sushi",4.3,Songshan,2168,Taipei
+Lawry's The Prime Rib,"American, Steakhouse",4.4,Xinyi,1983,Taipei
+Din Tai Fung (Xinyi 2),"Chinese, Asian",4.5,Xinyi,184,Taipei
+Yakitori - Songjiang,"Japanese, Bar",4.4,Zhongshan,457,Taipei
+T.G.I.Friday's Hsi-Men Restaurant (Ximen Dian),"American, Bar",4.2,Wanhua,519,Taipei
+Fruitful Food,"Chinese, Asian",4.4,Da'an,324,Taipei
+Bravo Beer - Taipei Civic Store,"Italian, American",4.8,Songshan,536,Taipei
+"M.O. Bar at Mandarin Oriental, Taipei","Bar, Wine Bar",4.8,Songshan,188,Taipei
+Mayur Indian Kitchen MIK-2 - Minsheng E. Road,"Indian, Asian",4.6,Songshan,782,Taipei
+Inparadise 饗饗,"French, Chinese",4.3,Xinyi,155,Taipei
+Tao-Yuan-Street Beef Noodle Shop,Taiwanese,4.1,Zhongzheng,259,Taipei
+Ximen Jinfeng,"Chinese, Asian",4.2,Wanhua,87,Taipei
+Le Cafe - Hotel Royal-Nikko Taipei,NA,4.3,Zhongshan,1844,Taipei
+Jingding Xiaoguan,"Chinese, Asian",4.3,Songshan,248,Taipei
+Tokiya (Beitou Guangming Branch),Asian,4.2,Beitou,173,Taipei
+Yong Kang Beef Noodles,"Chinese, Asian",4,Da'an,851,Taipei
+Zhouji Rouzhou,"Chinese, Asian",4.1,Wanhua,172,Taipei
+Café Un Deux Trois,"Steakhouse, International",4.4,Songshan,716,Taipei
+Top One Pot,"Chinese, Asian",4.3,Zhongshan,677,Taipei
+Merlot Cafe & Bistro,"Italian, European",4.6,Zhongshan,394,Taipei
+La Farfalla - Humble House Taipei,Italian,4.2,Xinyi,2983,Taipei
+Latest Recipe - Le Meridien Taipei,Asian,4.1,Xinyi,2535,Taipei
+Sunway Siokudo,"Japanese, Sushi",4.1,Wanhua,134,Taipei
+Chousan,"Asian, Taiwanese",4.5,Shilin,51,Taipei
+Hangzhou Xiaolong Tangbao,"Chinese, Asian",4.1,Songshan,175,Taipei
+The Guest House - Sheraton Grande Taipei Hotel,"Chinese, Asian",4.2,Zhongzheng,305,Taipei
+Ruth's Chris Steak House,Steakhouse,4.5,Zhongshan,265,Taipei
+Gustoso Italian Restaurant- Madison Taipei Hotel,"Italian, Steakhouse",4.5,Da'an,295,Taipei
+Toutouan Kaiseki Restaurant,Japanese,4.5,Da'an,525,Taipei
+Chamonix Teppanyaki (Taipei Nanchang Branch),NA,4.4,Zhongzheng,526,Taipei
+Wang Steak (Zhongshan N. Branch),Steakhouse,4.2,Zhongshan,395,Taipei
+Rakumenya-Nangang Shop,Japanese,4.7,Nangang,387,Taipei
+Qiao Zhi Wei Handmade Dumplings,"Chinese, Asian",4.4,Zhongzheng,134,Taipei
+Qi Yan No.1 Sichuan Cuisine,Chinese,4.6,Beitou,54,Taipei
+Si Fang a Jiu Minced Pork Rice,"Chinese, Asian",4.3,Wanhua,92,Taipei
+Gusto,"Italian, Pizza",4.7,Zhongzheng,103,Taipei
+AISIN GIORO Restaurant,"Chinese, Seafood",4.5,Da'an,821,Taipei
+Thai Bazaar,"Asian, Thai",4.1,Xinyi,250,Taipei
+Just Italian Restaurant,"Italian, Pizza",4.2,Da'an,274,Taipei
+Lan Jia Steamed Sandwich Shop,"Chinese, Fast Food",4.3,Zhongzheng,227,Taipei
+Kitchen 12-Sheraton Grande Taipei Hotel,"Chinese, Asian",4,Zhongzheng,3588,Taipei
+Golden Phoenix Hall Cantonese Cuisine,"Chinese, Asian",4.2,Zhongshan,669,Taipei
+Mala Yuanyang Hotpot,"Chinese, Asian",4.3,Wanhua,242,Taipei
+Metro Buffet - Caesar Metro Taipei,"Chinese, Japanese",3.9,Wanhua,179,Taipei
+Little Mongolian Taipei Station(hotpot),"Chinese, Asian",4.1,Zhongzheng,329,Taipei
+Top Cap Steakhouse,"Steakhouse, European",4.3,Xinyi,499,Taipei
+"Mayur Indian Kitchen Vegetarian restaurant, MIK-3",Indian,4.5,Zhongshan,344,Taipei
+Mala Hotpot,"Chinese, Asian",4.3,Xinyi,130,Taipei
+Niang Zi Korean Food,"Barbecue, Asian",4.2,Songshan,1268,Taipei
+Danny & Company,Steakhouse,4.5,Da'an,348,Taipei
+Tokiya (Taipei Chongqing S. Branch),NA,4.2,Zhongzheng,320,Taipei
+Ai Zai Cai Ru Rou Fan,Chinese,4.3,Beitou,55,Taipei
+Rainbow Terrace the Atrium,"Chinese, International",4.2,Da'an,495,Taipei
+Sukhothai - Sheraton Grand Taipei Hotel,"Asian, Thai",4.2,Zhongzheng,389,Taipei
+Shihlin Kitchen - Renaissance Taipei Shihlin Hotel,"Italian, Seafood",3.9,Shilin,332,Taipei
+Dian Shui Lou - Huaining,"Chinese, Asian",4,Zhongzheng,537,Taipei
+Shuang Yue Food,"Chinese, Asian",4.4,Zhongzheng,65,Taipei
+Da Antonio Ristorante Italiano,Italian,4.1,Xinyi,407,Taipei
+Steak Inn,"Steakhouse, Seafood",4.4,Da'an,506,Taipei
+French Windows - British TeaHouse,"Italian, European",4.6,Xinyi,360,Taipei
+Saffron Fine Indian Cuisine,"Indian, Asian",4.6,Shilin,243,Taipei
+Chamonix Teppanaki - Zhongxiao  E. Rd Branch,NA,4.5,Da'an,362,Taipei
+Antoine Room-Sheraton Grande Taipei Hotel,"French, European",4.5,Zhongzheng,258,Taipei
+Top One Pot JiLin,"Chinese, Asian",4.3,Zhongshan,379,Taipei
+Manlai Hot Spring Ramen,"Japanese, Asian",3.7,Beitou,121,Taipei
+Nook Restaurant,"Chinese, American",4.5,Beitou,39,Taipei
+Thai Town Cuisine - Taipei Main Station Mitsukoshi Store,Thai,4.3,Zhongzheng,150,Taipei
+Hestia Tapas Bar,"Mediterranean, European",4.3,Songshan,248,Taipei
+Hooters Taipei,"Bars & Pubs, American",3.9,Songshan,110,Taipei
+Taoran Ting Restaurant,"Chinese, Asian",4.2,Songshan,85,Taipei
+Checkers,"Chinese, Asian",3.9,Zhongzheng,1990,Taipei
+Beitou Kagaya,"Japanese, Asian",4,Beitou,65,Taipei
+Da Dao Cheng Braised Pork On Rice,"Asian, Taiwanese",4.7,Datong,27,Taipei
+The Jade Lounge,NA,4.9,Songshan,120,Taipei
+Driftwood Ximending,"Bars & Pubs, Bar",4.6,Wanhua,42,Taipei
+Marco Polo,"Italian, European",4.5,Da'an,218,Taipei
+ikki (Taipei Dunhua N. Branch),"Japanese, Asian",4.3,Songshan,382,Taipei
+Wired Chaya (Neihu),"Chinese, JapaneseOpen now",4.3,Neihu,47,Taipei
+Yakitori - Da Zhi,"Japanese, Asian",4.4,Zhongshan,328,Taipei
+KiKi Eslite XinYi Branch,"Chinese, Szechuan",4.2,Xinyi,341,Taipei
+Eatogether - Q Square,Asian,4.2,Datong,104,Taipei
+TGI Fridays,"Bar, Pub",4.2,Zhongzheng,437,Taipei
+Yonghe Century Soy Milk King,Taiwanese,4.1,Datong,138,Taipei
+Sushiro - Taiwan Flagship Restaurant,"Japanese, Sushi",4.2,Zhongzheng,62,Taipei
+Very Thai Restaurant - Nangang CTBC Financial Park Store,Thai,4.3,Nangang,132,Taipei
+INJOY Seafood HotPot,"Seafood, Asian",4.5,Da'an,286,Taipei
+Li He Fa Glutinous Oil Rice & Rice Cake Shop,Asian,4.4,Datong,80,Taipei
+TGI Friday's,"American, Bar",4.2,Xinyi,942,Taipei
+Tasty Steak (Taipei Roosevelt Branch),"American, Steakhouse",4.4,Da'an,213,Taipei
+Moksha indian restaurant,"Indian, Asian",4.7,Shilin,70,Taipei
+Chilliesine Indian Restaurant - Hsinchu,Indian,4.8,East,159,Hsinchu
+Din Tai Fung (East),"Taiwanese, Soups",4.5,East,251,Hsinchu
+Miao Kou Duck Rice,Taiwanese,4.1,North,132,Hsinchu
+The Promenade,Asian,4.1,East,503,Hsinchu
+Eatogether Hsinchu,NA,4.3,East,133,Hsinchu
+A Cut Steakhouse,Steakhouse,4.1,East,261,Hsinchu
+Fleur Lis-Recipe House,"Asian, Fusion",3.8,East,730,Hsinchu
+Stanley's Steak House,"American, Steakhouse",4.4,East,42,Hsinchu
+Wang Steak (Hsinchu Beida Branch),NA,4.4,East,207,Hsinchu
+Si Chuan Duan Chun Zhen Beef Noodles,"Chinese, Asian",4.2,East,216,Hsinchu
+Buono Bella Italian Restaurant,"Italian, Pizza",4.2,East,62,Hsinchu
+Nakayama Restaurant,"Japanese, Sushi",4,East,80,Hsinchu
+Table Joe Plus,American,4.3,East,80,Hsinchu
+Pizza Rock Hsinchu,"Italian, American",4.5,East,59,Hsinchu
+The BBQ House,"Italian, American",4.2,East,61,Hsinchu
+Le Cafe,Cafe,4,East,471,Hsinchu
+Chuan Jia Hakka Restaurant,Chinese,4.2,East,28,Hsinchu
+Royal Teppanyaki,Japanese,4.4,East,41,Hsinchu
+the Diner-HsinChu,Diner,4.2,East,44,Hsinchu
+Cafe Grazie,"Italian, Pizza",4,East,57,Hsinchu
+Second Floor Cafe - Hsinchu,"American, Cafe",4.3,East,44,Hsinchu
+Ho Chu Yuan,Chinese,4.3,North,10,Hsinchu
+Hsin Sheng Ti Seafood Restaurant,Seafood,4.1,Xiangshan,NA,Hsinchu
+Old Fish Bay,"Chinese, American",4,North,NA,Hsinchu
+CHAR Hsinchu,"American, Steakhouse",4.3,East,15,Hsinchu
+Liu Jia Rice With Minced Pork Sauce,"Asian, Taiwanese",4.1,North,89,Hsinchu
+LEBLEDOR - Hsinchu Station Outlet,"American, Brew Pub",4.3,East,31,Hsinchu
+Grassroots Kitchen,NA,3.9,Xiangshan,31,Hsinchu
+Thai Town Cuisine - Hsinchu Sogo Store,Thai,4.3,East,78,Hsinchu
+Fu Yuan Peanut Butter Co. Ltd,NA,4.3,East,44,Hsinchu
+Toscanini Italian Cuisine,NA,4.1,NA,49,Hsinchu
+Ying Wang Rou Yuan,"Asian, Taiwanese",4.4,Xiangshan,NA,Hsinchu
+Yuppie Restaurant,"Chinese, Seafood",3.4,East,18,Hsinchu
+Luau Pizza,"Italian, European",4.2,Xiangshan,25,Hsinchu
+Ming Court Restaurant,Chinese,4,East,63,Hsinchu
+12HOTPOT - Hsinchu Linsen,NA,4.1,East,44,Hsinchu
+Tai Wei Thai Restaurant,ThaiClosed now,4.3,Xiangshan,NA,Hsinchu
+Vzen Vegetarian Restaurant,"Italian, Indian",5,East,10,Hsinchu
+Yama Japanese Restaurant,Japanese,4,East,33,Hsinchu
+Friendy Pizzeria,"Italian, Pizza",4.3,East,33,Hsinchu
+Thai Town Cuisine- Hsinchu Big City Store,Thai,4.1,East,85,Hsinchu
+Xi Le,"Japanese, Seafood",4.4,East,13,Hsinchu
+Nong Wei Xiao Chu,Chinese,4,Xiangshan,NA,Hsinchu
+Shako Restaurant,"Italian, Chinese",5,East,NA,Hsinchu
+Tou Kai Jo Jou Japanese Cuisine,"Japanese, Sushi",3.9,East,11,Hsinchu
+Bhabhi's India Restaurant,"Indian, Contemporary",4.3,East,10,Hsinchu
+Yuan Wei Simmered Soup House,"Asian, Taiwanese",4.1,East,43,Hsinchu
+Two Moon Hotpot - Hsinchu,"Seafood, AsianClosed now",5,East,NA,Hsinchu
+Paul Hsinchu Chuchen,Cafe,4,East,48,Hsinchu
+Yi Bai Zhong Wei Dao,NA,4.1,North,48,Hsinchu
+Eisen Bistro,Italian,4.2,East,24,Hsinchu
+MAS India Foods,Indian,4.8,East,NA,Hsinchu
+Shi Jia Fish Ball,Fusion,4.4,East,60,Hsinchu
+Little Mongolian Hsinchu,Chinese,3.9,East,165,Hsinchu
+Shih Liu Chu Japanese Cuisine,"Japanese, Central Asian",4.4,East,21,Hsinchu
+Kai Fun Together - Big City Store,Chinese,4.3,East,37,Hsinchu
+Duck Xu - Beimen,"Asian, Taiwanese",3.8,North,82,Hsinchu
+Jia Mei Seafood Restaurant,Seafood,5,Xiangshan,NA,Hsinchu
+Thai Town Cuisine- Hsinchu Science Park Store,Thai,4,East,44,Hsinchu
+Lago Bistro,"Italian, Latin",5,NA,NA,Hsinchu
+Jr Cafe Restaurant,Cafe,4.1,East,NA,Hsinchu
+ABV Bar & Kitchen,"Japanese, Seafood",5,East,NA,Hsinchu
+The Park Restaurant and Pub,"Taiwanese, South American",4.6,East,16,Hsinchu
+Choya (in Lakshore Hotel complex),NA,3.9,East,44,Hsinchu
+Thai World Thai Cuisine,"Asian, ThaiClosed now",4.4,East,NA,Hsinchu
+Shian Yeou Hsinchu Jingguo,Chinese,3.7,North,54,Hsinchu
+Tasty Steak (Hsinchu Linsen Branch),Menu,4,East,NA,Hsinchu
+Jin Yun Hai Chan,"Chinese, Seafood",3.7,North,NA,Hsinchu
+Zhu Shan Noodle,Asian,4.1,North,29,Hsinchu
+La Dolce Vita,"Italian, Pizza",4.9,East,NA,Hsinchu
+A Cheng Hao Rice Noodles,"Asian, Taiwanese",3.7,Xiangshan,32,Hsinchu
+Xi Zi Beef Noodles,Asian,4.2,East,52,Hsinchu
+The Spice Shop,"Indian, Asian",3.9,East,32,Hsinchu
+Hai Rei Foods - Main Store,"Asian, Taiwanese",4.1,East,30,Hsinchu
+Boboli,"Italian, Brew Pub",4.5,East,NA,Hsinchu
+Tokiya (Hsinchu Beida Branch),NA,3.9,North,80,Hsinchu
+Little India Restaurant,NA,4.9,East,18,Hsinchu
+Gyu-Kaku Yakiniku Restaurant - Xinzhu Dayuanbai Shop,Central Asian,3.7,East,NA,Hsinchu
+Beef Steakhouse,Steakhouse,4.5,East,NA,Hsinchu
+Haidilao Hsinchu,"Chinese, Seafood",4.2,NA,32,Hsinchu
+Stone Yakiniku Hsinchu,Japanese,3.3,East,NA,Hsinchu
+iBeer Craft Beer Store,American,4.4,East,16,Hsinchu
+Xinghuwei Zhujiaofan,"Asian, Taiwanese",3.9,East,17,Hsinchu
+Fish 180 - Hsinchu Big CIty,Japanese,3.7,East,NA,Hsinchu
+Da Cun Wu Chuan Shao Ju Jiu Wu-Hsinchu,"Japanese, Barbecue",4.7,North,NA,Hsinchu
+Joy Palace  - Lakeshore Hotel Hsinchu,"Chinese, Cantonese",4.1,East,19,Hsinchu
+Pizza Cafe,American,4.3,North,13,Hsinchu
+Lucky Da Dhaba,Indian,3.3,East,NA,Hsinchu
+Bellini Pasta Pasta - Hsinchu Jucheng Branch,"Pizza, NeapolitanClosed now",3.8,East,15,Hsinchu
+Er Cun Sha Mian,Chinese,4.4,East,NA,Hsinchu
+Ginza Anzu Tonkatsu Hsinchu Sogo,Japanese,4.3,East,NA,Hsinchu
+Wen Jia Beef Noodle Restaurant,ChineseClosed now,4,East,NA,Hsinchu
+Thai Town Cuisine - Hsinchu Guanxin Store,Thai,4.4,East,11,Hsinchu
+1010 Hunan Cuisine - Hsinchu Sogo Store,Chinese,4.5,East,26,Hsinchu
+Zhuan Jiao 726 Shou Gong Coffee,Cafe,5,East,NA,Hsinchu
+Shanfa Food,"Japanese, Sushi",4.5,North,NA,Hsinchu
+Ke Rou Shi Guo - Hsinchu Jinshan,"Seafood, Asian",4.5,East,NA,Hsinchu
+Gaucho Restaurant,"Steakhouse, Barbecue",4,East,NA,Hsinchu
+Lago Bistro - Hua Da Xiao You Hui Guan,"Italian, AmericanClosed today",5,Xiangshan,NA,Hsinchu
+Huang Cheng Cantonese Roast Deli,NA,4.3,Xiangshan,NA,Hsinchu
+Garden Party,Closed now,4.7,East,NA,Hsinchu
+Chai Shao Yao Kao,Closed today,4.3,Xiangshan,NA,Hsinchu
+Mo Nei Western Restaurant,Fusion,5,East,NA,Hsinchu
+HOVII Cafe,"Italian, Cafe",4.2,North,NA,Hsinchu
+Zebra Salsa Dining Bar,NA,4,East,18,Hsinchu
+White Beard Steak - Hsinchu,NA,4.8,East,NA,Hsinchu
+Han Zhen Guan,"Asian, Korean",4,East,NA,Hsinchu
+Hsinchu Hei Mao Buns,NA,3.6,North,36,Hsinchu
+JuanToufu,NA,3.6,East,38,Hsinchu
+Zhu Mei Cantonese Homemade Food,Closed now,3.8,East,12,Hsinchu
+Aroma Thai,Thai,3.9,East,18,Hsinchu
+Olive Tree Kitchen,"Italian, Greek",4.3,East,11,Hsinchu
+Wellyen 1999,"Asian, Street Food",4.5,North,NA,Hsinchu
+Xin Nan Xing Seafood Restaurant,Seafood,4,North,NA,Hsinchu
+Jess 161 beer bar,"Bars & Pubs, Brew Pub",4,East,NA,Hsinchu
+Rice Bar - Hsinchu,Chinese,3.6,East,14,Hsinchu
+Lucky Da Dhaba Indian Cuisine,Indian,5,East,NA,Hsinchu
+NARA Thai Cuisine,Thai,4.5,East,NA,Hsinchu
+Pane e Vino,ItalianClosed now,4.2,East,11,Hsinchu
+Tudo Bem Bistro,"Brazilian, Pizza",4.7,East,NA,Hsinchu
+Chun Shui Tang (HsinChu Sogo),Cafe,4,East,16,Hsinchu
+Chien Tu Shabu Shabu - Hsinchu Zhongzheng,"Japanese, Seafood",3.6,North,NA,Hsinchu
+Ocean Bar,Seafood,4.3,East,12,Hsinchu
+Guo Jia Spring Roll,"Asian, Taiwanese",4,North,53,Hsinchu
+Niko's Pizzaria NY Style,Pizza,4.5,East,NA,Hsinchu
+Nan Liao Yang Chun Mian,"Chinese, Asian",4.5,North,NA,Hsinchu
+Zhuji - Yuan Dong Bai Huo Hsinchu,"Chinese, Asian",4,East,NA,Hsinchu
+Lane 18 Park Lamb noodles Zhongshan,"Asian, Taiwanese",3.7,North,10,Hsinchu
+Xin Zhu Shi Di Yi Jia Grass Jelly Shop,NA,4.1,East,10,Hsinchu
+New Heaven Restaurant,Closed now,4.5,East,NA,Hsinchu
+"Go Eat Tapas, Dining Bar",Spanish,4,East,27,Hsinchu
+Tekka Steak,Steakhouse,3.7,East,NA,Hsinchu
+Fish Lamb Small Collection,"Chinese, Seafood",4,East,NA,Hsinchu
+Futago,NA,4.2,East,12,Hsinchu
+Chai Jiu Noodle House,Asian,3.8,East,17,Hsinchu
+Zhou Jia Mochi,"Asian, Taiwanese",4.2,Xiangshan,15,Hsinchu
+WOW Restaurant & Bar,American,4,NA,12,Hsinchu
+Lao Shenyang Suancai Bairou Guo,Chinese,4.5,East,NA,Hsinchu
+Yingzhen Garden Restaurant,Chinese,4.1,East,27,Hsinchu
+RT Baker House,NA,4.1,East,42,Hsinchu
+Good Porridge Cantonese Porridge,ChineseClosed now,4.5,East,NA,Hsinchu
+Maps,"French, American",4.3,East,NA,Hsinchu
+Seed House,Japanese,4.7,East,NA,Hsinchu
+Siam More,ThaiMenu,4.2,East,NA,Hsinchu
+Ti Hu Wei Jin Pai Zhu Jiao Fan - Hsinchu Zhongzheng,NA,3.5,North,NA,Hsinchu
+YAYOI - Big CIty Hsinchu,Japanese,4.2,East,NA,Hsinchu
+Zhong Da Dumplings & Pot Sticker,"Asian, TaiwaneseClosed now",4,East,15,Hsinchu
+Shao Jing Zhu Shi Hui She - Hsinchu Big City,Japanese,3.8,East,NA,Hsinchu
+Wong's Dunlu Roufan,Chinese,4.1,Xiangshan,NA,Hsinchu
+Kiln Oven Ham Workshop - Hsinchu Branch,"American, Deli",4.1,East,11,Hsinchu
+Ten Kichi Ya - Big City,Menu,4,East,15,Hsinchu
+Cama Cafe - Hsinchu Ju Cheng Branch,Closed nowMenu,4.3,East,NA,Hsinchu
+Tongpan,NA,3.8,East,16,Hsinchu
+KaiYuan She Xiang Ji Pai,"Asian, Taiwanese",3.7,NA,NA,Hsinchu
+Zhang Xing Diao Xia Chang Zhi Te Ji Mala Chou Dou Fu,"Chinese, Seafood",3.5,NA,NA,Hsinchu
+Tokiya,NA,4.3,East,NA,Hsinchu
+Wu Ji Cong shu bing,"Chinese, Asian",4.1,NA,NA,Hsinchu
+Hongkong Da Lai Roast Meat,Steakhouse,4,East,10,Hsinchu
+Gujincheyong Zhongshu Restaurant,Chinese,5,NA,NA,Hsinchu
+Ceng Jia Noodle,Asian,4,East,28,Hsinchu
+Wo Jia Noodle Restaurant,Closed now,4,East,NA,Hsinchu
+Xi Da Fa Cheng Huang Bao,"Chinese, Asian",4.1,East,16,Hsinchu
+Mumu,Closed today,4.5,East,NA,Hsinchu
+LALA Kitchen (Hsinchu),NA,3.7,East,NA,Hsinchu
+Christine's Cake,NA,4.8,North,NA,Hsinchu
+Urban Tribe,Closed now,4.5,North,22,Hsinchu
+Little Mongolian - Hsinchu J.Piin Shopping Mall,"Chinese, Seafood",4,East,NA,Hsinchu
+Bei Men Fried Bowl Rice Cake,"Asian, Taiwanese",3.7,North,19,Hsinchu
+Zhu Ke Ye Guo Shu Shi,NA,4.5,East,NA,Hsinchu
+Donburi Hsinchu,Japanese,4,East,NA,Hsinchu
+Bazar Blanc,"Italian, French",3.9,East,NA,Hsinchu
+Xi Shi Shantou Food Diner,NA,3.9,North,21,Hsinchu
+Sichang,NA,4.4,North,NA,Hsinchu
+Mos Burger,Fast Food,4,East,20,Hsinchu
+Chuan Liu Dao Xiao Beef Noodle Restaurant,NA,3.5,East,NA,Hsinchu
+Fei Zai Long Non-Smoke Teppanyaki,Barbecue,3.9,East,27,Hsinchu
+Linjia Gongwan,"Asian, Taiwanese",3.3,North,NA,Hsinchu
+DPTEPANYAKY,"Chinese, Japanese",3.6,NA,NA,Hsinchu
+Sallowy,Italian,4,East,NA,Hsinchu
+Su Shi Lin Restaurant,Closed now,4.7,East,NA,Hsinchu
+Duck Zhen,"Chinese, Asian",4.3,Yancheng,205,Kaohsiung
+Gang Yuan Beef Noodles,"Chinese, Asian",4.3,Yancheng,393,Kaohsiung
+Harbour Buffet Restaurant-Grand Hi Lai Hotel,"Chinese, Seafood",4.3,Qianjin,2547,Kaohsiung
+Din Tai Fung Kaohsiung Store,"Chinese, Asian",4.3,Zuoying,347,Kaohsiung
+Croatian Kitchen,"Grill, Eastern European",5,Lingya,94,Kaohsiung
+crab's House,"Chinese, Seafood",4.2,Xinxing,77,Kaohsiung
+Yonghe Steamed Dumpling,"Chinese, Asian",4.2,Yancheng,155,Kaohsiung
+Yang Bao-Bao,"Asian, Taiwanese",4.3,Nanzi,103,Kaohsiung
+Chamonix Teppanyaki - Kaohsiung Wufu.Branch,Asian,4.5,Qianjin,408,Kaohsiung
+Wang Steak - Kaohsiung Zhongzheng,"Steakhouse, European",4.5,Xinxing,336,Kaohsiung
+Wok on the Park,"Steakhouse, Asian",4.1,Xinxing,341,Kaohsiung
+Old New Restaurant,"Chinese, Asian",4.3,Sanmin,75,Kaohsiung
+San Antonio French Restaurant,"French, European",4.3,Yancheng,381,Kaohsiung
+Ruth's Chris Steak House,"American, Steakhouse",4.6,Qianjin,113,Kaohsiung
+Uncle Bab Korea,"Barbecue, Asian",4.3,Sanmin,120,Kaohsiung
+Hi-Lai Kaohsiung Arena,"Seafood, Asian",4.3,Zuoying,5826,Kaohsiung
+Top Japanese Buffet,"Chinese, Seafood",4,Zuoying,1546,Kaohsiung
+Tripodking Qixian,Chinese,4.2,Xinxing,141,Kaohsiung
+Bottoms Up Kaohsiung,"International, Bar",4.3,Lingya,103,Kaohsiung
+ikki (Kaohsiung Dream Mall Branch),"Japanese, Asian",4.4,Qianzhen,469,Kaohsiung
+Cijin Sunset Bar,"Italian, American",4.6,Qijin,38,Kaohsiung
+Sunny Hills,NA,4.4,Yancheng,164,Kaohsiung
+Pasadena French Cuisine,"French, European",4.4,Sanmin,159,Kaohsiung
+Joes Mutton Diner,"Asian, Taiwanese",4.2,Gangshan,19,Kaohsiung
+Shantou Quancheng Shacha Hot Pot,Chinese,4,Xinxing,58,Kaohsiung
+Wulao Lingya,"Chinese, Asian",4.3,Qianzhen,174,Kaohsiung
+Ado Thailand Food - Kaohsiung Mingcheng,Thai,4.6,Zuoying,48,Kaohsiung
+Papaya Milk,NA,4.1,Xinxing,75,Kaohsiung
+Ukai-tei Kaohsiung,"French, Japanese",4.6,Qianzhen,23,Kaohsiung
+Steak House-The Grand Hi Lai Hotel,"American, Steakhouse",4.1,Qianjin,125,Kaohsiung
+Yuepin Restaurant,"Chinese, Asian",4.3,Xinxing,92,Kaohsiung
+Second Floor Cafe -  Kaohsiung,"Pizza, Cafe",4.4,Qianzhen,41,Kaohsiung
+The Lin - LV Senlin Baihui,"Chinese, Japanese",4.1,Gushan,223,Kaohsiung
+Tasty Steak (Kaohsiung Zhongshan Branch),Steakhouse,4.7,Qianjin,185,Kaohsiung
+Guo Mao Lai Lai Soy Milk Shop,"Asian, Taiwanese",4.3,Qianjin,72,Kaohsiung
+Tan Zuo Ma Li Grill & Japanese Restaurant,"Japanese, Barbecue",4.4,Gushan,287,Kaohsiung
+Cercle Buffet&Restaurant,"Asian, Diner",4.1,Lingya,390,Kaohsiung
+Qi Hou Fresh Raw Seafood,Seafood,4.1,Qijin,63,Kaohsiung
+Yakiyan (Kaohsiung Zhongshan),NA,4.4,NA,254,Kaohsiung
+Akaoni Steak,Steakhouse,4,Zuoying,169,Kaohsiung
+Guo Jia Zongzi,"Chinese, Asian",4.2,Yancheng,69,Kaohsiung
+Lexuan Wagyu,"Japanese, Seafood",5,Gushan,10,Kaohsiung
+Pier No.1,Bars & Pubs,4.4,Xinxing,27,Kaohsiung
+TGI Fridays Kaohsiung DreamMall,"American, Bar",4.3,Qianzhen,344,Kaohsiung
+Tong Hua Shabu Shabu Restaurant,"Chinese, Japanese",4.4,Zuoying,134,Kaohsiung
+Yuanxiang Beef Noodle,"Chinese, Asian",4,Xinxing,53,Kaohsiung
+Qijin Seafood,"Chinese, Seafood",3.9,Qijin,118,Kaohsiung
+THOMAS CHIEN Restaurant,"French, European",4.4,Qianzhen,47,Kaohsiung
+Jade Garden Restaurant,Chinese,4.2,Zuoying,258,Kaohsiung
+Yu Shan Ge Vegetarian Restaurant (Kaohsiung),"Chinese, Japanese",4.6,Gushan,77,Kaohsiung
+Jack Brothers Steakhouse - Yancheng,Steakhouse,4.1,Yancheng,26,Kaohsiung
+Hi-Lai Vegetarian Restaurant - Buddha Hall Store,"Chinese, Asian",4.3,Dashu,40,Kaohsiung
+Hou de Fu Steamed Dumpling Restaurant,"Chinese, Asian",4.3,Lingya,80,Kaohsiung
+Cozzi THE Roof,"Italian, Steakhouse",4,Qianzhen,101,Kaohsiung
+San Niu Beef Noodles,"Chinese, Asian",4.2,Zuoying,90,Kaohsiung
+Zi Qiang Night Market Nan Fong Minced Pork Rice,"Asian, Taiwanese",4.4,Lingya,91,Kaohsiung
+Cow on Fire Restaurant,"Steakhouse, Barbecue",3.9,Xinxing,68,Kaohsiung
+Da Niu Beef Noodles,"Chinese, Asian",4.3,Lingya,70,Kaohsiung
+Seashore,"Chinese, Seafood",4.6,Qijin,16,Kaohsiung
+LA ONE Kitchen - Boai,"Italian, Steakhouse",4.1,Sanmin,52,Kaohsiung
+BEAST Bar & Grill,"Mexican, American",4.3,Qianjin,59,Kaohsiung
+Old Tiawan Original Cuisine - Kaohsiung Museum of Fine Arts,"Chinese, Asian",4.1,Gushan,64,Kaohsiung
+Jing Yuan Leisure Farm,Fusion,4.2,Xiaogang,45,Kaohsiung
+Arkansas Diner,Diner,4.8,Zuoying,27,Kaohsiung
+Wangsteak - Bo'ai Kaohsiung,NA,4.6,Zuoying,139,Kaohsiung
+Jiu Zhen Nan Pastry Shop,"Chinese, Cafe",4.5,Qianjin,28,Kaohsiung
+Jengjong Ribs Rice - Zhengzhong Branch,"Chinese, Asian",4.1,Sanmin,158,Kaohsiung
+Cha Liu Shao Rou Tang,NA,4.2,Zuoying,122,Kaohsiung
+Xu Ji Steamed Dumpling Shop,Asian,4.2,Sanmin,41,Kaohsiung
+Heat 'N Chill,American,3.7,Dashu,113,Kaohsiung
+Zheng Xian Chang Fen - Cheng Qing,Chinese,4,Niaosong,27,Kaohsiung
+Lowgu Restaurant,"Asian, Taiwanese",4.2,Meinong,12,Kaohsiung
+Capstone Steakhouse,"Steakhouse, Taiwanese",4.2,Gushan,19,Kaohsiung
+Du Chuan Tou Ice Bowl Shaved Ice Mountain,NA,4.3,Gushan,136,Kaohsiung
+Miche Japanese Restaurants,"Japanese, Contemporary",4.5,Lingya,56,Kaohsiung
+Artco. C6,Fusion,4,Yancheng,125,Kaohsiung
+Yizhan Restaurant,"Asian, Taiwanese",4.2,Sanmin,22,Kaohsiung
+Top One Pot - Kaohsiung Dream Mall,"Chinese, Asian",4.6,NA,61,Kaohsiung
+Ding Fu Wedding Restaurant,NA,3.8,Gangshan,NA,Kaohsiung
+Easy House Vegetarian Food,"Chinese, Asian",4.3,Yancheng,83,Kaohsiung
+Xintonyi Steakhouse,"American, Steakhouse",4.3,Yancheng,14,Kaohsiung
+Dan Dan Hamburger,American,4.4,Qianzhen,45,Kaohsiung
+Dan Dan Hamburger,"American, Fast Food",4.1,Gushan,88,Kaohsiung
+Le Bon Marche,"French, Mediterranean",4.8,Gushan,25,Kaohsiung
+Thai Town Cuisine -  Kaohsiung Far Eastern Store,Thai,4.1,Lingya,83,Kaohsiung
+Karuisawa Hot Pot - Kaohsiung Bo’ai,NA,4.1,Gushan,64,Kaohsiung
+Chamonix,French,4.7,Zuoying,23,Kaohsiung
+Bagua Seafood Restaurant,"Chinese, Seafood",4.2,Gushan,22,Kaohsiung
+TimHoWan - Hanshin Arena Shopping Plaza,"Chinese, Asian",4,Zuoying,234,Kaohsiung
+Zui Bian Yi,Japanese,4.2,Sanmin,34,Kaohsiung
+Shanghainese Dumpling,NA,4,Qianjin,55,Kaohsiung
+Imma Israeli Restaurant,"Middle Eastern, Israeli",4.6,Sanmin,31,Kaohsiung
+Old New Taiwanese Cuisine,NA,4.5,Sanmin,10,Kaohsiung
+Birdwowo - Kaohsiung Store,NA,4.4,Zuoying,22,Kaohsiung
+Pasadena Italian House,Italian,4.1,Gushan,94,Kaohsiung
+Hong Mao Gang Seafood Restaurant,Seafood,4.3,Lingya,15,Kaohsiung
+Lahore (Halal),"Indian, Asian",4.1,Lingya,16,Kaohsiung
+Marukame - Shin Kong Mitsukoshi  Zuoying Store,Japanese,4.2,Zuoying,59,Kaohsiung
+Pujufang Restaurant,European,4.5,Daliao,NA,Kaohsiung
+Shanghainese Steam-Fried Baozi,NA,4.4,Sanmin,65,Kaohsiung
+Hai Tian Xia Seafood Restaurant,Seafood,4.1,Xinxing,25,Kaohsiung
+Thai Town Cuisine - Kaohsiung Zuoying Mitsukoshi Store,Thai,4.3,Zuoying,58,Kaohsiung
+Chef Teng Restaurant,NA,4.1,Xiaogang,14,Kaohsiung
+Harbour Cantonese Restaurant,Chinese,4.3,Yancheng,42,Kaohsiung
+Tokiya (Kaohsiung Zhongshan Branch),NA,4.3,Xinxing,160,Kaohsiung
+Smokey Joe's ( Kaohsiung Tzuyu),Mexican,3.8,Zuoying,104,Kaohsiung
+Taiwanese Restaurant-Grand Hi Lai Hotel,Seafood,4.2,Qianjin,57,Kaohsiung
+Pasadena Pizza. Beer. Grill,"American, Pizza",3.9,Yancheng,177,Kaohsiung
+Eatogether Kaohsiung Sando,NA,4,Lingya,37,Kaohsiung
+Mei Nung Hakka Restaurant,Closed now,4.4,Xiaogang,NA,Kaohsiung
+Chun Shui Tang (KaoHsiung ZouYing Mitsukoshi),NA,4,Zuoying,31,Kaohsiung
+Tai Shan Shan Tou Hot Pot - Cao Ya,Chinese,4.8,Qianzhen,NA,Kaohsiung
+The Brasserie Buffet,"Japanese, European",3.8,Lingya,75,Kaohsiung
+Haidawang Pengha Seafood Restaurant,"Seafood, AsianClosed now",4,Qianjin,12,Kaohsiung
+Handelaars,NA,5,Qijin,NA,Kaohsiung
+Maharaja Indian Restaurant,"Indian, Asian",4.4,Zuoying,35,Kaohsiung
+San Dai Spring Roll,Chinese,4.1,Xinxing,52,Kaohsiung
+Double Veggie,"Pizza, International",3.9,NA,27,Kaohsiung
+Guo Ba Shabu Shabu - Gangshan,Japanese,4,Gangshan,NA,Kaohsiung
+Caibaoli,Seafood,4.3,Qianjin,11,Kaohsiung
+Dayuanhuan Chicken Rice,"Asian, Taiwanese",4.4,Xinxing,34,Kaohsiung
+Ibu Kitchen,Closed todayMenu,4.5,Meinong,NA,Kaohsiung
+Han Lai Shu Shi - Ju Dan Dian,NA,4.3,Zuoying,87,Kaohsiung
+Chun Shui Tang (TAROKO Park),NA,4.1,Qianzhen,25,Kaohsiung
+Flavors Cantonese Cuisine & Tea House,"Chinese, Cantonese",4.1,Xinxing,130,Kaohsiung
+Kura Sushi - Hanshin Arena,Sushi,4.4,Zuoying,40,Kaohsiung
+Fwu Keh Lai North South Chinese Restaurant - Linsen,Chinese,4.5,Qianzhen,16,Kaohsiung
+Sasa coffee & Kitchen,NA,4,Gangshan,NA,Kaohsiung
+Liu's Traditional Juancun Food -Zhongzheng,Chinese,4.2,Zuoying,70,Kaohsiung
+Scenery of Life Cafe,Cafe,4.9,Fengshan,NA,Kaohsiung
+Mist,Japanese,4,Zuoying,135,Kaohsiung
+Huada Naicha,NA,4,Yancheng,155,Kaohsiung
+Ma Shi Well,"Italian, Cafe",5,Fengshan,NA,Kaohsiung
+The Lookout,"Contemporary, Pub",4.7,Xinxing,11,Kaohsiung
+Celebrity Cuisine Grand-hilai Hotel,Chinese,4.5,Lingya,33,Kaohsiung
+Peony Garden Taiwanese Cuisine,Chinese,5,Xinxing,NA,Kaohsiung
+Qi Xian Duck Rice,"Asian, Taiwanese",4.4,Qianjin,33,Kaohsiung
+Apliu Street,"Chinese, Asian",4.5,Fengshan,NA,Kaohsiung
+Niu Lao Er Beef Noodles,Asian,4.3,Lingya,46,Kaohsiung
+Kaohsiung Retro Teahouse,NA,4.3,Sanmin,NA,Kaohsiung
+Chen Lili Indonesia Halal Restaurant,Indonesian,4.6,Yancheng,NA,Kaohsiung
+Cairns Stone Grill Restaurant - Kaohsiung Arena,Steakhouse,3.7,Zuoying,38,Kaohsiung
+Fo Guang Lou Yi Di,NA,4.6,Dashu,22,Kaohsiung
+Jiangnanchun,"Chinese, Asian",4.3,Xinxing,48,Kaohsiung
+German Soul Kaohsiung,"German, Bar",4.9,Zuoying,20,Kaohsiung
+Cha Cha Tapas Bar,"Italian, European",4.7,Qianjin,34,Kaohsiung
+Le Felicity Gardens Bistro,"Italian, French",4.8,Lingya,10,Kaohsiung
+SANHOYAN - Kaohsiung Eda,"Chinese, Asian",5,Dashu,NA,Kaohsiung
+Howard Hotel Resorts Suites - Pearl River,NA,4.3,Xinxing,37,Kaohsiung
+Kaohsiung Milk,Fusion,3.8,Qianjin,86,Kaohsiung
+Oxford Pub,"Bars & Pubs, Pub",4.2,Yancheng,13,Kaohsiung
+Warm House Brunch,"International, ContemporaryClosed now",4,Gangshan,NA,Kaohsiung
+Smokey Joe's(Kaohsiung Jhongsiao),"Mexican, American",4,Xinxing,60,Kaohsiung
+Grandma Kuo's Fen Yang Wonton Restaurant,"Asian, Street Food",4.2,Zuoying,47,Kaohsiung
+Teppanyaki Restaurant-The Grand Hi Lai Hotel,Asian,4.4,Qianjin,84,Kaohsiung
+Dou Niu Shi Steakhouse,"Steakhouse, BarbecueClosed now",4.7,Qianjin,NA,Kaohsiung
+Gang Tie Niu Guo Wu Gong Chang,"Seafood, AsianClosed now",4,Gangshan,NA,Kaohsiung
+Cantonese Restaurant,"Chinese, Seafood",3.9,Qianzhen,75,Kaohsiung
+City Suites Kaohsiung Seafood Buffet,Seafood,3.5,Yancheng,111,Kaohsiung
+Wu Fu Tai Cai  Haichan Erou,Closed now,4.6,Lingya,NA,Kaohsiung
+Mimashokudo,"International, Asian",5,Fengshan,NA,Kaohsiung
+Yonshin Tea,"Chinese, Asian",4.2,Lingya,41,Kaohsiung
+Yi Lang Creative Sushi,"Japanese, Sushi",4.2,Zuoying,25,Kaohsiung
+Rong Ji Meatball (Bawan),"Steakhouse, Asian",5,Qishan,NA,Kaohsiung
+Cantonese Jade Restaurant-Grand Hi Lai Hotel,"Chinese, Asian",3.9,Qianjin,107,Kaohsiung
+Arthouse Cafe,"Bar, Pub",4.8,Gushan,29,Kaohsiung
+Qianjin Ground Pork Rice,"Asian, Taiwanese",3.8,Qianjin,11,Kaohsiung
+Now And Then By Nybc,Cafe,4.1,Yancheng,27,Kaohsiung
+Pizza Rock - Wenhua Branch,"Italian, Pizza",4.9,Lingya,35,Kaohsiung
+Chang Shian,"Chinese, Seafood",5,Qieding,NA,Kaohsiung
+Champs Elysees,International,4.3,Xinxing,72,Kaohsiung
+Cafe Grazie - Zuoying,Italian,3.8,Zuoying,25,Kaohsiung
+Pennoni,Italian,4.6,Sanmin,NA,Kaohsiung
+Ootoya Japanese Restaurant,Japanese,3.9,Qianjin,34,Kaohsiung
+Hudong Beef Restaurant,NA,4.8,Hunei,NA,Kaohsiung
+Gang Dou Jin Kou Fu Steamed Dumpling,NA,4.5,Nanzi,15,Kaohsiung
+Mu Lun Peanut Candy,"Asian, Taiwanese",4.8,Fengshan,NA,Kaohsiung
+Lao Song Beef Noodle Shop,Asian,4,Yancheng,32,Kaohsiung
+Yanagi,Japanese,3.5,Dashu,22,Kaohsiung
+Giguo (Zuoying Globall mall),JapaneseMenu,4.3,Zuoying,12,Kaohsiung
+Grand Hilai Taoyuan Taimou,"Chinese, Seafood",4.3,Luzhu,6012,Taoyuan
+Chun Shui Tang (Taoyuan Airport),"Chinese, Asian",4.1,Dayuan,91,Taoyuan
+Best01 Tea Garden,"Asian, Taiwanese",4.4,Longtan,33,Taoyuan
+ShinYeh Japanese Buffet - Zhongmao Shop,"Japanese, Seafood",4.4,Taoyuan,907,Taoyuan
+Top One Pot ZhongMei,Chinese,4.4,Zhongli,297,Taoyuan
+The Square,"International, Asian",3.8,Dayuan,352,Taoyuan
+Dim Sum Kitchen,NA,4.2,Taoyuan,853,Taoyuan
+ikki New Japanese Restaurant (Taoyuan Nanhua),Japanese,4.4,Taoyuan,365,Taoyuan
+Hotel Kuva Chateau- Tang’s Chinese Restaurant,"Chinese, Asian",4.3,Zhongli,299,Taoyuan
+Chiang Fu Yan,"Chinese, Asian",4.4,Longtan,13,Taoyuan
+The Shrimp Daddy - Taoyuan Tonlin Plaza,Seafood,4.2,Taoyuan,80,Taoyuan
+Wei Fang Chinese Restaurant,"Chinese, Asian",4,Dayuan,88,Taoyuan
+Sanhoyan - Taoyuan Gloria Outlet,Taiwanese,4,Zhongli,28,Taoyuan
+Our Noodles Garden,"Chinese, Fast Food",4.3,Daxi,42,Taoyuan
+Domy,NA,4.5,Daxi,11,Taoyuan
+Wang Steak (Taoyuan Zhongli Yanping Branch),Steakhouse,4.4,Zhongli,217,Taoyuan
+TGI FRIDAYS Hwa Tai,NA,4.2,Zhongli,179,Taoyuan
+Hit Western Restaurant - Fame Hall Garden Hotel,"Italian, American",4.8,Longtan,NA,Taoyuan
+Chus Steak,"French, Steakhouse",4.4,Zhongli,34,Taoyuan
+Da Jiang Wu Hakka Restaurant,"Asian, Taiwanese",4.2,Longtan,18,Taoyuan
+Homee Kitchen,"Chinese, Asian",3.4,Dayuan,60,Taoyuan
+Pine Garden,"Chinese, Contemporary",4.2,Longtan,12,Taoyuan
+Eatogether,Fusion,4.3,Taoyuan,103,Taoyuan
+Tokiya (Bade Dahe Branch),NA,4.3,Bade,112,Taoyuan
+Great Kuva Thai Food (Hotel Kuva Chateau ),Thai,4.4,Zhongli,145,Taoyuan
+Top One Pot - Daxingxi,NA,4.4,Taoyuan,261,Taoyuan
+Deng Shousi,NA,4.8,Yangmei,NA,Taoyuan
+Eatogether Taoyuan Zhongli Sogo,Closed now,4.4,Zhongli,86,Taoyuan
+Rong Shu Xia Lao a Bo Fresh Braised Bean Curd,"Asian, Taiwanese",4.2,Daxi,38,Taoyuan
+Yi Nancun Juan Cun Niurou Mian,"Asian, Taiwanese",4,Yangmei,NA,Taoyuan
+Pizza Rock Nankan,"Italian, American",4.8,Luzhu,54,Taoyuan
+Timhowan - Taoyuan Tai Mall Store,"Chinese, Asian",4.1,Luzhu,252,Taoyuan
+Cafe Tin,NA,4.3,Zhongli,20,Taoyuan
+Gudi Kitchen,"Steakhouse, International",4.8,Taoyuan,NA,Taoyuan
+Va Restaurant (Chateau de Chine Hotel Taoyuan),NA,3.7,Taoyuan,440,Taoyuan
+Xin Mei Long Qu Restaurant,"Asian, Taiwanese",4.8,Xinwu,NA,Taoyuan
+Shanghaochi Erouting- Bade,Deli,4.5,Bade,NA,Taoyuan
+Vege Creek,"Asian, TaiwaneseOpens in 48 min",4.8,Dayuan,NA,Taoyuan
+Big Pier - Flagship Store,American,4.4,Zhongli,NA,Taoyuan
+Bistro: D,NA,3.8,Dayuan,78,Taoyuan
+Sunlight Books,ItalianClosed now,5,Yangmei,NA,Taoyuan
+Tokiya (Zhongli Zhongshan Branch),NA,4.3,Zhongli,214,Taoyuan
+DAVID DINER Tex-Mex Food-Zhongli Zhongyuan Restaurant,"Mexican, American",4.5,Zhongli,10,Taoyuan
+Lake House,Closed now,5,Yangmei,NA,Taoyuan
+Mushi Shabu-Shabu,"Chinese, Asian",4.8,Bade,NA,Taoyuan
+Da Tang Mei Goose Diner,"Asian, Taiwanese",4.2,Longtan,24,Taoyuan
+Green Hills Coffee,"Italian, Cafe",5,Yangmei,NA,Taoyuan
+Baigui Nanyangren Wenjingguan Restaurant,"Asian, TaiwaneseClosed now",4.5,Pingzhen,NA,Taoyuan
+Parents Restaurant - Fame Hall Garden Hotel,"Chinese, SeafoodClosed nowMenu",4.2,Longtan,NA,Taoyuan
+Muhezi Yaokao Pizza,"Pizza, Cafe",4.5,Longtan,NA,Taoyuan
+Laojia Restaurant,Chinese,4.2,Fuxing,NA,Taoyuan
+Daxi Honglou Huaijiu Restaurant,NA,4.3,Daxi,NA,Taoyuan
+Wang Steak (Taoyuan Tongde Branch),"American, Steakhouse",4.4,Taoyuan,267,Taoyuan
+HoneyWood Cafe,"Italian, American",4.5,Pingzhen,15,Taoyuan
+Yangmei Hakka Restaurant,"Asian, Taiwanese",4.1,Yangmei,18,Taoyuan
+Li Xuan,"Chinese, Asian",3.7,Daxi,15,Taoyuan
+Black Beard Beefsteak - Longtan,Steakhouse,4.5,Longtan,NA,Taoyuan
+Chamonix Teppanyaki (Pingzhen Yanping Branch),Closed nowMenu,4.4,Pingzhen,305,Taoyuan
+A15 Taiwan Food,"Chinese, American",4.4,Dayuan,NA,Taoyuan
+NINI Garden Italian Restaurant,"Italian, Steakhouse",4.4,Luzhu,41,Taoyuan
+Ichi Tora Ramen,Japanese,4.2,Yangmei,NA,Taoyuan
+Tina Kitchen,Fusion,4,Fuxing,NA,Taoyuan
+The Olive Tree Experience,"Chinese, Asian",3.8,Longtan,NA,Taoyuan
+Kanpai Classic - Zhong Mao Branch,"Japanese, Bar",4.3,Taoyuan,12,Taoyuan
+Ippudo - Taoyuan Gaotie Branch,NA,4.1,Zhongli,21,Taoyuan
+12HOTPOT - Zhongli Carrefour Zhongshan E.,NA,4.2,Zhongli,117,Taoyuan
+Chuwei Port Chengfubo Seafood,Seafood,4.3,Dayuan,13,Taoyuan
+Wacheng Thai Town Cuisin Taoyuan Sanyue,Thai,4.3,Taoyuan,93,Taoyuan
+Wanshitou Restaurant,"Cafe, Asian",4.1,Luzhu,10,Taoyuan
+Zang Shoushi,Japanese,4.1,Zhongli,67,Taoyuan
+City Suites Taoyuan Gateway,NA,4.3,Dayuan,NA,Taoyuan
+Yang Shin Vegetarian Restaurant - Fame Hall Garden Hotel,"Chinese, Asian",4.8,Longtan,NA,Taoyuan
+Mr. Onion Steak Restaurant,Steakhouse,3.7,Luzhu,26,Taoyuan
+J&D BEEF NOODLES,"Chinese, Asian",4.1,Luzhu,NA,Taoyuan
+Hai Yan Re Kuai Chao Canting,Chinese,5,Xinwu,NA,Taoyuan
+Bite 2 Eat Pizza - Taoyuan,Closed now,4.7,Bade,NA,Taoyuan
+Nanfei Meishi House,African,4.3,Xinwu,NA,Taoyuan
+Yong Chuan Beef Noodles,Asian,3.9,Zhongli,39,Taoyuan
+Thai Town Cuisine - Zhongli Sogo Store,Thai,4.2,Zhongli,181,Taoyuan
+Haidilao - Taoyuan Tong Ling,Closed now,4.6,Taoyuan,17,Taoyuan
+Yamaokuya Yakiniku - Nankan Branch,"Japanese, Barbecue",4.5,Luzhu,NA,Taoyuan
+Gan Zhi Fei Nong,Closed now,4.2,Longtan,NA,Taoyuan
+Gloria Outlets,"Asian, Taiwanese",4,Zhongli,10,Taoyuan
+Wu Ming Seafood Dining,"Chinese, AsianClosed now",5,Dayuan,NA,Taoyuan
+Buna Cafe,Italian,4.1,Taoyuan,44,Taoyuan
+Traveler Cafe,"Italian, Chinese",3.8,Yangmei,NA,Taoyuan
+12HOTPOT - Taoyuan Nanping,NA,4.2,Taoyuan,61,Taoyuan
+Korean Food,"Asian, Korean",4,Yangmei,NA,Taoyuan
+Second Floor Taoyuan Huatai Store,FusionClosed now,4,Zhongli,NA,Taoyuan
+YI HUI XUAN,Chinese,3.7,Zhongli,NA,Taoyuan
+Shian-Yeou Fondu Automat,Menu,4.1,Pingzhen,47,Taoyuan
+Shin Bai Wang Hakka Restaurant,"Chinese, Seafood",4.7,Zhongli,NA,Taoyuan
+Top-d Seafood Restaurant (Taoyuan),"Chinese, SeafoodClosed nowMenu",3.9,Taoyuan,65,Taoyuan
+Cozzi Market,Fusion,3.3,Zhongli,NA,Taoyuan
+Lao You Tiao Jia Chang Cai (Linkou),"Chinese, AsianClosed now",4.5,Guishan,NA,Taoyuan
+The H.O.P.,"Mexican, American",4.5,Taoyuan,62,Taoyuan
+A Han Thai,Thai,4.3,Pingzhen,NA,Taoyuan
+Long Tan Lao Tou Bai Hakka Cuisine,Fusion,3.6,Longtan,28,Taoyuan
+Kudian Coffee,CafeMenu,4.7,Fuxing,NA,Taoyuan
+Shan Zhen Eatery,"Asian, Taiwanese",4.4,Fuxing,NA,Taoyuan
+Formosa Chang - Taoyuan Erhang,Closed now,3.8,Dayuan,16,Taoyuan
+Roots Cafe - Gloria Outlets,"American, Cafe",3.8,Zhongli,13,Taoyuan
+The Vivid Western Restaurant (Hotel Kuva Chateau),NA,3.9,Zhongli,185,Taoyuan
+Zendon Yaki,"Steakhouse, AsianClosed now",4.6,Zhongli,13,Taoyuan
+Da Shi Men Live Fish Restaurant,"Chinese, Seafood",4.1,Longtan,NA,Taoyuan
+Guang De Seafood Restaurant (Zhongmei Rd),SeafoodClosed now,4.2,Zhongli,10,Taoyuan
+McDonald's Airport,Fast Food,3.5,Taoyuan,NA,Taoyuan
+Jack's Steak House,Steakhouse,5,Zhongli,NA,Taoyuan
+Pretty Garden,"Cafe, Northern-Italian",4,Longtan,NA,Taoyuan
+Shiyuan Huoyu Restaurant,ChineseClosed now,4.7,Longtan,NA,Taoyuan
+Yi Xiao Lu,"Japanese, Sushi",5,Taoyuan,NA,Taoyuan
+Homa Aquatic Product,NA,4.2,Zhongli,NA,Taoyuan
+Ranaissance - Longtan Store,Chinese,4.3,Longtan,13,Taoyuan
+Usual Place Hakka Cuisine,"Asian, Taiwanese",4.1,Daxi,33,Taoyuan
+TGI Fridays Zhongli,NA,4.2,Zhongli,308,Taoyuan
+Yi Restaurant Monarch Skyline Hotel,Japanese,4.2,Luzhu,12,Taoyuan
+KIKI Noodle Bar,Closed now,4.5,Dayuan,NA,Taoyuan
+Hu Tong Yakiniku,NA,4.3,Taoyuan,NA,Taoyuan
+Orchard Cafe - Orchard Park,International,3.9,Dayuan,112,Taoyuan
+Xiao Nan Men Chuantong Douhua,NA,4,Dayuan,NA,Taoyuan
+Mos Burger,NA,4.1,Zhongli,46,Taoyuan
+Xinhong Goose Restaurant,"Asian, Taiwanese",3.3,Xinwu,NA,Taoyuan
+Yangmei Shouwu Hakka Seafood,"Asian, Taiwanese",3.8,Yangmei,NA,Taoyuan
+Youji Liaoli,"Asian, Taiwanese",3.8,Daxi,NA,Taoyuan
+Gan Noodle,"Asian, Taiwanese",4.3,Daxi,NA,Taoyuan
+LEBLEDOR - Zhongli Sogo Outlet,"American, Brew Pub",3.8,Zhongli,22,Taoyuan
+Pleasant Hotels Buffet,International,3.4,Taoyuan,37,Taoyuan
+Bonew Cafe',"Cafe, Northern-Italian",4.5,Longtan,NA,Taoyuan
+Lao Di Fang Restaurant,"Asian, Taiwanese",4.5,Longtan,NA,Taoyuan
+Toscanini Italy Restaurant,Italian,3.6,Pingzhen,21,Taoyuan
+Aegean Sea Shore Cafe,ItalianClosed now,4.3,Xinwu,NA,Taoyuan
+Guo Ran Hui Tongling,NA,4.2,Taoyuan,14,Taoyuan
+Smail,"Pizza, Cafe",4.4,Daxi,NA,Taoyuan
+Thai Town Cuisine - Taoyuan Zhongzheng Store,Thai,4.3,Taoyuan,39,Taoyuan
+Little Mongolian Spicy Hot Pot - Zhongli,"Asian, Taiwanese",4,Zhongli,249,Taoyuan
+Sun Dong Bao Niu Pai   Zhong Li Jian Xing,"Steakhouse, Asian",3.6,Zhongli,NA,Taoyuan
+Roux Bistro,"French, FusionClosed today",5,Taoyuan,NA,Taoyuan
+Chiuan Jia Fu Hakka Cuisine Restaurant,"Asian, Taiwanese",4.6,Zhongli,NA,Taoyuan
+Tokiya (Taoyuan Sanmin Branch),NA,4.1,Yangmei,84,Taoyuan
+Stanley’s Steakhouse,Steakhouse,4,Zhongli,NA,Taoyuan
+Thai Town Cuisine- Zhongli Metro Walk Store,Thai,4,Zhongli,104,Taoyuan
+Pizza Rock Taiwan - Taoyuan Branch,"Italian, American",4.8,Taoyuan,NA,Taoyuan
+Hakka Shallot Noodles,"Asian, Taiwanese",3.8,Yangmei,NA,Taoyuan
+Frank's Texas Bbq,"American, BarbecueClosed now",4.1,Daxi,10,Taoyuan
+KaiFun Together - Zhongli,Closed nowMenu,4.3,Zhongli,18,Taoyuan
+Hanlin Tea House,Fusion,4.2,Taoyuan,18,Taoyuan
+Back Street Office,Cafe,4.2,Daxi,NA,Taoyuan
+Green Herb Cuisine,"International, FusionOpen nowMenu",5,Taoyuan,NA,Taoyuan
+Sunrise Golf & Country Club,Fusion,4.1,Yangmei,15,Taoyuan
+KaiFun Together - Taoyuan,NA,4,Taoyuan,21,Taoyuan
+Red Barn BBQ Kitchen,"Mexican, ChineseClosed today",4.2,Luzhu,NA,Taoyuan
+Dim Sum Master - Ba De/Guang Feng,Asian,3.1,Bade,NA,Taoyuan
+Wonder Garden,Chinese,4.6,Pingzhen,NA,Taoyuan
+Littlehill. Life,Closed now,4.4,Longtan,NA,Taoyuan
+Ba Fung Hakka Restaurant,"Asian, Taiwanese",3.5,Yangmei,13,Taoyuan
+Yakiyan O-NiKU - Taoyuan Tong Ling,Asian,4.6,Taoyuan,67,Taoyuan
+Green Breeze Prairie,Fusion,3.8,Pingzhen,12,Taoyuan
+Chuan Men Tz Trendy Szechwan Cuisine,NA,4,Luzhu,21,Taoyuan
+Liu Ma Ma Rice Dumpling,"Asian, Taiwanese",3.9,Zhongli,23,Taoyuan
+Fantasy 193 Restaurant,"Mexican, SteakhouseClosed now",4.3,Zhongli,NA,Taoyuan
+Hong Deng Long Nong Jia Cai Restaurant,NA,4.2,Longtan,NA,Taoyuan
+Tina Kitchen,Fusion,3.8,Bade,11,Taoyuan
+Yentl Pasta - Linkou,Italian,4.5,Guishan,NA,Taoyuan
+Ate Marita Cold Noodle House,"Filipino, Asian",5,Zhongli,NA,Taoyuan
+Annapurna Creative Indian Restaurant,Indian,4.2,Guanyin,NA,Taoyuan
+Katsumasa - Zhongli Dajiang Store,NA,4.4,Zhongli,22,Taoyuan
+D3 Bar,NA,4,Dayuan,NA,Taoyuan
+Ming Shi Fu Seafood,Seafood,4.3,Dayuan,NA,Taoyuan
+Gyu-Kaku - Gloria Outlets,NA,5,Zhongli,NA,Taoyuan
+Jin Yu Man Tang,NA,4,Bade,NA,Taoyuan
+Little Mongolian Taoyuan,ChineseClosed now,4,Taoyuan,107,Taoyuan
+Huochuanman,"Chinese, Barbecue",5,Zhongli,NA,Taoyuan
+8way - Daxi Cihu,Closed nowMenu,4,Daxi,NA,Taoyuan
+3 Good - Puxin Yongmei,"Chinese, Asian",3.8,Yangmei,NA,Taoyuan
+Jin Zhang Roast,NA,4.2,Daxi,NA,Taoyuan
+Madrid,NA,4.3,Yangmei,NA,Taoyuan
+Chien Tu Shabu Shabu - Nanping,"Japanese, Seafood",3.8,Taoyuan,12,Taoyuan
+Momo Paradise Zhongli Dajiang,Closed now,3.7,Zhongli,54,Taoyuan
+Yi Fan Di Sukiyaki,Japanese,4.2,Taoyuan,23,Taoyuan
+Lifestyle Book Store,Cafe,4.6,Pingzhen,NA,Taoyuan
