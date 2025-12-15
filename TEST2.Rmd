@@ -19,7 +19,6 @@ library(widyr)
 library(igraph)
 library(ggraph)
 library(readxl)
-library(ggtext)
 
 mind_map.f <- function(
   data,
@@ -28,60 +27,65 @@ mind_map.f <- function(
   keep_ratio = 0.75
 ) {
 
-restaurant_clean <- restaurant_name %>%
-  str_replace_all("_", " ") %>%
-  str_to_title()
-
-tokens <- data %>%
-  filter(restaurant == restaurant_name) %>%
-  mutate(
-    text = str_to_lower(review),
-    text = str_replace_all(text, "[[:punct:]]", " "),
-    text = str_trim(text),
-    review_id = row_number()) %>%
+  tokens <- data %>%
+    filter(restaurant == restaurant_name) %>%
+    mutate(
+      text = str_to_lower(review),
+      text = str_replace_all(text, "[[:punct:]]", " "),
+      text = str_trim(text),
+      review_id = row_number()
+    ) %>%
     unnest_tokens(word, text) %>%
     filter(!word %in% stop_words$word, !is.na(word))
 
-wp <- tokens %>%
+  wp <- tokens %>%
     pairwise_count(word, review_id, sort = TRUE, upper = FALSE) %>%
     filter(n >= min_pair_freq) %>%
     slice_max(n, n = ceiling(nrow(.) * keep_ratio))
 
-graph <- graph_from_data_frame(wp)
+  graph <- graph_from_data_frame(wp)
+
   clusters <- components(graph)$membership
   V(graph)$cluster <- clusters
 
-cluster_1c <- lapply(split(V(graph)$name, clusters), function(nodes) {
+  cluster_centers <- lapply(split(V(graph)$name, clusters), function(nodes) {
     subgraph <- induced_subgraph(graph, nodes)
-    nodes[which.max(degree(subgraph))]})
+    nodes[which.max(degree(subgraph))]
+  })
 
-constellations_f123 <- do.call(rbind, lapply(names(cluster_1c), function(cl) {
-    center <- cluster_1c[[cl]]
-    nodes <- names(clusters[clusters == as.integer(cl)])
-    data.frame(
-      from = center,
-      to = nodes[nodes != center],
-      stringsAsFactors = FALSE)}))
+  constellation_df <- do.call(
+    rbind,
+    lapply(names(cluster_centers), function(cl) {
+      center <- cluster_centers[[cl]]
+      nodes <- names(clusters[clusters == as.integer(cl)])
+      data.frame(
+        from = center,
+        to = nodes[nodes != center],
+        stringsAsFactors = FALSE
+      )
+    })
+  )
 
-constellation.g <- graph_from_data_frame(constellations_f123)
+  constellation_graph <- graph_from_data_frame(constellation_df)
 
-ggraph(constellation.g, layout = "fr") +
+  ggraph(constellation_graph, layout = "fr") +
     geom_edge_fan(
       color = "gray60",
       alpha = 0.4,
       lineend = "round"
     ) +
-    geom_node_point(color = "steelblue3", size = 2) +
-    geom_node_text(aes(label = name), repel = TRUE, size = 4) +
-    labs(
-      title = paste(
-        "What customers think about",
-        paste0("**", restaurant_clean, "**")
-      ),
-      caption = "Word clusters are based on shared usage and word choice in reviews.") +
-    theme_void() +
-    theme(
-      plot.title = ggtext::element_markdown())}
+    geom_node_point(
+      color = "steelblue3",
+      size = 2
+    ) +
+    geom_node_text(
+      aes(label = name),
+      repel = TRUE,
+      size = 4
+    ) +
+    theme_void()
+}
+
 ```
 
 ```{r}
